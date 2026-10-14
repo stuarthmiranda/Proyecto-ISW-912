@@ -14,8 +14,9 @@
 | Versión | Fecha | Semana o Fase | Descripción del Cambio | Autor |
 | :---: | :---: | :---: | :--- | :--- |
 | **0.1** | 23/09/2026 | Semana 1 | Definición inicial de la idea del proyecto, problema, propuesta, valor esperado y objetivos. | Stuarth Fabricio Miranda Rojas |
-| **0.2** | 23/09/2026 | Semana 2 / Fase 3 | Incorporación del análisis de contexto organizacional (EEF), mapa de 8 interesados (poder e interés) y restricciones conocidas. | Stuarth Fabricio Miranda Rojas |
-| **0.3** | 04/10/2026 | Semana 3 | Integración de requerimientos del sistema, casos de prueba iniciales y definición de roles del Scrum Team a 14 semanas. | Stuarth Fabricio Miranda Rojas |
+| **0.2** | 23/09/2026 | Semana 2 / Fase 3 | Incorporación del análisis de contexto organizacional (EEF), mapa de interesados y restricciones conocidas. | Stuarth Fabricio Miranda Rojas |
+| **0.3** | 04/10/2026 | Semana 3 | Integración de requerimientos del sistema, casos de prueba iniciales y definición de roles. | Stuarth Fabricio Miranda Rojas |
+| **0.4** | 14/10/2026 | Semana 4 | Implementación de ciclo de vida ágil, proyección a 10 semanas (5 Sprints), Product Backlog, DoD y cronograma. | Stuarth Fabricio Miranda Rojas |
 
 ---
 
@@ -60,7 +61,7 @@ Proponer una solución tecnológica para la gestión y optimización de operacio
 * Establecer métodos para la optimización de rutas mediante Haversine y Dijkstra, así como para el cálculo de consumo, costos y emisiones estimadas de CO₂.
 
 ---
----
+
 ## Contexto del Proyecto e Interesados
 
 ### 1. Análisis del Entorno Organizacional y Factores Ambientales (EEF)
@@ -69,39 +70,27 @@ Proponer una solución tecnológica para la gestión y optimización de operacio
 El desarrollo del proyecto se plantea bajo una estructura matricial orientada a proyectos dentro del ámbito informático. Esta estructura permite contar con la autoridad necesaria para la toma de decisiones técnicas y de gestión sobre la plataforma, coordinando las actividades del equipo de desarrollo con los requerimientos operativos de la empresa logística.
 
 #### Factores Ambientales de la Empresa (EEF)
-* **Factores Internos:**
-  * Infraestructura tecnológica disponible para el alojamiento y despliegue de la plataforma web.
-  * Capacidad y experiencia del equipo de desarrollo en la implementación de algoritmos como Dijkstra y Haversine.
-  * Canales de comunicación interna y herramientas para el seguimiento de la gestión del proyecto.
+* **Factores Internos:** Infraestructura tecnológica disponible, capacidad del equipo de desarrollo en algoritmos (Dijkstra/Haversine) y herramientas de gestión.
+* **Factores Externos:** API de Google Maps, normativas ambientales de CO₂, condiciones de las vías.
 
-* **Factores Externos:**
-  * Servicios de información geográfica de Google Maps y sus condiciones de uso o límites de consulta de la API.
-  * Normativas ambientales vigentes relacionadas con el control y reporte de emisiones de CO₂.
-  * Condiciones de las vías y tipos de carretera en las zonas donde operan los vehículos de transporte.
+### 2. Identificación de Interesados (Stakeholders)
 
----
-
-### 2. Identificación de Interesados (Stakeholders) y Mapa de Poder e Interés
-
-| Interesado / Stakeholder | Rol en el Proyecto | Nivel de Poder | Nivel de Interés | Estrategia de Gestión |
-| :--- | :--- | :--- | :--- | :--- |
-| Gerencia General / Sponsor del Proyecto | Aprobación de recursos y alineación estratégica del negocio | Alto | Alto | Gestionar de cerca mediante reportes periódicos de avance y valor entregado. |
-| Encargados de operaciones logísticas | Planificación de rutas, asignación de cargas y gestión diaria | Alto | Alto | Gestionar de cerca para asegurar que el sistema responda a las necesidades operativas reales. |
-| Director de Proyecto (PM) | Liderazgo, integración y control del cumplimiento de objetivos | Alto | Alto | Gestionar de cerca, coordinando al equipo y facilitando la toma de decisiones. |
-| Equipo de desarrollo de software | Diseño, arquitectura, desarrollo e implementación del sistema | Medio | Alto | Mantener informados y empoderados durante la definición de requerimientos y algoritmos. |
-| Conductores / Transportistas de la flota | Usuarios finales que ejecutan las rutas asignadas | Bajo | Alto | Mantener informados y recopilar retroalimentación sobre la usabilidad y precisión de las rutas. |
-| Jefatura de Mantenimiento Vehicular | Registro y control del estado mecánico y mantenimientos preventivos | Medio | Medio | Mantener satisfechos integrando los módulos de control mecánico y alertas preventivas. |
-| Clientes / Destinatarios finales de la carga | Receptores del servicio de transporte y seguimiento de entrega | Bajo | Alto | Mantener informados sobre los tiempos estimados de llegada y estado del paquete. |
-| Entidades de regulación ambiental y ODS | Auditoría y evaluación del impacto ambiental e indicadores de CO₂ | Medio | Bajo | Mantener satisfechos mediante la generación de reportes precisos de huella de carbono. |
-
----
+| Interesado / Stakeholder | Nivel de Poder | Nivel de Interés | Estrategia de Gestión |
+| :--- | :--- | :--- | :--- |
+| Gerencia General / Sponsor | Alto | Alto | Gestionar de cerca mediante reportes periódicos de avance. |
+| Encargados de operaciones logísticas | Alto | Alto | Gestionar de cerca para asegurar respuesta a necesidades operativas. |
+| Director de Proyecto (PM) | Alto | Alto | Gestionar de cerca, coordinando al equipo. |
+| Equipo de desarrollo de software | Medio | Alto | Mantener informados y empoderados durante la definición técnica. |
+| Conductores de la flota | Bajo | Alto | Mantener informados y recopilar retroalimentación de usabilidad. |
+| Jefatura de Mantenimiento | Medio | Medio | Mantener satisfechos integrando módulos de control mecánico. |
+| Clientes finales de la carga | Bajo | Alto | Mantener informados sobre tiempos estimados de llegada. |
+| Entidades de regulación ambiental | Medio | Bajo | Mantener satisfechos mediante la generación de reportes de CO₂. |
 
 ### 3. Restricciones Conocidas del Proyecto
-
-* **Tiempo:** El marco temporal definido dentro del periodo académico para completar el análisis, definición de requerimientos y diseño conceptual de la plataforma.
-* **Presupuesto:** La disponibilidad de recursos financieros limitados, lo que exige el uso de herramientas de desarrollo gratuitas, librerías de código abierto y capas de uso libre de APIs geográficas.
-* **Tecnología:** La necesidad de adaptar el cálculo de algoritmos como Dijkstra a datos geográficos en tiempo real, considerando la complejidad computacional y las limitaciones de cuota en las consultas a Google Maps.
-* **Personas:** La capacidad operativa del equipo de estudiantes asignado para asumir los roles del proyecto, requiriendo una distribución eficiente del trabajo.
+* **Tiempo:** Marco temporal definido (10 semanas) para el diseño conceptual y desarrollo.
+* **Presupuesto:** Disponibilidad financiera limitada, exigiendo herramientas de desarrollo gratuitas y capas libres de APIs.
+* **Tecnología:** Complejidad computacional al adaptar Dijkstra a datos geográficos en tiempo real.
+* **Personas:** Capacidad operativa individual asumiendo todos los roles del proyecto.
 
 ---
 
@@ -145,138 +134,144 @@ El desarrollo del proyecto se plantea bajo una estructura matricial orientada a 
 
 ## 5. Casos de Prueba Iniciales
 
-Para garantizar la calidad del sistema, se definen los siguientes casos de prueba principales basados en los requerimientos funcionales críticos:
-
 * **CP-RF01-01: Registrar una ruta correctamente**
-  * **Descripción:** El usuario con permisos ingresa al módulo de Rutas, completa los datos de la ruta. Al guardar, el sistema valida la información y registra la ruta, mostrándola inmediatamente en el listado de rutas disponibles.
   * **Criterios de aceptación:** Origen y destino válidos y diferentes; distancia mayor a cero; tiempo estimado correcto.
-
 * **CP-RF02-01: Optimizar una ruta correctamente**
-  * **Descripción:** El usuario ingresa al módulo de Optimización de Rutas, selecciona una ruta previamente registrada y solicita la optimización. El sistema analiza información y genera una alternativa optimizada mostrando las mejoras detectadas.
   * **Criterios de aceptación:** Debe existir al menos una ruta registrada; la alternativa optimizada debe mostrar alguna mejora; la comparación entre rutas debe ser clara y entendible.
-
 * **CP-RF03-01: Registrar un proveedor correctamente**
-  * **Descripción:** El usuario autorizado accede al módulo de Proveedores y completa los datos solicitados de un nuevo proveedor, incluyendo sus certificaciones ambientales. Al guardar, el sistema valida la información y registra el proveedor.
   * **Criterios de aceptación:** El proveedor debe tener un nombre válido y único; debe incluir al menos un medio de contacto; las certificaciones deben registrarse correctamente.
-
 * **CP-RF04-01: Registrar consumo de recursos correctamente**
-  * **Descripción:** El usuario autorizado ingresa al módulo de Indicadores, selecciona registrar consumo y completa los datos. El sistema valida la información y registra el consumo, asociándolo a la ruta, vehículo o actividad.
   * **Criterios de aceptación:** La cantidad registrada debe ser mayor a cero; el recurso debe asociarse a un vehículo u operación válida; las unidades deben coincidir.
-
 * **CP-RF05-01: Generar un reporte correctamente**
-  * **Descripción:** El usuario ingresa al módulo de Reportes, selecciona el tipo de reporte y define filtros. El sistema recopila los datos, procesa la información y genera un reporte visual con gráficos que puede ser exportado a PDF.
   * **Criterios de aceptación:** Debe existir información para las fechas seleccionadas; los gráficos deben cargarse correctamente; la exportación debe funcionar correctamente.
 
 ---
 
-## 6. Definición del Scrum Team (Roles, Responsabilidades y Plan a 14 Semanas)
+## 6. Metodología de Trabajo y Ciclo de Vida
 
-Para alinear el desarrollo del sistema con la metodología ágil y las tecnologías seleccionadas, el trabajo se distribuye de manera semanal entre 5 roles específicos dentro del Scrum Team.
+### 6.1 Enfoque del Ciclo de Vida
+Se utilizará un **Ciclo de Vida Adaptativo (Ágil)**. Este enfoque permite evolucionar el proyecto mediante iteraciones (Sprints), ajustando el rumbo según los hallazgos técnicos (como la integración con la API de Google Maps) y asegurando la entrega temprana de valor funcional a los interesados.
 
-| Rol dentro del Scrum Team | Enfoque Principal |
-| :--- | :--- |
-| **Product Owner (PO) / PM** | Negocio, priorización del Product Backlog y cumplimiento de objetivos (ODS 9). |
-| **Scrum Master** | Facilitación, remoción de bloqueos y gestión del proceso ágil. |
-| **Frontend Developer** | Desarrollo de interfaces web (HTML/CSS/JS) y experiencia de usuario. |
-| **Backend Developer** | Lógica de servidor (Python/FastAPI), algoritmos matemáticos y base de datos SQL. |
-| **Analista de Calidad (QA)** | Pruebas, validación de requerimientos y control de estabilidad del sistema. |
+### 6.2 Definición del Sprint
+El trabajo se estructurará en iteraciones llamadas **Sprints**, con una duración fija de **2 semanas** cada uno. Cada Sprint incluirá las siguientes ceremonias para cumplir con los grupos de procesos:
+* **Sprint Planning (Planificación):** Selección de requerimientos a trabajar.
+* **Daily Scrum (Monitoreo y Control):** Seguimiento diario del progreso.
+* **Sprint Review (Cierre de fase):** Demostración del incremento funcional.
+* **Sprint Retrospective (Cierre):** Lecciones aprendidas y mejora continua.
 
-### 1. Product Owner (PO) / Project Manager (PM)
-**Responsabilidad:** Maximizar el valor del producto, gestionar el Product Backlog y asegurar que la plataforma cumpla con los objetivos de negocio y el ODS 9 (sostenibilidad).
+### 6.3 Estimación de Desarrolladores y Capacidad
+Para desarrollar esta plataforma en un entorno real con un plazo de **10 semanas (5 Sprints)**, dada la integración de algoritmos complejos y geolocalización, se estimaría un equipo ideal de **4 profesionales** (1 Backend Senior, 1 Frontend, 1 QA y 1 Scrum Master/PO). 
+Sin embargo, bajo el contexto académico, el proyecto se ejecuta de forma individual, por lo que **Stuarth Fabricio Miranda Rojas asume todos los roles técnicos y de gestión**, priorizando las funciones críticas para cumplir con las 10 semanas de entrega.
 
-| Semana | Tareas y Responsabilidades del Rol |
-| :---: | :--- |
-| **1** | Definición del Project Charter y visión general del producto. |
-| **2** | Análisis del entorno organizacional (EEF) e identificación de interesados. |
-| **3** | Creación inicial del Product Backlog (Rutas, Proveedores, Vehículos). |
-| **4** | Refinamiento de historias de usuario con el equipo técnico. |
-| **5** | Validación de los primeros prototipos visuales (Login y Dashboard). |
-| **6** | Priorización de tareas operativas para el cálculo de distancias y tiempos. |
-| **7** | Aceptación del módulo de registro de vehículos y proveedores. |
-| **8** | Revisión de la lógica de optimización (Dijkstra/Haversine) desde la perspectiva de negocio. |
-| **9** | Validación de la integración y los datos geográficos de Google Maps. |
-| **10** | Refinamiento de los requerimientos para el módulo de métricas ambientales (CO₂). |
-| **11** | Aceptación del módulo de reportes y validación de la trazabilidad. |
-| **12** | Pruebas de aceptación de usuario (UAT) sobre la plataforma completa. |
-| **13** | Gestión de últimos cambios en el alcance y preparación del entregable final. |
-| **14** | Presentación final del producto ante interesados y cierre formal. |
+### 6.4 Cronograma del Proyecto de Desarrollo de Software (A 10 Semanas)
 
-### 2. Scrum Master
-**Responsabilidad:** Facilitar el proceso ágil, remover bloqueos operativos y técnicos, y asegurar que el equipo trabaje en un entorno colaborativo.
+| Fase / Tarea | Semanas 1-2 | Semanas 3-4 | Semanas 5-6 | Semanas 7-8 | Semanas 9-10 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Planning (Planificación)** | | | | | |
+| - Design a business proposal | ████ | | | | |
+| - Analyze & Select resources | ████ | | | | |
+| - Build project timetable | ████ | | | | |
+| **Requirements Analysis** | | | | | |
+| - Elicitation & Examination | ████████ | | | | |
+| - Draft specification details | | ████ | | | |
+| **Design (Diseño)** | | | | | |
+| - Software design evaluation | | ████████ | | | |
+| - Technical requirements (DB, APIs) | | ████████ | | | |
+| **Development (Desarrollo)** | | | | | |
+| - Backend & Algoritmos | | | ████████ | ████ | |
+| - Frontend & Vistas Web | | | ████ | ████████ | |
+| **Testing & Deployment** | | | | | |
+| - QA, Regresión e Integración | | | | ████ | ████████ |
 
-| Semana | Tareas y Responsabilidades del Rol |
-| :---: | :--- |
-| **1** | Definición del Scrum Team y establecimiento de reglas de trabajo interno. |
-| **2** | Configuración del entorno de gestión (ej. GitHub Projects/Trello). |
-| **3** | Facilitación de la primera planificación de Sprint (Sprint Planning). |
-| **4** | Resolución de impedimentos iniciales (gestión de llaves de API de Google Maps). |
-| **5** | Facilitación de Daily Stand-ups y monitoreo de avances. |
-| **6** | Facilitación de retrospectiva temprana para ajustar procesos del equipo. |
-| **7** | Remoción de bloqueos técnicos de integración entre Frontend y Backend. |
-| **8** | Facilitación de Sprint Review enfocado en el algoritmo de rutas. |
-| **9** | Gestión de la capacidad del equipo para evitar sobrecargas operativas. |
-| **10** | Asegurar comunicación fluida entre Developers y Analista de Calidad (QA). |
-| **11** | Seguimiento exhaustivo a la corrección de errores (bugs) detectados. |
-| **12** | Facilitación de la penúltima planificación enfocada en pulir detalles. |
-| **13** | Preparación para el cierre administrativo del proyecto logístico. |
-| **14** | Retrospectiva final y documentación técnica de lecciones aprendidas. |
+---
 
-### 3. Frontend Developer
-**Responsabilidad:** Construir la interfaz de usuario web utilizando HTML, CSS y JavaScript, garantizando una navegación responsiva, fluida y orientada a la experiencia del operario logístico.
+## 7. Product Backlog Priorizado
 
-| Semana | Tareas y Responsabilidades del Rol |
-| :---: | :--- |
-| **1** | Planificación de la estructura de vistas web y diseño UI básico. |
-| **2** | Definición de la paleta de colores y estilos CSS base. |
-| **3** | Maquetación responsiva del Login y Panel Principal (Dashboard). |
-| **4** | Creación de formularios HTML para el registro de rutas y vehículos. |
-| **5** | Desarrollo de las vistas de listado y gestión de proveedores. |
-| **6** | Integración inicial de JavaScript para validaciones en el cliente (formularios). |
-| **7** | Incorporación de la vista del mapa para el monitoreo de rutas. |
-| **8** | Conexión de la interfaz web con los primeros endpoints de la API (Backend). |
-| **9** | Renderizado visual de la ruta óptima sugerida en el mapa interactivo. |
-| **10** | Desarrollo de paneles gráficos interactivos para métricas de sostenibilidad. |
-| **11** | Creación de la interfaz para la generación, filtrado y descarga de reportes. |
-| **12** | Manejo de estados de error y mensajes de éxito al usuario (UI polish). |
-| **13** | Optimización de carga de archivos estáticos y rendimiento de renderizado web. |
-| **14** | Despliegue de la aplicación cliente y resolución de errores visuales finales. |
+Los requerimientos funcionales han sido transformados en elementos del Backlog, agregando valor de negocio y priorizados según la dependencia técnica.
 
-### 4. Backend Developer
-**Responsabilidad:** Diseñar la arquitectura de la base de datos SQL, programar la lógica de negocio y desarrollar la API REST utilizando Python (FastAPI).
+| ID | Prioridad | Elemento del Backlog (Historia de Usuario) | Criterios de Aceptación Básicos |
+| :--- | :---: | :--- | :--- |
+| **PB-01** | Alta | **Gestión de Accesos:** Como administrador, quiero asignar roles a los usuarios (Login) para garantizar la seguridad de la información. | Autenticación requerida. Roles diferenciados. Base de datos operativa. |
+| **PB-02** | Alta | **Gestión de Vehículos:** Como gestor, quiero registrar y actualizar vehículos para controlar la flota logística disponible. | Placa única. Capacidad y consumo estimado definidos. |
+| **PB-03** | Alta | **Registro de Rutas:** Como gestor, quiero registrar origen y destino para tener un catálogo de rutas operativas. | Origen y destino distintos. Almacenamiento en base de datos. |
+| **PB-04** | Alta | **Gestión de Proveedores:** Como administrador, quiero registrar proveedores para evaluar sus prácticas responsables y certificaciones. | Nombre único. Medio de contacto. Campo de certificaciones ambientales. |
+| **PB-05** | Media | **Cálculos de Rutas (Haversine/Dijkstra):** Como sistema, quiero optimizar rutas mediante algoritmos matemáticos y mapas para reducir tiempos y distancias. | Distancia > 0. Mejora operativa comprobable en comparación a rutas estándar. |
+| **PB-06** | Media | **Indicadores de Consumo:** Como operario, quiero registrar el combustible y recursos usados para medir la eficiencia de la ruta. | Asociado a un vehículo/ruta. Cantidades mayores a cero. |
+| **PB-07** | Media | **Métricas Ambientales (CO₂):** Como analista, quiero visualizar métricas de impacto ambiental para verificar el cumplimiento del ODS 9. | Cálculo de emisiones acorde a la distancia y consumo. Gráficos interactivos. |
+| **PB-08** | Baja | **Historial General:** Como auditor, quiero consultar el historial de operaciones pasadas para trazabilidad. | Filtros por fecha y ruta. Ordenamiento cronológico. |
+| **PB-09** | Baja | **Generación de Reportes:** Como administrador, quiero exportar la eficiencia operativa en PDF/Excel para presentar resultados. | Exportación funcional. Formato claro con tablas/gráficos. |
+| **PB-10** | Baja | **Monitoreo en Tiempo Real:** Como gestor, quiero ver el estado actual de las rutas activas para reaccionar a incidencias. | Integración de mapas interactivos. Actualización de estado en pantalla. |
 
-| Semana | Tareas y Responsabilidades del Rol |
-| :---: | :--- |
-| **1** | Diseño del modelo relacional y diagramas de base de datos SQL. |
-| **2** | Configuración del entorno de desarrollo local en FastAPI (Python). |
-| **3** | Creación del esquema SQL y conexión inicial a la base de datos. |
-| **4** | Desarrollo del CRUD básico para vehículos y proveedores (API REST). |
-| **5** | Desarrollo de endpoints para el registro y consulta de historial de rutas. |
-| **6** | Implementación inicial de la fórmula de Haversine para cálculo de distancias. |
-| **7** | Configuración de consultas seguras a la API de Google Maps (datos geográficos). |
-| **8** | Programación e integración del algoritmo de Dijkstra para rutas eficientes. |
-| **9** | Ajuste, parseo y optimización de las respuestas JSON de la API. |
-| **10** | Implementación de la lógica matemática de cálculo de emisiones (CO₂). |
-| **11** | Generación de la estructura de datos para la exportación de reportes (PDF/Excel). |
-| **12** | Integración de filtros de búsqueda complejos para el historial general del sistema. |
-| **13** | Refactorización de código Python y optimización de consultas SQL (latencia). |
-| **14** | Preparación del servidor, despliegue del Backend y monitoreo de estabilidad. |
+---
 
-### 5. Analista de Calidad (QA)
-**Responsabilidad:** Validar que los incrementos de software cumplan con los requerimientos, manteniendo tiempos de respuesta óptimos y garantizando la fiabilidad de las métricas.
+## 8. Planificación a 5 Sprints (Proyección de 10 semanas)
 
-| Semana | Tareas y Responsabilidades del Rol |
-| :---: | :--- |
-| **1** | Definición de la estrategia general de pruebas del proyecto. |
-| **2** | Estructuración de los casos de prueba formales basados en los requerimientos. |
-| **3** | Revisión de usabilidad sobre los flujos de navegación planificados. |
-| **4** | Validación de campos obligatorios y restricciones en formularios (Frontend). |
-| **5** | Ejecución de pruebas unitarias sobre los primeros endpoints de FastAPI. |
-| **6** | Ejecución del caso de prueba CP-RF01-01 (Registro de rutas). |
-| **7** | Validación técnica de precisión en los cálculos de distancia (Haversine). |
-| **8** | Ejecución del caso de prueba CP-RF02-01 (Optimización de rutas con Dijkstra). |
-| **9** | Reporte de defectos (bugs) encontrados en la integración del mapa interactivo. |
-| **10** | Ejecución de pruebas funcionales para métricas ambientales y de recursos (CP-RF04-01). |
-| **11** | Ejecución del caso CP-RF05-01 (Generación y exportación de reportes). |
-| **12** | Pruebas de compatibilidad en múltiples navegadores (Chrome, Edge, Safari). |
-| **13** | Ejecución de pruebas de regresión y verificación de tiempos de respuesta (< 2s). |
-| **14** | Validación final de estabilidad y emisión del reporte de calidad para el cierre. |
+El alcance total del proyecto se ha distribuido en **5 Sprints de 2 semanas**, asegurando que cada incremento genere valor sin bloquear otros requerimientos técnicos.
+
+* **Sprint 1 (Semanas 1-2) - "Estructura Base y Seguridad":** Desarrollo de la base de datos SQL, esquema principal, diseño UI básico, Login y control de roles (PB-01).
+* **Sprint 2 (Semanas 3-4) - "Flota y Entidades Principales":** Módulo CRUD para registro de Vehículos (PB-02), Proveedores (PB-04) y Rutas básicas (PB-03).
+* **Sprint 3 (Semanas 5-6) - "Inteligencia de Rutas":** Integración de Google Maps API, implementación de la fórmula de Haversine y algoritmo de Dijkstra para optimización (PB-05).
+* **Sprint 4 (Semanas 7-8) - "Sostenibilidad y Recursos":** Registro de indicadores de consumo de combustible y desarrollo del cálculo de métricas de emisiones de CO₂ (PB-06, PB-07).
+* **Sprint 5 (Semanas 9-10) - "Trazabilidad y Cierre":** Desarrollo del historial general, exportación de reportes PDF, y visualización del monitoreo operativo final (PB-08, PB-09, PB-10).
+
+---
+
+## 9. Sprint Backlog Detallado (Sprints Iniciales)
+
+A continuación, se desglosan las tareas técnicas para los primeros dos Sprints del proyecto:
+
+### Sprint Backlog - Sprint 1 (Estructura Base y Seguridad)
+* **Tarea 1.1:** Diseñar y construir el script SQL para la base de datos logística (tablas Usuarios, Roles).
+* **Tarea 1.2:** Configurar el entorno de desarrollo local y el servidor en Python (FastAPI).
+* **Tarea 1.3:** Maquetar la estructura HTML/CSS de la página de Login.
+* **Tarea 1.4:** Desarrollar el endpoint de autenticación segura (Backend).
+* **Tarea 1.5:** Conectar el formulario de Login con el servidor y validar inicio de sesión.
+
+### Sprint Backlog - Sprint 2 (Flota y Entidades Principales)
+* **Tarea 2.1:** Extender la base de datos para incluir las tablas Vehículos, Proveedores y Rutas.
+* **Tarea 2.2:** Desarrollar los endpoints (GET, POST) para guardar y leer Vehículos y Proveedores.
+* **Tarea 2.3:** Crear las vistas HTML (formularios y tablas) para el registro de la flota.
+* **Tarea 2.4:** Integrar alertas y mensajes de confirmación visuales en el Frontend tras cada registro.
+
+---
+
+## 10. Definition of Done (DoD) y Criterios de Calidad
+
+Para asegurar la estabilidad técnica y operativa del sistema logístico, una historia de usuario o tarea técnica solo se considerará **"Terminada" (Done)** cuando cumpla obligatoriamente con la siguiente lista de verificación ejecutada por el rol de Quality Assurance (QA):
+
+1. **El código ha sido revisado y documentado** según los estándares del proyecto.
+2. **Pruebas Unitarias aprobadas:** El código lógico (Backend/FastAPI) pasa sus pruebas individuales de cálculo sin errores matemáticos.
+3. **Pruebas de Humo (Smoke Testing) ejecutadas:** Tras el despliegue local, la funcionalidad crítica compila y las vistas HTML cargan correctamente sin fallos evidentes.
+4. **Pruebas de Integración exitosas:** El Frontend interactúa correctamente con los endpoints del Backend y la base de datos SQL responde guardando la información íntegra.
+5. **Pruebas de Regresión pasadas:** Se garantiza que la nueva función implementada (ej. optimizar ruta) no rompe funciones previas (ej. registrar vehículo).
+6. Los Criterios de Aceptación especificados en el Product Backlog se cumplen a cabalidad.
+7. Los tiempos de respuesta de la funcionalidad no superan los 2 segundos bajo carga normal.
+
+---
+
+## 11. Definición del Scrum Team a 10 Semanas
+
+Nota aclaratoria: Al ser un proyecto de alcance individual, el estudiante **Stuarth Fabricio Miranda Rojas** asume las responsabilidades de todos los roles técnicos y de gestión (PO, SM, Frontend, Backend y QA) para garantizar la ejecución de las fases en las 10 semanas de plazo.
+
+| Rol dentro del Scrum Team | Encargado | Enfoque Principal |
+| :--- | :--- | :--- |
+| **Product Owner / PM** | Stuarth Miranda | Negocio, priorización del Product Backlog, validación y cumplimiento de objetivos (ODS 9). |
+| **Scrum Master** | Stuarth Miranda | Planificación de Sprints, remoción de bloqueos (ej. APIs) y gestión del proceso ágil. |
+| **Frontend Developer** | Stuarth Miranda | Desarrollo de interfaces web (HTML/CSS/JS) y experiencia de usuario. |
+| **Backend Developer** | Stuarth Miranda | Lógica de servidor (Python/FastAPI), algoritmos matemáticos (Dijkstra) y BD SQL. |
+| **Analista de QA** | Stuarth Miranda | Definition of Done, pruebas unitarias, de integración, regresión y control de estabilidad. |
+
+### Planificación Integral por Rol (Semanas 1 a 10)
+
+| Semana | Product Owner & Scrum Master | Backend & Frontend Developer | Analista de Calidad (QA) |
+| :---: | :--- | :--- | :--- |
+| **1** | Project Charter, EEFs y reglas de trabajo. | Diseño de BD SQL y maquetación de Login. | Definición de estrategia de pruebas y DoD. |
+| **2** | Creación del Product Backlog priorizado. | Setup FastAPI, endpoints de Auth y seguridad. | Ejecución de Pruebas Unitarias y Humo (Login). |
+| **3** | Refinamiento de requerimientos de flota. | CRUD de Vehículos y Proveedores (BD y API). | Validación de formularios web y reglas de campos. |
+| **4** | Sprint Review enfocado en entidades base. | Vistas de listado y registro de rutas simples. | Pruebas de Integración (Front-Back) para registros. |
+| **5** | Priorización operativa (Google Maps). | Implementación matemática de Haversine. | Verificación matemática de distancias calculadas. |
+| **6** | Revisión de inteligencia de rutas (Dijkstra). | Algoritmo de rutas óptimas y conexión API. | Pruebas de usabilidad en mapa e integración API. |
+| **7** | Validación técnica y gestión de capacidad. | Lógica de recolección de consumo de recursos. | Pruebas de Humo en nuevos módulos de consumo. |
+| **8** | Definición de paneles de ODS 9 (CO₂). | Gráficos y cálculo matemático de emisiones. | Validación de precisión de indicadores ambientales. |
+| **9** | Refinamiento de requerimientos de trazabilidad. | Generación de PDF/Excel e historial general. | Ejecución de Pruebas de Regresión completas. |
+| **10** | Presentación, cierre y entrega final. | Despliegue, optimización de velocidad de BD. | Verificación de tiempos de carga (< 2s) y UAT. |
