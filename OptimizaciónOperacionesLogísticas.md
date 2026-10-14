@@ -167,21 +167,26 @@ Sin embargo, bajo el contexto académico, el proyecto se ejecuta de forma indivi
 
 | Fase / Tarea | Semanas 1-2 | Semanas 3-4 | Semanas 5-6 | Semanas 7-8 | Semanas 9-10 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Planning (Planificación)** | | | | | |
-| - Design a business proposal | ████ | | | | |
-| - Analyze & Select resources | ████ | | | | |
-| - Build project timetable | ████ | | | | |
-| **Requirements Analysis** | | | | | |
-| - Elicitation & Examination | ████████ | | | | |
-| - Draft specification details | | ████ | | | |
-| **Design (Diseño)** | | | | | |
-| - Software design evaluation | | ████████ | | | |
-| - Technical requirements (DB, APIs) | | ████████ | | | |
-| **Development (Desarrollo)** | | | | | |
-| - Backend & Algoritmos | | | ████████ | ████ | |
-| - Frontend & Vistas Web | | | ████ | ████████ | |
-| **Testing & Deployment** | | | | | |
-| - QA, Regresión e Integración | | | | ████ | ████████ |
+| **1. Planificación (Planning)** | | | | | |
+| - Diseño de propuesta del proyecto (Project Charter) | ████ | | | | |
+| - Análisis de entorno (EEF) y selección de recursos | ████ | | | | |
+| - Elaboración de la proyección y cronograma a 10 semanas | ████ | | | | |
+| **2. Análisis de Requerimientos** | | | | | |
+| - Levantamiento y revisión de requerimientos funcionales | ████████ | | | | |
+| - Creación del Product Backlog priorizado | | ████ | | | |
+| - Definición del Sprint Backlog y Definition of Done (DoD) | | ████ | | | |
+| **3. Diseño (Arquitectura y UI/UX)** | | | | | |
+| - Evaluación de arquitectura técnica del sistema | | ████████ | | | |
+| - Diseño del esquema relacional de Base de Datos SQL | | ████████ | | | |
+| - Prototipado visual de interfaces web (Mockups) | | | ████ | | |
+| **4. Desarrollo (Ejecución de Sprints)** | | | | | |
+| - Desarrollo Backend (API FastAPI, Dijkstra, Haversine) | | | ████████ | ████ | |
+| - Desarrollo Frontend (Vistas HTML/CSS/JS y formularios) | | | ████ | ████████ | |
+| - Integración de API de Google Maps y cálculos | | | | ████████ | |
+| **5. Pruebas y Despliegue (QA)** | | | | | |
+| - Ejecución de Pruebas Unitarias y de Humo | | | ████ | ████ | |
+| - Ejecución de Pruebas de Integración y Regresión | | | | ████ | ████████ |
+| - Evaluación UAT, Presentación y Despliegue final | | | | | ████████ |
 
 ---
 
