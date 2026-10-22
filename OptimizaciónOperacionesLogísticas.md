@@ -17,6 +17,7 @@
 | **0.2** | 23/09/2026 | Semana 2 / Fase 3 | Incorporación del análisis de contexto organizacional (EEF), mapa de interesados y restricciones conocidas. | Stuarth Fabricio Miranda Rojas |
 | **0.3** | 04/10/2026 | Semana 3 | Integración de requerimientos del sistema, casos de prueba iniciales y definición de roles. | Stuarth Fabricio Miranda Rojas |
 | **0.4** | 14/10/2026 | Semana 4 | Implementación de ciclo de vida ágil, proyección a 10 semanas (5 Sprints), Product Backlog, DoD y cronograma. | Stuarth Fabricio Miranda Rojas |
+| **0.5** | 21/10/2026 | Semana 5 | Desglose completo de todos los requerimientos (Funcionales, No funcionales y Dominio) en Historias de Usuario (regla de las 3 C's). | Stuarth Fabricio Miranda Rojas |
 
 ---
 
@@ -97,7 +98,6 @@ El desarrollo del proyecto se plantea bajo una estructura matricial orientada a 
 ## 4. Requerimientos del Sistema
 
 ### Requerimientos Funcionales
-
 1. El sistema debe permitir registrar información relacionada con las rutas logísticas utilizadas por las empresas, incluyendo origen, destino, distancia y tiempo estimado.
 2. El sistema debe ofrecer una funcionalidad para optimizar rutas mediante el análisis de distancia, consumo de recursos y eficiencia operativa.
 3. El sistema debe permitir gestionar proveedores logísticos y visualizar información relevante para evaluar prácticas responsables.
@@ -110,25 +110,23 @@ El desarrollo del proyecto se plantea bajo una estructura matricial orientada a 
 10. El sistema debe garantizar que los usuarios puedan acceder a las funcionalidades según su rol asignado.
 
 ### Requerimientos No Funcionales
-
 1. El sistema debe mantener tiempos de respuesta adecuados, de manera que las consultas y operaciones principales se ejecuten sin retrasos perceptibles para el usuario.
-2. El sistema debe asegurar la disponibilidad continua de la plataforma, permitiendo que los usuarios accedan a sus funcionalidades durante la mayor parte del tiempo operativo.
-3. El sistema debe implementar medidas de seguridad que protejan los datos registrados, incluyendo autenticación de usuarios y manejo adecuado de información sensible.
-4. La interfaz del sistema debe ser intuitiva, clara y fácil de utilizar, permitiendo que los usuarios realicen sus tareas sin necesidad de capacitaciones extensas.
-5. El sistema debe estar diseñado de forma modular para facilitar futuras actualizaciones, mantenimiento y ampliación de funcionalidades sin afectar la operación principal.
-6. El sistema debe ser compatible con navegadores web comunes para garantizar su accesibilidad desde diferentes dispositivos.
-7. El sistema debe permitir un desempeño estable incluso en condiciones de carga moderada, manteniendo tiempos de respuesta adecuados a las operaciones realizadas.
-8. Los datos almacenados deben gestionarse siguiendo buenas prácticas que aseguren integridad, consistencia y disponibilidad.
-9. El sistema debe estar estructurado para garantizar escalabilidad en caso de aumentar el número de usuarios o el volumen de información registrada.
-10. El diseño visual del sistema debe seguir criterios de claridad y orden, evitando elementos que dificulten la navegación o la composición de la información.
+2. El sistema debe asegurar la disponibilidad continua de la plataforma.
+3. El sistema debe implementar medidas de seguridad que protejan los datos registrados.
+4. La interfaz del sistema debe ser intuitiva, clara y fácil de utilizar.
+5. El sistema debe estar diseñado de forma modular para facilitar futuras actualizaciones.
+6. El sistema debe ser compatible con navegadores web comunes.
+7. El sistema debe permitir un desempeño estable incluso en condiciones de carga moderada.
+8. Los datos almacenados deben gestionarse siguiendo buenas prácticas de integridad.
+9. El sistema debe estar estructurado para garantizar escalabilidad.
+10. El diseño visual del sistema debe seguir criterios de claridad y orden.
 
 ### Requerimientos de Dominio
-
 1. El sistema debe calcular la distancia estimada entre puntos de origen y destino para cada ruta registrada.
 2. El sistema debe estimar el tiempo aproximado de recorrido según la distancia y el tipo de vía seleccionada.
-3. El sistema debe registrar y procesar datos relacionados con el consumo de recursos, como combustible o materiales utilizados en operaciones logísticas.
-4. El sistema debe generar indicadores básicos de eficiencia como distancia recorrida, tiempo utilizado y consumo aproximado de recursos.
-5. El sistema debe emplear unidades estandarizadas para todos los cálculos relacionados con distancia, tiempo y consumo.
+3. El sistema debe registrar y procesar datos relacionados con el consumo de recursos.
+4. El sistema debe generar indicadores básicos de eficiencia.
+5. El sistema debe emplear unidades estandarizadas para todos los cálculos.
 
 ---
 
@@ -137,13 +135,13 @@ El desarrollo del proyecto se plantea bajo una estructura matricial orientada a 
 * **CP-RF01-01: Registrar una ruta correctamente**
   * **Criterios de aceptación:** Origen y destino válidos y diferentes; distancia mayor a cero; tiempo estimado correcto.
 * **CP-RF02-01: Optimizar una ruta correctamente**
-  * **Criterios de aceptación:** Debe existir al menos una ruta registrada; la alternativa optimizada debe mostrar alguna mejora; la comparación entre rutas debe ser clara y entendible.
+  * **Criterios de aceptación:** Debe existir al menos una ruta registrada; la alternativa optimizada debe mostrar alguna mejora.
 * **CP-RF03-01: Registrar un proveedor correctamente**
-  * **Criterios de aceptación:** El proveedor debe tener un nombre válido y único; debe incluir al menos un medio de contacto; las certificaciones deben registrarse correctamente.
+  * **Criterios de aceptación:** El proveedor debe tener un nombre válido y único; debe incluir al menos un medio de contacto.
 * **CP-RF04-01: Registrar consumo de recursos correctamente**
-  * **Criterios de aceptación:** La cantidad registrada debe ser mayor a cero; el recurso debe asociarse a un vehículo u operación válida; las unidades deben coincidir.
+  * **Criterios de aceptación:** La cantidad registrada debe ser mayor a cero; el recurso debe asociarse a un vehículo u operación válida.
 * **CP-RF05-01: Generar un reporte correctamente**
-  * **Criterios de aceptación:** Debe existir información para las fechas seleccionadas; los gráficos deben cargarse correctamente; la exportación debe funcionar correctamente.
+  * **Criterios de aceptación:** Debe existir información para las fechas seleccionadas; los gráficos deben cargarse correctamente.
 
 ---
 
@@ -153,59 +151,186 @@ El desarrollo del proyecto se plantea bajo una estructura matricial orientada a 
 Se utilizará un **Ciclo de Vida Adaptativo (Ágil)**. Este enfoque permite evolucionar el proyecto mediante iteraciones (Sprints), ajustando el rumbo según los hallazgos técnicos (como la integración con la API de Google Maps) y asegurando la entrega temprana de valor funcional a los interesados.
 
 ### 6.2 Definición del Sprint
-El trabajo se estructurará en iteraciones llamadas **Sprints**, con una duración fija de **2 semanas** cada uno. Cada Sprint incluirá las siguientes ceremonias para cumplir con los grupos de procesos:
-* **Sprint Planning (Planificación):** Selección de requerimientos a trabajar.
-* **Daily Scrum (Monitoreo y Control):** Seguimiento diario del progreso.
-* **Sprint Review (Cierre de fase):** Demostración del incremento funcional.
-* **Sprint Retrospective (Cierre):** Lecciones aprendidas y mejora continua.
+El trabajo se estructurará en iteraciones llamadas **Sprints**, con una duración fija de **2 semanas** cada uno. Cada Sprint incluirá las ceremonias: Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective.
 
 ### 6.3 Estimación de Desarrolladores y Capacidad
-Para desarrollar esta plataforma en un entorno real con un plazo de **10 semanas (5 Sprints)**, dada la integración de algoritmos complejos y geolocalización, se estimaría un equipo ideal de **4 profesionales** (1 Backend Senior, 1 Frontend, 1 QA y 1 Scrum Master/PO). 
-Sin embargo, bajo el contexto académico, el proyecto se ejecuta de forma individual, por lo que **Stuarth Fabricio Miranda Rojas asume todos los roles técnicos y de gestión**, priorizando las funciones críticas para cumplir con las 10 semanas de entrega.
+Para desarrollar esta plataforma en un entorno real con un plazo de **10 semanas (5 Sprints)**, se estimaría un equipo ideal de **4 profesionales** (1 Backend Senior, 1 Frontend, 1 QA y 1 Scrum Master/PO). Sin embargo, el proyecto se ejecuta de forma individual por **Stuarth Fabricio Miranda Rojas**, quien asume todos los roles técnicos y de gestión.
 
 ### 6.4 Cronograma del Proyecto de Desarrollo de Software (A 10 Semanas)
 
 | Fase / Tarea | Semanas 1-2 | Semanas 3-4 | Semanas 5-6 | Semanas 7-8 | Semanas 9-10 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **1. Planificación (Planning)** | | | | | |
-| - Diseño de propuesta del proyecto (Project Charter) | ████ | | | | |
-| - Análisis de entorno (EEF) y selección de recursos | ████ | | | | |
-| - Elaboración de la proyección y cronograma a 10 semanas | ████ | | | | |
+| - Diseño de propuesta y Project Charter | ████ | | | | |
+| - Análisis de entorno y recursos | ████ | | | | |
 | **2. Análisis de Requerimientos** | | | | | |
-| - Levantamiento y revisión de requerimientos funcionales | ████████ | | | | |
-| - Creación del Product Backlog priorizado | | ████ | | | |
-| - Definición del Sprint Backlog y Definition of Done (DoD) | | ████ | | | |
+| - Levantamiento de requerimientos | ████████ | | | | |
+| - Creación de Historias de Usuario | | ████ | | | |
 | **3. Diseño (Arquitectura y UI/UX)** | | | | | |
-| - Evaluación de arquitectura técnica del sistema | | ████████ | | | |
-| - Diseño del esquema relacional de Base de Datos SQL | | ████████ | | | |
-| - Prototipado visual de interfaces web (Mockups) | | | ████ | | |
-| **4. Desarrollo (Ejecución de Sprints)** | | | | | |
-| - Desarrollo Backend (API FastAPI, Dijkstra, Haversine) | | | ████████ | ████ | |
-| - Desarrollo Frontend (Vistas HTML/CSS/JS y formularios) | | | ████ | ████████ | |
-| - Integración de API de Google Maps y cálculos | | | | ████████ | |
+| - Diseño de BD y Arquitectura | | ████████ | | | |
+| - Prototipado visual (Mockups) | | | ████ | | |
+| **4. Desarrollo (Ejecución Sprints)**| | | | | |
+| - Backend y Algoritmos | | | ████████ | ████ | |
+| - Frontend y Vistas Web | | | ████ | ████████ | |
 | **5. Pruebas y Despliegue (QA)** | | | | | |
-| - Ejecución de Pruebas Unitarias y de Humo | | | ████ | ████ | |
-| - Ejecución de Pruebas de Integración y Regresión | | | | ████ | ████████ |
-| - Evaluación UAT, Presentación y Despliegue final | | | | | ████████ |
+| - Pruebas Unitarias y de Integración | | | | ████ | ████████ |
+| - Despliegue final | | | | | ████████ |
 
 ---
 
-## 7. Product Backlog Priorizado
+## 7. Product Backlog Priorizado (Historias de Usuario)
 
-Los requerimientos funcionales han sido transformados en elementos del Backlog, agregando valor de negocio y priorizados según la dependencia técnica.
+A continuación, se detallan todas las Historias de Usuario, abarcando los Requerimientos Funcionales, de Dominio y No Funcionales.
 
-| ID | Prioridad | Elemento del Backlog (Historia de Usuario) | Criterios de Aceptación Básicos |
-| :--- | :---: | :--- | :--- |
-| **PB-01** | Alta | **Gestión de Accesos:** Como administrador, quiero asignar roles a los usuarios (Login) para garantizar la seguridad de la información. | Autenticación requerida. Roles diferenciados. Base de datos operativa. |
-| **PB-02** | Alta | **Gestión de Vehículos:** Como gestor, quiero registrar y actualizar vehículos para controlar la flota logística disponible. | Placa única. Capacidad y consumo estimado definidos. |
-| **PB-03** | Alta | **Registro de Rutas:** Como gestor, quiero registrar origen y destino para tener un catálogo de rutas operativas. | Origen y destino distintos. Almacenamiento en base de datos. |
-| **PB-04** | Alta | **Gestión de Proveedores:** Como administrador, quiero registrar proveedores para evaluar sus prácticas responsables y certificaciones. | Nombre único. Medio de contacto. Campo de certificaciones ambientales. |
-| **PB-05** | Media | **Cálculos de Rutas (Haversine/Dijkstra):** Como sistema, quiero optimizar rutas mediante algoritmos matemáticos y mapas para reducir tiempos y distancias. | Distancia > 0. Mejora operativa comprobable en comparación a rutas estándar. |
-| **PB-06** | Media | **Indicadores de Consumo:** Como operario, quiero registrar el combustible y recursos usados para medir la eficiencia de la ruta. | Asociado a un vehículo/ruta. Cantidades mayores a cero. |
-| **PB-07** | Media | **Métricas Ambientales (CO₂):** Como analista, quiero visualizar métricas de impacto ambiental para verificar el cumplimiento del ODS 9. | Cálculo de emisiones acorde a la distancia y consumo. Gráficos interactivos. |
-| **PB-08** | Baja | **Historial General:** Como auditor, quiero consultar el historial de operaciones pasadas para trazabilidad. | Filtros por fecha y ruta. Ordenamiento cronológico. |
-| **PB-09** | Baja | **Generación de Reportes:** Como administrador, quiero exportar la eficiencia operativa en PDF/Excel para presentar resultados. | Exportación funcional. Formato claro con tablas/gráficos. |
-| **PB-10** | Baja | **Monitoreo en Tiempo Real:** Como gestor, quiero ver el estado actual de las rutas activas para reaccionar a incidencias. | Integración de mapas interactivos. Actualización de estado en pantalla. |
+### 7.1 Historias de Usuario: Requerimientos Funcionales
+
+#### HU-01: Registro de rutas logísticas
+* **Como** gestor logístico
+* **Quiero** registrar la información detallada de las rutas (origen, destino, distancia y tiempo estimado)
+* **Para** centralizar el catálogo de recorridos operativos.
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que estoy en el formulario, cuando ingreso datos válidos, entonces el sistema guarda la ruta.
+  * **Criterio 2:** Dado que intento guardar, cuando dejo campos vacíos, entonces el sistema bloquea la acción.
+* **Prioridad:** Alta. **Estimación:** 3 puntos.
+* **Justificación:** Es un desarrollo directo de formulario (CRUD básico) sin integraciones externas.
+
+#### HU-02: Optimización inteligente de rutas
+* **Como** gestor logístico
+* **Quiero** utilizar una funcionalidad de optimización
+* **Para** obtener alternativas de viaje más eficientes en tiempo y distancia.
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que hay rutas, cuando selecciono "Optimizar", entonces el sistema muestra una mejor alternativa.
+* **Prioridad:** Alta. **Estimación:** 13 puntos.
+* **Justificación:** Alta complejidad técnica. Implica programar algoritmos matemáticos (Dijkstra) y conectar la API de Google Maps.
+
+#### HU-03: Gestión de proveedores logísticos
+* **Como** administrador
+* **Quiero** registrar la información de los proveedores logísticos
+* **Para** tener a mano sus datos y certificaciones.
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que ingreso datos de contacto válidos, cuando guardo, entonces se registra en sistema.
+* **Prioridad:** Alta. **Estimación:** 3 puntos.
+* **Justificación:** Operación CRUD básica (crear y leer datos de texto) muy predecible.
+
+#### HU-04: Registro de indicadores de recursos
+* **Como** operario logístico
+* **Quiero** registrar el consumo de combustible y materiales
+* **Para** medir la eficiencia operativa del viaje.
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que ingreso el combustible usado, cuando guardo, entonces se asocia al vehículo correcto.
+* **Prioridad:** Media. **Estimación:** 5 puntos.
+* **Justificación:** Requiere cruzar información de tablas (vehículos y rutas) e incluir validaciones lógicas de números.
+
+#### HU-05: Monitoreo en tiempo real de rutas
+* **Como** gestor logístico
+* **Quiero** ver la información actualizada del estado de los viajes
+* **Para** reaccionar si ocurre algún problema.
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que un viaje cambia de estado, cuando recargo la vista, entonces veo el estado actual.
+* **Prioridad:** Baja. **Estimación:** 8 puntos.
+* **Justificación:** Crear interfaces que se actualicen dinámicamente y crucen datos en vivo lleva bastante tiempo de desarrollo y pruebas.
+
+#### HU-06: Generación de reportes de eficiencia
+* **Como** administrador
+* **Quiero** generar reportes exportables de las operaciones
+* **Para** apoyar la toma de decisiones.
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que selecciono un rango de fechas, cuando exporto, entonces obtengo un archivo PDF o Excel.
+* **Prioridad:** Baja. **Estimación:** 5 puntos.
+* **Justificación:** La información ya existe, pero hay que programar librerías externas para maquetar e imprimir PDFs/Excels.
+
+#### HU-07: Panel de métricas de sostenibilidad (CO₂)
+* **Como** analista ambiental
+* **Quiero** visualizar gráficos de huella de carbono
+* **Para** verificar el cumplimiento del ODS 9.
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que hay datos de consumo, cuando entro al panel, entonces veo gráficos con las emisiones estimadas.
+* **Prioridad:** Media. **Estimación:** 8 puntos.
+* **Justificación:** Implica aplicar conversiones matemáticas ambientales e integrar librerías gráficas para la interfaz.
+
+#### HU-08: Gestión del catálogo de vehículos
+* **Como** gestor logístico
+* **Quiero** registrar y actualizar la información de los vehículos
+* **Para** controlar la flota disponible.
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que ingreso una placa válida, cuando guardo, entonces se registra el vehículo.
+* **Prioridad:** Alta. **Estimación:** 3 puntos.
+* **Justificación:** Formulario de registro y actualización básico (CRUD).
+
+#### HU-09: Historial de operaciones y trazabilidad
+* **Como** auditor
+* **Quiero** consultar un historial detallado de rutas pasadas
+* **Para** tener trazabilidad total del sistema.
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que uso el buscador por fechas, cuando consulto, entonces veo los registros pasados.
+* **Prioridad:** Baja. **Estimación:** 5 puntos.
+* **Justificación:** Exige programar consultas SQL cruzadas con múltiples filtros de búsqueda.
+
+#### HU-10: Gestión de accesos por roles (Seguridad)
+* **Como** administrador de sistemas
+* **Quiero** que el sistema asigne permisos según el rol del usuario (operario, gestor)
+* **Para** garantizar la privacidad de los datos (Cubre Requerimiento No Funcional 3).
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que un operario inicia sesión, cuando intenta ver reportes gerenciales, entonces el sistema lo bloquea.
+* **Prioridad:** Alta. **Estimación:** 5 puntos.
+* **Justificación:** La seguridad requiere bloqueos tanto en la pantalla (UI) como en el servidor (Backend), lo que toma tiempo de probar.
+
+---
+
+### 7.2 Historias de Usuario: Requerimientos de Dominio
+
+*(Estas historias agrupan las reglas matemáticas de negocio que rigen el proyecto).*
+
+#### HU-11: Cálculo geoespacial y tiempos estimados
+* **Como** sistema (Backend)
+* **Quiero** utilizar unidades estandarizadas para calcular automáticamente la distancia y el tiempo estimado de las rutas
+* **Para** asegurar que todos los cálculos operativos del sistema sean precisos y uniformes (Cubre Requerimientos de Dominio 1, 2 y 5).
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que se ingresan coordenadas geográficas, cuando el sistema procesa la ruta, entonces calcula la distancia exacta en kilómetros usando la fórmula de Haversine.
+* **Prioridad:** Alta. **Estimación:** 5 puntos.
+* **Justificación:** Es un trabajo 100% de backend que requiere transformar fórmulas matemáticas complejas en código Python funcional.
+
+#### HU-12: Procesamiento de eficiencia y consumo
+* **Como** sistema (Backend)
+* **Quiero** procesar los datos ingresados de combustible y tiempo
+* **Para** generar y almacenar los indicadores básicos de eficiencia de la flota (Cubre Requerimientos de Dominio 3 y 4).
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que se finaliza una ruta, cuando se guardan los datos, entonces el sistema calcula automáticamente el rendimiento por kilómetro.
+* **Prioridad:** Media. **Estimación:** 3 puntos.
+* **Justificación:** Son fórmulas matemáticas simples (división de distancias y litros) ejecutadas automáticamente en el servidor.
+
+---
+
+### 7.3 Historias de Usuario: Requerimientos No Funcionales
+
+*(Estas historias representan restricciones técnicas de rendimiento, arquitectura y experiencia de usuario que afectan a todo el proyecto).*
+
+#### HU-13: Rendimiento y Alta Disponibilidad
+* **Como** operario y gestor
+* **Quiero** que el sistema responda rápido y esté siempre disponible sin caídas
+* **Para** poder realizar mi trabajo sin interrupciones operativas (Cubre Requerimientos NF 1, 2 y 7).
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que interactúo con la plataforma, cuando guardo o consulto datos normales, entonces el tiempo de respuesta es menor a 2 segundos.
+* **Prioridad:** Alta. **Estimación:** 5 puntos.
+* **Justificación:** Exige optimizar las consultas a la base de datos SQL para que no se ponga lenta conforme se llene de viajes.
+
+#### HU-14: Arquitectura escalable e integridad de datos
+* **Como** desarrollador (Arquitecto)
+* **Quiero** construir el sistema de forma modular y con buenas prácticas de bases de datos
+* **Para** asegurar que la información no se corrompa y el sistema pueda crecer a futuro (Cubre Requerimientos NF 5, 8 y 9).
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que se diseña la base de datos, cuando se crean las tablas, entonces se aplican llaves foráneas para mantener la integridad relacional.
+* **Prioridad:** Alta. **Estimación:** 5 puntos.
+* **Justificación:** Un buen diseño relacional al inicio evita que la base de datos se rompa después, pero requiere planificación técnica detallada.
+
+#### HU-15: Usabilidad, Interfaz y Compatibilidad Web
+* **Como** usuario final (Conductor / Gestor)
+* **Quiero** que la plataforma tenga un diseño ordenado, intuitivo y funcione en cualquier navegador
+* **Para** poder utilizarla fácilmente desde mi computadora o teléfono sin necesidad de capacitación (Cubre Requerimientos NF 4, 6 y 10).
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que abro el sistema desde Google Chrome o Safari, cuando navego por los módulos, entonces el diseño se adapta a la pantalla y se ve correctamente.
+* **Prioridad:** Media. **Estimación:** 5 puntos.
+* **Justificación:** Requiere tiempo en el Frontend usando CSS para que la página sea responsiva y se vea bien en diferentes pantallas y navegadores.
 
 ---
 
@@ -213,70 +338,43 @@ Los requerimientos funcionales han sido transformados en elementos del Backlog, 
 
 El alcance total del proyecto se ha distribuido en **5 Sprints de 2 semanas**, asegurando que cada incremento genere valor sin bloquear otros requerimientos técnicos.
 
-* **Sprint 1 (Semanas 1-2) - "Estructura Base y Seguridad":** Desarrollo de la base de datos SQL, esquema principal, diseño UI básico, Login y control de roles (PB-01).
-* **Sprint 2 (Semanas 3-4) - "Flota y Entidades Principales":** Módulo CRUD para registro de Vehículos (PB-02), Proveedores (PB-04) y Rutas básicas (PB-03).
-* **Sprint 3 (Semanas 5-6) - "Inteligencia de Rutas":** Integración de Google Maps API, implementación de la fórmula de Haversine y algoritmo de Dijkstra para optimización (PB-05).
-* **Sprint 4 (Semanas 7-8) - "Sostenibilidad y Recursos":** Registro de indicadores de consumo de combustible y desarrollo del cálculo de métricas de emisiones de CO₂ (PB-06, PB-07).
-* **Sprint 5 (Semanas 9-10) - "Trazabilidad y Cierre":** Desarrollo del historial general, exportación de reportes PDF, y visualización del monitoreo operativo final (PB-08, PB-09, PB-10).
+* **Sprint 1 (Semanas 1-2):** Desarrollo de la base de datos, arquitectura modular, diseño UI y seguridad (HU-10, HU-14, HU-15).
+* **Sprint 2 (Semanas 3-4):** Módulo CRUD para registro de Vehículos (HU-08), Proveedores (HU-03) y Rutas básicas (HU-01).
+* **Sprint 3 (Semanas 5-6):** Integración API, cálculos geoespaciales y optimización de rutas (HU-02, HU-11).
+* **Sprint 4 (Semanas 7-8):** Procesamiento de indicadores, consumo y panel de sostenibilidad (HU-04, HU-07, HU-12).
+* **Sprint 5 (Semanas 9-10):** Trazabilidad, rendimiento bajo carga y monitoreo final (HU-05, HU-06, HU-09, HU-13).
 
 ---
 
 ## 9. Sprint Backlog Detallado (Sprints Iniciales)
 
-A continuación, se desglosan las tareas técnicas para los primeros dos Sprints del proyecto:
-
 ### Sprint Backlog - Sprint 1 (Estructura Base y Seguridad)
-* **Tarea 1.1:** Diseñar y construir el script SQL para la base de datos logística (tablas Usuarios, Roles).
-* **Tarea 1.2:** Configurar el entorno de desarrollo local y el servidor en Python (FastAPI).
-* **Tarea 1.3:** Maquetar la estructura HTML/CSS de la página de Login.
-* **Tarea 1.4:** Desarrollar el endpoint de autenticación segura (Backend).
-* **Tarea 1.5:** Conectar el formulario de Login con el servidor y validar inicio de sesión.
+* **Tarea 1.1:** Diseñar y construir el script SQL asegurando la integridad relacional.
+* **Tarea 1.2:** Configurar el servidor en Python (FastAPI) con arquitectura modular.
+* **Tarea 1.3:** Maquetar la estructura HTML/CSS base responsiva.
+* **Tarea 1.4:** Desarrollar el endpoint de autenticación segura y roles.
+* **Tarea 1.5:** Conectar el Login con el servidor.
 
 ### Sprint Backlog - Sprint 2 (Flota y Entidades Principales)
-* **Tarea 2.1:** Extender la base de datos para incluir las tablas Vehículos, Proveedores y Rutas.
-* **Tarea 2.2:** Desarrollar los endpoints (GET, POST) para guardar y leer Vehículos y Proveedores.
-* **Tarea 2.3:** Crear las vistas HTML (formularios y tablas) para el registro de la flota.
-* **Tarea 2.4:** Integrar alertas y mensajes de confirmación visuales en el Frontend tras cada registro.
+* **Tarea 2.1:** Extender la BD para incluir Vehículos, Proveedores y Rutas.
+* **Tarea 2.2:** Desarrollar los endpoints (GET, POST) para guardar Vehículos.
+* **Tarea 2.3:** Crear las vistas HTML para el registro de la flota.
+* **Tarea 2.4:** Integrar alertas y mensajes visuales en el Frontend.
 
 ---
 
 ## 10. Definition of Done (DoD) y Criterios de Calidad
 
-Para asegurar la estabilidad técnica y operativa del sistema logístico, una historia de usuario o tarea técnica solo se considerará **"Terminada" (Done)** cuando cumpla obligatoriamente con la siguiente lista de verificación ejecutada por el rol de Quality Assurance (QA):
+Una historia de usuario solo se considerará **"Terminada" (Done)** cuando cumpla con:
 
-1. **El código ha sido revisado y documentado** según los estándares del proyecto.
-2. **Pruebas Unitarias aprobadas:** El código lógico (Backend/FastAPI) pasa sus pruebas individuales de cálculo sin errores matemáticos.
-3. **Pruebas de Humo (Smoke Testing) ejecutadas:** Tras el despliegue local, la funcionalidad crítica compila y las vistas HTML cargan correctamente sin fallos evidentes.
-4. **Pruebas de Integración exitosas:** El Frontend interactúa correctamente con los endpoints del Backend y la base de datos SQL responde guardando la información íntegra.
-5. **Pruebas de Regresión pasadas:** Se garantiza que la nueva función implementada (ej. optimizar ruta) no rompe funciones previas (ej. registrar vehículo).
-6. Los Criterios de Aceptación especificados en el Product Backlog se cumplen a cabalidad.
-7. Los tiempos de respuesta de la funcionalidad no superan los 2 segundos bajo carga normal.
+1. **Pruebas Unitarias aprobadas:** El código lógico pasa sus pruebas individuales.
+2. **Pruebas de Humo (Smoke Testing):** La vista HTML carga correctamente sin fallos.
+3. **Pruebas de Integración exitosas:** El Frontend interactúa correctamente con el Backend y la BD.
+4. **Pruebas de Regresión pasadas:** Se garantiza que la nueva función no rompe funciones previas.
+5. Los Criterios de Aceptación especificados en la Historia de Usuario se cumplen.
 
 ---
 
 ## 11. Definición del Scrum Team a 10 Semanas
 
-Nota aclaratoria: Al ser un proyecto de alcance individual, el estudiante **Stuarth Fabricio Miranda Rojas** asume las responsabilidades de todos los roles técnicos y de gestión (PO, SM, Frontend, Backend y QA) para garantizar la ejecución de las fases en las 10 semanas de plazo.
-
-| Rol dentro del Scrum Team | Encargado | Enfoque Principal |
-| :--- | :--- | :--- |
-| **Product Owner / PM** | Stuarth Miranda | Negocio, priorización del Product Backlog, validación y cumplimiento de objetivos (ODS 9). |
-| **Scrum Master** | Stuarth Miranda | Planificación de Sprints, remoción de bloqueos (ej. APIs) y gestión del proceso ágil. |
-| **Frontend Developer** | Stuarth Miranda | Desarrollo de interfaces web (HTML/CSS/JS) y experiencia de usuario. |
-| **Backend Developer** | Stuarth Miranda | Lógica de servidor (Python/FastAPI), algoritmos matemáticos (Dijkstra) y BD SQL. |
-| **Analista de QA** | Stuarth Miranda | Definition of Done, pruebas unitarias, de integración, regresión y control de estabilidad. |
-
-### Planificación Integral por Rol (Semanas 1 a 10)
-
-| Semana | Product Owner & Scrum Master | Backend & Frontend Developer | Analista de Calidad (QA) |
-| :---: | :--- | :--- | :--- |
-| **1** | Project Charter, EEFs y reglas de trabajo. | Diseño de BD SQL y maquetación de Login. | Definición de estrategia de pruebas y DoD. |
-| **2** | Creación del Product Backlog priorizado. | Setup FastAPI, endpoints de Auth y seguridad. | Ejecución de Pruebas Unitarias y Humo (Login). |
-| **3** | Refinamiento de requerimientos de flota. | CRUD de Vehículos y Proveedores (BD y API). | Validación de formularios web y reglas de campos. |
-| **4** | Sprint Review enfocado en entidades base. | Vistas de listado y registro de rutas simples. | Pruebas de Integración (Front-Back) para registros. |
-| **5** | Priorización operativa (Google Maps). | Implementación matemática de Haversine. | Verificación matemática de distancias calculadas. |
-| **6** | Revisión de inteligencia de rutas (Dijkstra). | Algoritmo de rutas óptimas y conexión API. | Pruebas de usabilidad en mapa e integración API. |
-| **7** | Validación técnica y gestión de capacidad. | Lógica de recolección de consumo de recursos. | Pruebas de Humo en nuevos módulos de consumo. |
-| **8** | Definición de paneles de ODS 9 (CO₂). | Gráficos y cálculo matemático de emisiones. | Validación de precisión de indicadores ambientales. |
-| **9** | Refinamiento de requerimientos de trazabilidad. | Generación de PDF/Excel e historial general. | Ejecución de Pruebas de Regresión completas. |
-| **10** | Presentación, cierre y entrega final. | Despliegue, optimización de velocidad de BD. | Verificación de tiempos de carga (< 2s) y UAT. |
+Nota aclaratoria: Al ser un proyecto individual, **Stuarth Fabricio Miranda Rojas** asume las responsabilidades de todos los roles (PO, SM, Frontend, Backend y QA).
