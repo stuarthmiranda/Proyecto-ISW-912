@@ -21,6 +21,8 @@
 | **0.6** | 21/10/2026 | Semana 5 | Optimización y recorte del alcance para enfocar el valor de negocio. | Stuarth Fabricio Miranda Rojas |
 | **0.7** | 21/10/2026 | Semana 5 | División de historia de 13 puntos en dos (HU-02 y HU-03) y renumeración del Backlog para calzar con la velocidad de 8 puntos/Sprint. | Stuarth Fabricio Miranda Rojas |
 | **0.8** | 04/11/2026 | Actualización de integrantes | Adaptación del proyecto a tres integrantes, sin cambios en el alcance, historias, requerimientos, puntos ni cronograma originales. | Equipo de desarrollo (3 integrantes) |
+| **0.9** | 04/11/2026 | Plan de Comunicaciones | Incorporación del Plan de Comunicaciones y su referencia al tablero existente de Notion, sin cambios en el alcance ni en la planificación originales. | Equipo de desarrollo (3 integrantes) |
+| **0.10** | 04/11/2026 | Definiciones de organización y comunicación | Asignación de responsabilidades y definición de horarios, WIP, registros, validación y escalamiento por instrucción del solicitante, conservando el alcance, los puntos y el cronograma. | Equipo de desarrollo (3 integrantes) |
 
 ---
 
@@ -94,7 +96,7 @@ El desarrollo del proyecto se plantea bajo una estructura matricial orientada a 
 * **Tiempo:** Marco temporal definido (10 semanas) para el diseño conceptual y desarrollo.
 * **Presupuesto:** Disponibilidad financiera limitada, exigiendo herramientas de desarrollo gratuitas y capas libres de APIs.
 * **Tecnología:** Complejidad computacional al adaptar Dijkstra a datos geográficos en tiempo real.
-* **Personas:** Equipo de desarrollo (3 integrantes). Distribución de responsabilidades individuales: Pendiente de definir por el equipo.
+* **Personas:** Equipo de desarrollo (3 integrantes). Distribución de responsabilidades individuales definida en la sección 11.
 
 ---
 
@@ -145,7 +147,7 @@ Se utilizará un **Ciclo de Vida Adaptativo (Ágil)**. Este enfoque permite evol
 El trabajo se estructurará en iteraciones llamadas **Sprints**, con una duración fija de **2 semanas** cada uno. Cada Sprint incluirá las ceremonias: Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective.
 
 ### 6.3 Estimación de Desarrolladores y Capacidad
-Para desarrollar esta plataforma en un entorno real con un plazo de **10 semanas (5 Sprints)**, se estimaría un equipo ideal de **4 profesionales** (1 Backend Senior, 1 Frontend, 1 QA y 1 Scrum Master/PO). El proyecto se desarrolla por el **Equipo de desarrollo (3 integrantes)**: **Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas**. Se conserva la capacidad de planificación original de **8 puntos de historia por Sprint**, sin aumentarla por el número de integrantes. Distribución de responsabilidades individuales: Pendiente de definir por el equipo.
+Para desarrollar esta plataforma en un entorno real con un plazo de **10 semanas (5 Sprints)**, se estimaría un equipo ideal de **4 profesionales** (1 Backend Senior, 1 Frontend, 1 QA y 1 Scrum Master/PO). El proyecto se desarrolla por el **Equipo de desarrollo (3 integrantes)**: **Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas**. Se conserva la capacidad de planificación original de **8 puntos de historia por Sprint**, sin aumentarla por el número de integrantes. Distribución de responsabilidades individuales definida en la sección 11.
 
 ### 6.4 Cronograma del Proyecto de Desarrollo de Software (A 10 Semanas)
 
@@ -315,4 +317,115 @@ Una historia de usuario solo se considerará **"Terminada" (Done)** cuando cumpl
 
 ## 11. Definición del Scrum Team a 10 Semanas
 
-El **Equipo de desarrollo (3 integrantes)** está conformado por **Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas**. Se mantienen los roles previstos (PO, SM, Frontend, Backend y QA) y el plazo original de 10 semanas. Asignación de roles y responsabilidades individuales: **Pendiente de definir por el equipo**.
+El **Equipo de desarrollo (3 integrantes)** está conformado por **Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas**. Las siguientes asignaciones se establecen como planificación en la versión 0.10, por autorización del solicitante para resolver las definiciones pendientes. No describen experiencia profesional acreditada, disponibilidad comprobada, acuerdos de reuniones anteriores ni trabajo ya ejecutado.
+
+| Integrante | Roles previstos que asume | Responsabilidades dentro del alcance actual |
+| --- | --- | --- |
+| Stuarth Fabricio Miranda Rojas | PO y Backend | Mantener las prioridades originales, coordinar las consultas académicas con el profesor y desarrollar la lógica de servidor y persistencia de sus historias asignadas. |
+| Cristopher Quiros Araya | Scrum Master y Frontend | Facilitar las ceremonias existentes, vigilar los límites WIP, mantener el registro de decisiones y desarrollar las interfaces de sus historias asignadas. |
+| Miguel Cruz Vargas | QA y apoyo de Backend | Coordinar la verificación del DoD, registrar resultados reales de pruebas y desarrollar el procesamiento de recursos asignado. |
+
+Los roles se acumulan dentro del equipo de tres; no implican incorporar personas ni aumentar la capacidad. Cada responsable implementará su historia, actualizará su tarjeta y aportará evidencia. La revisión corresponderá a otro integrante para evitar que una persona sea el único validador de su propio trabajo.
+
+| Historia original | Responsable de implementación | Responsable de revisión del DoD | Sprint original |
+| --- | --- | --- | --- |
+| HU-01 (3 puntos) | Stuarth Fabricio Miranda Rojas | Miguel Cruz Vargas | 1 |
+| HU-02 (5 puntos) | Cristopher Quiros Araya | Miguel Cruz Vargas | 1 |
+| HU-03 (8 puntos) | Stuarth Fabricio Miranda Rojas | Miguel Cruz Vargas | 2 |
+| HU-04 (5 puntos) | Miguel Cruz Vargas | Stuarth Fabricio Miranda Rojas | 4 |
+| HU-05 (5 puntos) | Cristopher Quiros Araya | Miguel Cruz Vargas | Sin Sprint asignado en el Release Plan original. |
+| HU-06 (8 puntos) | Cristopher Quiros Araya | Miguel Cruz Vargas | 5 |
+| HU-07 (3 puntos) | Cristopher Quiros Araya | Miguel Cruz Vargas | 3 |
+| HU-08 (5 puntos) | Stuarth Fabricio Miranda Rojas | Miguel Cruz Vargas | 3 |
+| HU-09 (5 puntos) | Stuarth Fabricio Miranda Rojas | Miguel Cruz Vargas | Sin Sprint asignado en el Release Plan original. |
+| HU-10 (3 puntos) | Miguel Cruz Vargas | Stuarth Fabricio Miranda Rojas | 4 |
+| HU-11 (5 puntos) | Miguel Cruz Vargas | Cristopher Quiros Araya | Sin Sprint asignado en el Release Plan original. |
+
+En el Sprint 1, Stuarth asume las tareas originales 1.1 a 1.3 de HU-01, Cristopher las tareas 1.4 y 1.5 de HU-02 y Miguel su revisión según el DoD. En el Sprint 2, Stuarth asume las tareas originales 2.1 a 2.4 y Miguel revisa sus resultados. Los demás integrantes podrán colaborar dentro de las mismas historias sin crear tareas ni puntos adicionales.
+
+Se mantienen las 10 semanas, los 5 Sprints y los 8 puntos por Sprint. El backlog conserva sus 11 historias y 55 puntos; el Release Plan original programa 8 historias y 40 puntos. HU-05, HU-09 y HU-11 permanecen en el backlog sin compromiso de entrega dentro de esos 5 Sprints. Asignarles responsables no las incorpora al cronograma ni elimina sus requisitos.
+
+---
+
+## 12. Plan de Comunicaciones del Proyecto
+
+**Proyecto:** Sistema inteligente para gestión y optimización de operaciones logísticas  
+**Equipo:** Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas  
+**Base:** Alcance de la versión 0.8, plan integrado en la 0.9 y definiciones organizativas de la 0.10.  
+**Referencia:** [Optimización logística · Centro del Sprint 1](https://app.notion.com/p/40f28b05e206818bae44c111edf7ee18)
+
+### 12.1. Propósito y fuentes
+
+El plan establece cómo comunicar avances, bloqueos, validaciones y decisiones mediante el tablero existente y las ceremonias ya previstas: Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective.
+
+La página de Notion fue consultada el 04/11/2026, fecha local de Guatemala. En esa consulta documentaba HU-01 y HU-02, las cuatro columnas, los límites WIP como propuestas, las asignaciones individuales pendientes y ningún avance confirmado. Esa descripción corresponde al momento de la consulta. Las asignaciones y reglas que siguen son definiciones de esta actualización del Markdown; no se ha modificado Notion ni se afirma que ya las refleje.
+
+### 12.2. Participantes y responsabilidades de comunicación
+
+Cada responsable de historia actualizará el estado, los avances y los impedimentos en los comentarios de su tarjeta existente. El revisor de la sección 11 registrará el resultado de la validación. Cristopher facilitará las ceremonias, comprobará la coherencia del tablero y registrará los acuerdos generales en comentarios de la página principal existente de Notion.
+
+Stuarth será el enlace con el profesor **Deiver Cubero Molina**. Al cierre de cada Sprint preparará un resumen de historias terminadas con evidencia, trabajo restante, bloqueos y consultas académicas. El canal documental será el Markdown del proyecto y el resumen quedará registrado en los comentarios de la página principal de Notion. Para la comunicación directa se utilizará el espacio de clase del curso, sin crear cuentas, correos o reuniones adicionales ni suponer que el profesor tiene acceso a Notion. Las respuestas se registrarán solo cuando se reciban; no se comprometen plazos de respuesta del profesor.
+
+Los demás interesados del mapa se mantienen como roles del contexto conceptual. No se atribuyen nombres, contactos ni participación real a empresas, conductores, clientes o entidades reguladoras. Sus necesidades se revisarán con los requisitos originales en la Sprint Review; no se programan envíos externos ni se inventan representantes. Las dudas sobre su interpretación se canalizarán por Stuarth al profesor dentro del seguimiento académico existente.
+
+### 12.3. Uso del tablero y límites WIP
+
+El tablero del Sprint 1 da seguimiento a **HU-01 (3 puntos)** y **HU-02 (5 puntos)**, por un total de **8 puntos**, junto con las tareas originales 1.1 a 1.5.
+
+| Columna existente | Significado y regla de movimiento |
+| --- | --- |
+| Pendiente | Trabajo no iniciado. El responsable definido en la sección 11 lo mueve a En proceso cuando comience realmente. |
+| En proceso | Implementación activa. El responsable lo mueve a En revisión cuando esté listo para validar y haya incorporado la evidencia disponible. |
+| En revisión | El revisor comprueba el DoD. Si falla, registra el motivo y devuelve la historia a En proceso. |
+| Hecho | El revisor mueve la historia únicamente después de comprobar los cinco criterios del DoD y dejar evidencia. |
+
+Para este plan se adoptan **máximo 2 tarjetas en En proceso** y **máximo 2 en En revisión**; Pendiente y Hecho quedan sin límite. Se trata de una regla de coordinación manual, no de una restricción automática de Notion. Cristopher vigilará los límites. Si se alcanza uno, el equipo ayudará a terminar o revisar el trabajo existente antes de iniciar otra tarjeta. Si un retorno desde revisión pudiera superar el límite de En proceso, se pausará otra implementación, registrando la pausa en su tarjeta, antes de reanudar la historia devuelta; no se ocultará el trabajo iniciado moviéndolo a Pendiente.
+
+Las actualizaciones de tarjetas corresponderán al trabajo real y se harán el mismo día de trabajo en que cambie su estado. Estas definiciones no autorizan añadir historias al Sprint ni aumentar la velocidad.
+
+### 12.4. Matriz de comunicaciones internas
+
+Se fija el siguiente horario de planificación en **hora de Guatemala**, relativo a las semanas originales de cada Sprint. Se aplica al trabajo futuro, sin reconstruir ni dar por realizadas ceremonias pasadas. La modalidad será escrita mediante comentarios en Notion, sin incorporar otra herramienta. Los bloques horarios reservan una ventana de intercambio, no acreditan asistencia ni disponibilidad previamente comprobada.
+
+| Comunicación | Momento y duración | Responsable y participantes | Contenido y registro |
+| --- | --- | --- | --- |
+| Sprint Planning | Primer lunes del Sprint, 19:00–19:45. | Facilita Cristopher; participan los tres. | Revisar historias del Release Plan y responsabilidades de la sección 11; resumen en comentarios de la página principal. |
+| Daily Scrum | Lunes a viernes, 18:45–19:00. | Facilita Cristopher; cada integrante comunica su estado. | Avance real, siguiente paso dentro de la historia y bloqueos; comentarios de las tarjetas. |
+| Cambio de estado | El mismo día de trabajo del cambio. | Responsable de historia o revisor, según la columna. | Justificación y evidencia en la tarjeta existente. |
+| Bloqueo | Al detectarlo, con respuesta interna a más tardar en el siguiente Daily Scrum. | Lo comunica quien lo detecte; coordina Cristopher. | Registro en la tarjeta y seguimiento mientras persista. |
+| Sprint Review | Segundo viernes del Sprint, 19:00–19:30. | Participan los tres; Miguel presenta el resultado de validación. | Contrastar resultados con requisitos y DoD; resumen en comentarios de la página principal. La participación externa no es necesaria para la revisión interna y no se da por confirmada. |
+| Sprint Retrospective | Segundo viernes del Sprint, 19:30–19:50. | Facilita Cristopher; participan los tres. | Revisar dificultades de coordinación y registrar acuerdos en comentarios de la página principal. |
+
+Si un integrante no puede intervenir en una ventana, dejará su actualización escrita antes de ella; el facilitador registrará la ausencia sin atribuirle aprobación. No se añaden reuniones para compensarla. El resumen al profesor se preparará después de la Sprint Review para su comunicación en el siguiente espacio de clase disponible.
+
+### 12.5. Avances, bloqueos y escalamiento
+
+El comentario de avance tendrá este formato: **fecha; HU; tareas originales atendidas; resultado comprobable; evidencia; siguiente paso; bloqueo, si existe**. Se informará únicamente lo realizado; una tarea iniciada no equivale a una historia terminada.
+
+El comentario de bloqueo tendrá el formato: **fecha; HU; impedimento; efecto sobre el trabajo; ayuda requerida; responsable de atención; siguiente revisión; resolución cuando ocurra**. Quien lo detecte lo registrará de inmediato y mencionará a Cristopher. El responsable de implementación atenderá los bloqueos técnicos de su historia con apoyo del revisor; Cristopher atenderá los de coordinación y Stuarth las dudas sobre alcance o requisitos.
+
+La primera respuesta interna deberá quedar registrada a más tardar en el siguiente Daily Scrum. Si el bloqueo continúa durante dos Daily Scrum consecutivos, Cristopher lo escalará a Stuarth en el comentario de la tarjeta. Si requiere orientación académica, Stuarth lo incluirá en el resumen al profesor y lo planteará en el siguiente espacio de clase. Este plazo es de comunicación interna, no una promesa de resolución o de respuesta externa.
+
+Los bloqueos se describirán en comentarios, sin añadir columnas. Su existencia no justifica marcar Hecho, cambiar puntos ni mover fechas. La resolución se registrará con su fecha y evidencia antes de comunicar que el impedimento terminó.
+
+### 12.6. Validación y evidencia de cierre
+
+Se mantienen los cinco criterios del DoD original: pruebas unitarias aprobadas, prueba de humo con HTML sin fallos, integración Frontend/Backend/base de datos exitosa, regresión superada y criterios de aceptación satisfechos.
+
+El responsable de implementación reunirá la evidencia en los comentarios de la tarjeta con el formato: **fecha; criterio del DoD; procedimiento ejecutado; resultado observado; enlace o archivo de evidencia**. Se podrán adjuntar salidas de pruebas y capturas obtenidas durante la validación de las funcionalidades existentes. La ausencia de evidencia se registrará como criterio no acreditado; no se presumirá una prueba aprobada.
+
+El revisor asignado en la sección 11 comprobará cada criterio y registrará su resultado antes de mover la historia a Hecho. Miguel coordinará la consistencia de estas revisiones; en sus propias historias revisará la persona indicada en la tabla. Si falla algún criterio, el revisor devolverá la historia a En proceso con el motivo y el responsable corregirá dentro de su alcance original.
+
+### 12.7. Registro de decisiones
+
+Cristopher mantendrá las decisiones generales en los **comentarios de la página principal existente de Notion**; las decisiones específicas se anotarán en los **comentarios de la tarjeta de la historia** y se referenciarán desde el resumen general cuando afecten al equipo. No se creará otra página, base de datos o tablero.
+
+Cada registro contendrá: **fecha; asunto; HU, si corresponde; alternativas consideradas; decisión; personas que la aprobaron; responsable de aplicación; motivo y referencia a la evidencia disponible**. Las decisiones operativas dentro del alcance se tomarán con la conformidad escrita de al menos dos integrantes, incluida la persona responsable de aplicarlas. Si no se alcanza esa conformidad, se conservará la regla vigente y Stuarth canalizará la consulta en el seguimiento académico, sin detener trabajo no afectado. Las ausencias o el silencio no se contabilizarán como aprobación.
+
+Las asignaciones, los horarios y los límites WIP de esta versión se registran como definiciones de planificación autorizadas por el solicitante, no como acuerdos ya votados por los integrantes. Las decisiones posteriores no modificarán automáticamente el alcance, los puntos ni el cronograma. HU-05, HU-09 y HU-11 mantienen la situación indicada en la sección 11 y no se introducirán en los Sprints programados mediante un acuerdo operativo.
+
+### 12.8. Conservación del alcance y estado de aplicación
+
+Se conservan los objetivos, requerimientos, funcionalidades, 11 historias, puntos, tareas técnicas originales, DoD y cronograma de 10 semanas. Las definiciones de esta actualización distribuyen el trabajo y concretan la comunicación sin ampliar el producto ni prometer la entrega de historias no programadas.
+
+El historial 0.1 a 0.9 se conserva intacto y solo se añade la versión 0.10. Esta edición se limita a los Markdown locales: no modifica el tablero de Notion, no envía mensajes ni crea eventos. Por ello, las nuevas asignaciones y reglas quedan documentadas aquí sin afirmar que ya estén aplicadas en el tablero o que se hayan realizado reuniones, pruebas o entregas.
