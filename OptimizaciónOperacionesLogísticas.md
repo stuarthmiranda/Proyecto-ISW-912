@@ -4,7 +4,7 @@
 
 **Curso:** Administración de Proyectos Informáticos  
 **Código de curso:** ISW-912  
-**Estudiante:** Stuarth Fabricio Miranda Rojas  
+**Integrantes:** Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas  
 **Profesor:** Deiver Cubero Molina  
 
 ---
@@ -20,6 +20,7 @@
 | **0.5** | 21/10/2026 | Semana 5 | Desglose completo de los requerimientos en Historias de Usuario (regla de las 3 C's). | Stuarth Fabricio Miranda Rojas |
 | **0.6** | 21/10/2026 | Semana 5 | Optimización y recorte del alcance para enfocar el valor de negocio. | Stuarth Fabricio Miranda Rojas |
 | **0.7** | 21/10/2026 | Semana 5 | División de historia de 13 puntos en dos (HU-02 y HU-03) y renumeración del Backlog para calzar con la velocidad de 8 puntos/Sprint. | Stuarth Fabricio Miranda Rojas |
+| **0.8** | 04/11/2026 | Actualización de integrantes | Adaptación del proyecto a tres integrantes, sin cambios en el alcance, historias, requerimientos, puntos ni cronograma originales. | Equipo de desarrollo (3 integrantes) |
 
 ---
 
@@ -93,7 +94,7 @@ El desarrollo del proyecto se plantea bajo una estructura matricial orientada a 
 * **Tiempo:** Marco temporal definido (10 semanas) para el diseño conceptual y desarrollo.
 * **Presupuesto:** Disponibilidad financiera limitada, exigiendo herramientas de desarrollo gratuitas y capas libres de APIs.
 * **Tecnología:** Complejidad computacional al adaptar Dijkstra a datos geográficos en tiempo real.
-* **Personas:** Capacidad operativa individual asumiendo todos los roles del proyecto.
+* **Personas:** Equipo de desarrollo (3 integrantes). Distribución de responsabilidades individuales: Pendiente de definir por el equipo.
 
 ---
 
@@ -144,7 +145,7 @@ Se utilizará un **Ciclo de Vida Adaptativo (Ágil)**. Este enfoque permite evol
 El trabajo se estructurará en iteraciones llamadas **Sprints**, con una duración fija de **2 semanas** cada uno. Cada Sprint incluirá las ceremonias: Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective.
 
 ### 6.3 Estimación de Desarrolladores y Capacidad
-Para desarrollar esta plataforma en un entorno real con un plazo de **10 semanas (5 Sprints)**, se estimaría un equipo ideal de **4 profesionales** (1 Backend Senior, 1 Frontend, 1 QA y 1 Scrum Master/PO). Sin embargo, el proyecto se ejecuta de forma individual por **Stuarth Fabricio Miranda Rojas**, limitando la capacidad (velocidad) a un promedio de **8 puntos de historia por Sprint**.
+Para desarrollar esta plataforma en un entorno real con un plazo de **10 semanas (5 Sprints)**, se estimaría un equipo ideal de **4 profesionales** (1 Backend Senior, 1 Frontend, 1 QA y 1 Scrum Master/PO). El proyecto se desarrolla por el **Equipo de desarrollo (3 integrantes)**: **Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas**. Se conserva la capacidad de planificación original de **8 puntos de historia por Sprint**, sin aumentarla por el número de integrantes. Distribución de responsabilidades individuales: Pendiente de definir por el equipo.
 
 ### 6.4 Cronograma del Proyecto de Desarrollo de Software (A 10 Semanas)
 
@@ -267,7 +268,7 @@ A continuación, se detallan las 11 Historias de Usuario principales que engloba
 
 ## 8. Planificación y Release Plan (Capacidad: 8 pts / Sprint)
 
-Dado que la capacidad individual (Velocidad) es de 8 puntos por iteración, las historias clave se distribuyen de la siguiente forma para asegurar entregas funcionales exactas a la capacidad:
+Se conserva la capacidad de planificación original de 8 puntos por iteración para el Equipo de desarrollo (3 integrantes), con la siguiente distribución original de historias clave:
 
 * **Sprint 1 (Semanas 1-2):** Desarrollo visual y registro de la plataforma. (Total Sprint: **8 puntos**).
   * **HU-01 (3 pts):** Registro de rutas logísticas.
@@ -314,4 +315,4 @@ Una historia de usuario solo se considerará **"Terminada" (Done)** cuando cumpl
 
 ## 11. Definición del Scrum Team a 10 Semanas
 
-Nota aclaratoria: Al ser un proyecto individual, **Stuarth Fabricio Miranda Rojas** asume las responsabilidades de todos los roles (PO, SM, Frontend, Backend y QA) para garantizar la ejecución de las fases en las 10 semanas de plazo.
+El **Equipo de desarrollo (3 integrantes)** está conformado por **Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas**. Se mantienen los roles previstos (PO, SM, Frontend, Backend y QA) y el plazo original de 10 semanas. Asignación de roles y responsabilidades individuales: **Pendiente de definir por el equipo**.
