@@ -23,6 +23,7 @@
 | **0.8** | 04/11/2026 | Actualización de integrantes | Adaptación del proyecto a tres integrantes, sin cambios en el alcance, historias, requerimientos, puntos ni cronograma originales. | Equipo de desarrollo (3 integrantes) |
 | **0.9** | 04/11/2026 | Plan de Comunicaciones | Incorporación del Plan de Comunicaciones y su referencia al tablero existente de Notion, sin cambios en el alcance ni en la planificación originales. | Equipo de desarrollo (3 integrantes) |
 | **0.10** | 04/11/2026 | Definiciones de organización y comunicación | Asignación de responsabilidades y definición de horarios, WIP, registros, validación y escalamiento por instrucción del solicitante, conservando el alcance, los puntos y el cronograma. | Equipo de desarrollo (3 integrantes) |
+| **0.11** | 04/11/2026 | Semana 8 / Fase 3: Trabajo Colaborativo | Incorporación de matriz de riesgos, mapa de calor, plan de mitigación y adquisiciones críticas, sin modificar el alcance, las estimaciones ni la planificación original. | Equipo de desarrollo (3 integrantes) |
 
 ---
 
@@ -429,3 +430,113 @@ Las asignaciones, los horarios y los límites WIP de esta versión se registran 
 Se conservan los objetivos, requerimientos, funcionalidades, 11 historias, puntos, tareas técnicas originales, DoD y cronograma de 10 semanas. Las definiciones de esta actualización distribuyen el trabajo y concretan la comunicación sin ampliar el producto ni prometer la entrega de historias no programadas.
 
 El historial 0.1 a 0.9 se conserva intacto y solo se añade la versión 0.10. Esta edición se limita a los Markdown locales: no modifica el tablero de Notion, no envía mensajes ni crea eventos. Por ello, las nuevas asignaciones y reglas quedan documentadas aquí sin afirmar que ya estén aplicadas en el tablero o que se hayan realizado reuniones, pruebas o entregas.
+
+---
+
+## 13. Gestión de Riesgos — Semana 8
+
+### 13.1. Introducción
+
+La gestión de riesgos permite anticipar condiciones que podrían impedir el cumplimiento de los requisitos del **Sistema inteligente para gestión y optimización de operaciones logísticas** dentro de las 10 semanas previstas. En un equipo de tres integrantes, la disponibilidad de una persona afecta tanto la implementación como la revisión. La integración de Google Maps, los cálculos de Dijkstra y Haversine, la comunicación Frontend/Backend y la persistencia de datos introducen dependencias que deben controlarse sin ampliar el producto. El presupuesto limitado exige vigilar el acceso a servicios externos y evitar comprometer gastos no autorizados.
+
+Esta sección incorpora los dos artefactos de la Semana 8, Fase 3: Trabajo Colaborativo: **Matriz de Riesgos** y **Plan de Mitigación**. Toma como base la versión 0.10, conserva las secciones anteriores y no acredita incidentes, pruebas, reuniones, compras ni entregas realizadas. Las puntuaciones y los riesgos residuales son evaluaciones iniciales de planificación, no mediciones empíricas ni resultados de controles ya ejecutados.
+
+### 13.2. Identificación y registro de riesgos — Artefacto 1
+
+#### 13.2.1. Criterios de evaluación
+
+Se utiliza **prioridad = probabilidad (P) × impacto (I)**. La evaluación expresa exposición a incumplir requisitos, calidad o plazo; no modifica los puntos de historia.
+
+| Valor | Probabilidad | Impacto sobre este proyecto |
+| :---: | --- | --- |
+| 1 | Baja: condición posible, pero localizada y con pocos factores identificados que la favorezcan. | Bajo: corrección localizada en la historia, sin afectar otras historias ni el cierre previsto. |
+| 2 | Media: condición plausible por dependencias o integración aún sin evidencia de validación. | Medio: retrabajo que afecta una historia o su revisión dentro del Sprint. |
+| 3 | Alta: condición favorecida por una limitación documentada o varias dependencias concurrentes. | Alto: puede impedir un requisito esencial, el DoD, la seguridad de los datos o el compromiso de entrega dentro de las 10 semanas. |
+
+**Prioridad baja: 1–2; media: 3–4; alta: 6–9.** Se atienden primero las altas y después las medias y bajas; a igual puntuación, se prioriza el mayor impacto y la dependencia que bloquee otra historia. Los valores posibles del producto son 1, 2, 3, 4, 6 y 9. La categoría principal será técnico, equipo, alcance, tercero o negocio; el tipo será amenaza u oportunidad. En esta evaluación se registran diez amenazas relevantes, sin añadir oportunidades sin sustento.
+
+#### 13.2.2. Matriz de riesgos
+
+Los nombres abreviados de los dueños corresponden a los integrantes identificados en la sección 11. El dueño coordina la respuesta y su seguimiento; conserva las responsabilidades de implementación y revisión ya asignadas.
+
+| ID | Descripción: Si ocurre X, entonces Y | Categoría | Tipo | P | I | Prioridad | Dueño del riesgo | Fundamento de la evaluación |
+| --- | --- | --- | --- | :---: | :---: | --- | --- | --- |
+| R-01 | Si Google Maps API no está disponible o rechaza el acceso durante la integración, entonces HU-02 no podrá mostrar origen y destino y se bloqueará su aceptación. | tercero | amenaza | 2 | 3 | 6 — Alta | Cristopher Quiros Araya | HU-02 depende del acceso externo; no hay evidencia de disponibilidad validada. |
+| R-02 | Si el uso de Google Maps exige un gasto superior a los recursos autorizados, entonces la restricción presupuestaria impedirá sostener esa integración. | negocio | amenaza | 2 | 3 | 6 — Alta | Stuarth Fabricio Miranda Rojas | La restricción presupuestaria exige herramientas gratuitas y capas libres; no se documenta contratación ni saldo disponible. |
+| R-03 | Si el grafo o la implementación de Dijkstra representan incorrectamente las conexiones y sus pesos, entonces HU-03 devolverá una ruta que no cumple el criterio de alternativa más corta. | técnico | amenaza | 2 | 3 | 6 — Alta | Stuarth Fabricio Miranda Rojas | HU-03 requiere lógica matemática propia y depende de la estructura de grafos. |
+| R-04 | Si Haversine recibe coordenadas o unidades interpretadas incorrectamente, entonces las distancias de HU-09 y los cálculos que las utilicen serán inconsistentes. | técnico | amenaza | 2 | 3 | 6 — Alta | Stuarth Fabricio Miranda Rojas | El dominio exige cálculos geográficos y unidades estandarizadas; HU-09 permanece sin Sprint asignado. |
+| R-05 | Si Frontend y Backend intercambian coordenadas o datos de rutas con formatos incompatibles, entonces fallará el guardado o el cálculo solicitado desde la interfaz. | técnico | amenaza | 2 | 2 | 4 — Media | Cristopher Quiros Araya | Las tareas 1.3 y 2.3 conectan componentes desarrollados por integrantes distintos. |
+| R-06 | Si el esquema SQL o el guardado permiten datos incompletos o relaciones inconsistentes, entonces las rutas registradas y los indicadores derivados perderán integridad. | técnico | amenaza | 2 | 3 | 6 — Alta | Stuarth Fabricio Miranda Rojas | La persistencia de HU-01 y el requisito no funcional de integridad dependen de la tabla y la conexión de guardado. |
+| R-07 | Si la validación de permisos permite a un operario acceder a información restringida, entonces HU-08 incumplirá el control por roles y expondrá datos. | técnico | amenaza | 2 | 3 | 6 — Alta | Stuarth Fabricio Miranda Rojas | El criterio de HU-08 exige bloquear accesos no autorizados; no hay evidencia de validación. |
+| R-08 | Si un integrante no está disponible para implementar o revisar su historia, entonces se acumulará trabajo en proceso o revisión y se pondrá en riesgo el cierre del Sprint. | equipo | amenaza | 2 | 2 | 4 — Media | Cristopher Quiros Araya | Tres integrantes concentran roles técnicos y de coordinación; cada historia requiere revisión de otra persona. |
+| R-09 | Si se interpreta que los cinco Sprints comprometen las once historias, entonces se prometerán 55 puntos con una planificación que solo programa 40 y se comprometerá el plazo de 10 semanas. | alcance | amenaza | 3 | 3 | 9 — Alta | Stuarth Fabricio Miranda Rojas | La diferencia documentada es de 15 puntos: HU-05, HU-09 y HU-11 no tienen Sprint asignado. |
+| R-10 | Si se acumulan validaciones o se declara una historia terminada sin evidencia de los cinco criterios del DoD, entonces se comunicarán avances no acreditados y defectos podrían llegar al cierre. | equipo | amenaza | 2 | 3 | 6 — Alta | Miguel Cruz Vargas | El DoD exige cinco verificaciones y QA participa en la revisión de varias historias. |
+
+#### 13.2.3. Mapa de calor inicial
+
+Cada ID aparece una sola vez. Las filas representan probabilidad y las columnas impacto. El color se acompaña de texto para que el mapa sea legible sin depender del color.
+
+| Probabilidad ↓ / Impacto → | 1 — Bajo | 2 — Medio | 3 — Alto |
+| --- | --- | --- | --- |
+| **3 — Alta** | 🟨 3 — Media: sin riesgos | 🟥 6 — Alta: sin riesgos | 🟥 9 — Alta: **R-09** |
+| **2 — Media** | 🟩 2 — Baja: sin riesgos | 🟨 4 — Media: **R-05, R-08** | 🟥 6 — Alta: **R-01, R-02, R-03, R-04, R-06, R-07, R-10** |
+| **1 — Baja** | 🟩 1 — Baja: sin riesgos | 🟩 2 — Baja: sin riesgos | 🟨 3 — Media: sin riesgos |
+
+El mapa ubica los diez riesgos: ocho de prioridad alta y dos de prioridad media. Su concentración inicial refleja dependencias esenciales aún sin evidencia de control; no significa que los eventos ya hayan ocurrido.
+
+### 13.3. Plan de mitigación — Artefacto 2
+
+#### 13.3.1. Acciones, disparadores y contingencias
+
+Las acciones siguientes concretan controles dentro de historias, tareas y criterios de calidad ya existentes. **No crean ítems nuevos del Sprint Backlog**, no asignan puntos adicionales ni reprograman historias. Cuando el documento no tiene una tarea desglosada, se indica expresamente la HU correspondiente y esa limitación de trazabilidad. Las referencias a Sprints anteriores son vínculos con la planificación original, no afirmaciones de ejecución ni órdenes de rehacer trabajo ya validado.
+
+| ID | Estrategia | Acción concreta e ítem correspondiente del backlog existente | Disparador verificable | Contingencia o respaldo |
+| --- | --- | --- | --- | --- |
+| R-01 | Mitigar; aceptar la indisponibilidad externa que no controla el equipo. | En **HU-02, Sprint 1, tareas 1.4 y 1.5**, comprobar que la integración carga el mapa y representa origen y destino; registrar errores de acceso y su contexto como evidencia de la validación. | El mapa no carga o la solicitud es rechazada durante la ejecución de esas tareas o su revisión. | Registrar HU-02 como bloqueada y continuar únicamente trabajo original que no dependa del servicio. Reintentar tras resolver el acceso; no sustituir proveedor ni declarar aceptada la visualización con una simulación. |
+| R-02 | Evitar gasto no autorizado; mitigar exposición presupuestaria. | Como condición de **HU-02, tarea 1.4**, Stuarth revisará con Cristopher la modalidad de acceso y el consumo disponible en la cuenta que se utilice antes de realizar llamadas de integración; mantener las validaciones limitadas a las necesarias para HU-02. | La cuenta exige un pago no autorizado, no permite verificar el consumo o informa que el uso previsto excede lo disponible. | Detener las llamadas que impliquen gasto y comunicar el bloqueo por la vía de la sección 12. Mantener la funcionalidad pendiente hasta resolver la restricción; no contratar automáticamente otro plan o servicio. |
+| R-03 | Mitigar. | En **HU-03, Sprint 2, tareas 2.1, 2.2 y 2.4**, contrastar los resultados con grafos pequeños cuyo recorrido mínimo pueda calcularse manualmente; revisar pesos y conexiones antes de aceptar la lógica. | Una prueba de la tarea 2.4 devuelve una ruta distinta de la mínima esperada o no resuelve un recorrido disponible. | Corregir el grafo o Dijkstra dentro de HU-03 y repetir la prueba fallida y la regresión correspondiente. Conservar la historia sin terminar mientras persista la discrepancia. |
+| R-04 | Mitigar y aceptar exposición de programación no resuelta. | En **HU-09**, contrastar coordenadas, conversión de unidades y distancia contra ejemplos calculables de forma independiente; aplicar las unidades del requisito de dominio 3. **No existe tarea desglosada ni Sprint asignado para HU-09**; la acción queda vinculada a esa historia, sin incorporarla a un Sprint. | La revisión detecta mezcla de grados y radianes, unidades distintas de kilómetros o una distancia incompatible con los datos de entrada. | No utilizar el resultado discrepante como evidencia de aceptación; registrar la dependencia afectada y corregir dentro de HU-09 cuando se autorice su ejecución. No estimar tiempo únicamente a partir de distancia sin una base definida en los requisitos. |
+| R-05 | Mitigar. | En **HU-01, tarea 1.3**, y **HU-03, tarea 2.3**, contrastar los nombres, tipos y unidades de los datos enviados y recibidos; realizar la verificación de integración ya exigida por el DoD. | Una solicitud válida desde la interfaz es rechazada, guarda datos distintos o devuelve coordenadas incompatibles. | Volver la historia afectada a En proceso, corregir el intercambio en las tareas existentes y repetir la integración; no añadir endpoints ajenos a las historias. |
+| R-06 | Mitigar. | En **HU-01, tareas 1.1 y 1.3**, revisar campos y relaciones del esquema y contrastar el dato guardado con la entrada válida del **CP-RF01-01**; comprobar el requisito no funcional 5 al validar la persistencia. | La ruta guardada pierde campos, admite origen/destino inválidos o queda asociada a datos inconsistentes. | Detener la validación de la persistencia afectada y corregir esquema o guardado en las mismas tareas. Repetir la verificación con datos de prueba; no borrar registros reales ni afirmar recuperación mediante copias cuya existencia no está acreditada. |
+| R-07 | Mitigar. | En **HU-08, Sprint 3**, verificar su criterio de aceptación con un operario que intenta acceder a reportes gerenciales y contrastar el resultado con el rol autorizado. **La sección 9 no contiene tarea desglosada para este Sprint**; el vínculo es HU-08 y el DoD. | Un usuario con rol operario logra acceder a una operación restringida durante la validación. | Impedir que la historia se marque Hecho o se entregue como segura; corregir los permisos dentro de HU-08 y repetir la validación de acceso e integración. |
+| R-08 | Mitigar. | En las historias asignadas en la **sección 11**, el responsable mantendrá el avance y las evidencias en sus comentarios; Cristopher vigilará el WIP y coordinará apoyo sobre las mismas tareas. Para Sprint 1 se vincula a **1.1–1.5** y para Sprint 2 a **2.1–2.4**; en Sprints posteriores, a sus HU originales sin inventar desglose. | Un responsable comunica indisponibilidad o falta su actualización en una ventana diaria sin registro previo. | Redistribuir temporalmente el trabajo original entre los otros dos integrantes mediante decisión registrada, preservando revisión por otra persona. Si no hay capacidad, comunicar el trabajo no terminado, sin elevar velocidad, puntos ni extender fechas automáticamente. |
+| R-09 | Evitar promesas fuera del Release Plan; aceptar el riesgo residual de cobertura. | Stuarth contrastará los compromisos con la **sección 8 y las HU originales** en Planning y Review; mantener explícito que HU-05, HU-09 y HU-11 no tienen Sprint asignado. Las tareas de **sección 9** conservan su programación; este control de gestión no agrega una tarea técnica. | Se propone añadir cualquiera de esas tres historias a un Sprint ya completo o se comunica que se entregarán 55 puntos en los cinco Sprints. | Mantener la programación de 40 puntos y registrar la discrepancia para consulta académica. No retirar las tres HU del alcance, no prometer su terminación ni aprobar ampliación de fechas o capacidad como contingencia automática. |
+| R-10 | Mitigar. | En **tarea 2.4 de HU-03** y en la revisión de **todas las historias conforme al DoD de sección 10**, el revisor comprobará cada criterio con la evidencia de sección 12.6 antes del movimiento a Hecho; vigilar el límite de 2 tarjetas en revisión. No se crean tareas de pruebas nuevas. | Una historia se propone como Hecho sin evidencia de algún criterio, falla una validación o se acumulan más de dos tarjetas en revisión. | Mantener o devolver la historia a En proceso según el fallo, priorizar su corrección y revisión dentro del trabajo original y comunicar lo no validado en la Review. No omitir criterios para cumplir una fecha. |
+
+#### 13.3.2. Fecha de revisión y evaluación residual
+
+**Fecha de evaluación documental inicial: 04/11/2026. Próxima revisión programada de los diez riesgos: 11/11/2026**, utilizando el seguimiento ya previsto; esta fecha se aplica al registro de riesgos y no cambia las semanas ni las fechas de entrega del proyecto. Se revisará antes si aparece un disparador. No se afirma que ninguna de estas revisiones se haya realizado. Después se actualizará el registro en las Planning y Review existentes mientras el proyecto continúe activo, sin crear reuniones adicionales.
+
+Los valores residuales siguientes son **estimaciones objetivo condicionadas a ejecutar y acreditar las acciones**. Se reduce la probabilidad cuando corresponde, sin asumir que desaparece la consecuencia. Mientras no haya evidencia, se conserva como exposición vigente la puntuación inicial de la matriz.
+
+| ID | Próxima revisión programada | P residual | I residual | Prioridad residual objetivo | Condición y exposición que permanece |
+| --- | --- | :---: | :---: | --- | --- |
+| R-01 | 11/11/2026 | 1 | 3 | 3 — Media | Solo tras validar el acceso y mapa; puede persistir una interrupción del proveedor. |
+| R-02 | 11/11/2026 | 1 | 3 | 3 — Media | Solo con modalidad y consumo verificados; no se asegura gratuidad futura ni disponibilidad presupuestaria. |
+| R-03 | 11/11/2026 | 1 | 3 | 3 — Media | Solo tras evidencia de la tarea 2.4; permanecen casos no cubiertos por la validación. |
+| R-04 | 11/11/2026 | 2 | 3 | 6 — Alta | Se mantiene inicialmente: HU-09 sigue sin Sprint; no se presume implementado el control. |
+| R-05 | 11/11/2026 | 1 | 2 | 2 — Baja | Solo tras integración comprobada; cambios posteriores podrían reintroducir incompatibilidades. |
+| R-06 | 11/11/2026 | 1 | 3 | 3 — Media | Solo tras evidencia de persistencia íntegra; permanecen errores posibles fuera de los casos revisados. |
+| R-07 | 11/11/2026 | 1 | 3 | 3 — Media | Solo tras comprobar roles; una modificación posterior puede introducir un acceso indebido. |
+| R-08 | 11/11/2026 | 1 | 2 | 2 — Baja | Solo con avance accesible y apoyo coordinado; una ausencia prolongada sigue afectando la capacidad. |
+| R-09 | 11/11/2026 | 2 | 3 | 6 — Alta | La claridad del compromiso reduce la confusión, pero no resuelve los 15 puntos sin programación. |
+| R-10 | 11/11/2026 | 1 | 3 | 3 — Media | Solo con revisión y evidencia del DoD; la carga de validación y defectos no detectados permanecen posibles. |
+
+En cada revisión, el dueño registrará fecha efectiva, evidencia, estado (identificado, activo, en tratamiento o cerrado), P e I reevaluadas y justificación de cualquier cambio. Un riesgo solo se cerrará cuando deje de ser aplicable o exista evidencia suficiente de resolución; una fecha programada no demuestra cierre. Miguel comprobará la evidencia de calidad, Cristopher consolidará el seguimiento y Stuarth canalizará las consultas de alcance conforme a sus roles existentes.
+
+### 13.4. Adquisiciones críticas y dependencias de terceros
+
+Esta identificación responde al requisito académico de adquisiciones. **No acredita contratos firmados, proveedores adicionales elegidos ni compras realizadas.** Se distinguen modalidades previstas de hechos contractuales. No se fijan tarifas, cuotas gratuitas, garantías de servicio ni condiciones comerciales actuales que el expediente no documenta; su comprobación será condición del acceso, no un supuesto de este plan.
+
+| Dependencia crítica y vínculo | Proveedor | Tipo de contrato o modalidad prevista | Control y responsable | Plan de salida o respaldo |
+| --- | --- | --- | --- | --- |
+| Google Maps API para **HU-02, tareas 1.4 y 1.5**; riesgos R-01 y R-02. | Google, proveedor ya identificado en el proyecto. | Adhesión a condiciones del servicio y modalidad de acceso por uso que resulte aplicable; aceptar únicamente uso compatible con la restricción presupuestaria y previamente autorizado. No se acredita cuenta, aceptación contractual, saldo ni contratación. | Stuarth verificará condiciones y exposición a gasto; Cristopher verificará el acceso técnico al integrar. Si requiere gasto no autorizado, se activa R-02. | Suspender llamadas y deshabilitar las credenciales del proyecto en la cuenta cuando proceda, revisando cualquier compromiso que realmente exista. Conservar el trabajo propio y los datos cuya conservación esté permitida, sin presumir derechos sobre contenido del proveedor. No migrar a otro servicio automáticamente; HU-02 continuará bloqueada si no puede cumplirse con la dependencia original. |
+| Notion para seguimiento del Sprint y registro de decisiones de **sección 12**; vínculo con R-08 y R-10. | Notion, plataforma del tablero existente. | Adhesión al servicio de colaboración ya utilizado. El expediente no identifica el plan comercial, titular contractual ni pagos; no se autoriza una nueva suscripción. | Cristopher comprobará acceso a la página y tarjetas durante el seguimiento habitual. Si no puede actualizarse el registro, dejará constancia de la interrupción. | Durante una indisponibilidad, registrar temporalmente en este mismo Markdown el estado y los acuerdos verificables para preservar el expediente, sin crear archivos ni tableros. Reconciliar el registro al recuperar acceso. Si debe abandonarse el servicio, conservar únicamente información propia y accesible conforme a permisos; no suponer una exportación o migración ya efectuada. |
+
+Python, FastAPI, SQL, HTML/CSS y JavaScript están citados como tecnologías del trabajo original; el expediente no define proveedor de hosting, motor de base de datos contratado ni otra compra crítica. No se eligen proveedores ni contratos para completar la tabla. Las incompatibilidades de integración se atienden dentro de R-05 y las tareas existentes, sin incorporar herramientas o servicios nuevos.
+
+### 13.5. Integración colaborativa y conservación del expediente
+
+La matriz y el plan quedan en este mismo Markdown. Los dueños comunicarán disparadores y cambios por el mecanismo de avances y bloqueos de la sección 12, citando el ID del riesgo y su historia o tarea original. Si falla Notion, se aplicará el respaldo documental de la sección 13.4. El análisis de riesgos se incorporará a las ceremonias existentes, sin presumir que ya tuvo lugar.
+
+La incorporación de la versión **0.11** conserva íntegros el historial 0.1–0.10 y el contenido de las semanas anteriores. No modifica objetivos, requisitos, funcionalidades, once historias, sus puntos, asignaciones, DoD, tareas, velocidad de 8 puntos por Sprint ni cronograma de 10 semanas. Las respuestas propuestas describen cómo controlar los riesgos de ese trabajo y no constituyen ampliaciones del alcance o compromisos de contratación. No se crean archivos adicionales ni se modifica el tablero de Notion.
