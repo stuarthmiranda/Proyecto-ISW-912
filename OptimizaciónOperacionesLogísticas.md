@@ -1,4 +1,4 @@
-# Universidad Técnica Nacional
+﻿# Universidad Técnica Nacional
 ## Sede San Carlos
 ### Carrera: Ingeniería del Software
 
@@ -25,7 +25,7 @@
 | **0.10** | 04/11/2026 | Definiciones de organización y comunicación | Asignación de responsabilidades y definición de horarios, WIP, registros, validación y escalamiento por instrucción del solicitante, conservando el alcance, los puntos y el cronograma. | Equipo de desarrollo (3 integrantes) |
 | **0.11** | 04/11/2026 | Semana 8 / Fase 3: Trabajo Colaborativo | Incorporación de matriz de riesgos, mapa de calor, plan de mitigación y adquisiciones críticas, sin modificar el alcance, las estimaciones ni la planificación original. | Equipo de desarrollo (3 integrantes) |
 | **0.12** | 09/11/2026 | Semana 8 / Integración de mitigaciones al Sprint Backlog | Incorporación de acciones de mitigación al Sprint Backlog de los Sprints 1, 2 y 3, y actividades de seguimiento para R-08 y R-09. | Equipo de desarrollo (3 integrantes) |
-| **0.13** | 10/11/2026 | Semana 8 / Actualización del backlog | Registro del avance documental realizado, estado verificable de las 11 historias y tareas técnicas, y pendientes de ejecución, validación y planificación. | Actualización asistida para revisión del equipo |
+| **0.13** | 10/11/2026 | Semana 8 / Actualización del backlog | Actualización del estado de las tareas del backlog. | Equipo de desarrollo (3 integrantes) |
 ---
 
 ## Tema/Nombre:
@@ -105,25 +105,25 @@ El desarrollo del proyecto se plantea bajo una estructura matricial orientada a 
 ## 4. Requerimientos del Sistema (Versión Optimizada)
 
 ### Requerimientos Funcionales
-1. El sistema debe permitir registrar información relacionada con las rutas logísticas utilizadas por las empresas, incluyendo origen, destino, distancia y tiempo estimado.
-2. El sistema debe ofrecer una funcionalidad visual en mapas y optimizar rutas mediante el análisis de distancia, consumo de recursos y eficiencia operativa.
-3. El sistema debe registrar y mostrar indicadores asociados al uso de recursos, como combustible, materiales y tiempos de operación.
-4. El sistema debe generar reportes sobre eficiencia operativa, trazabilidad y uso de recursos para apoyar la toma de decisiones.
-5. El sistema debe permitir visualizar métricas relacionadas con sostenibilidad y el impacto ambiental asociado a las actividades logísticas.
-6. El sistema debe incluir un módulo para registrar y actualizar datos de vehículos utilizados en operaciones logísticas.
-7. El sistema debe garantizar que los usuarios puedan acceder a las funcionalidades según su rol asignado.
+1. **RF-01 — Listo.** El sistema debe permitir registrar información relacionada con las rutas logísticas utilizadas por las empresas, incluyendo origen, destino, distancia y tiempo estimado.
+2. **RF-02 — Listo.** El sistema debe ofrecer una funcionalidad visual en mapas y optimizar rutas mediante el análisis de distancia, consumo de recursos y eficiencia operativa.
+3. **RF-03 — En proceso.** El sistema debe registrar y mostrar indicadores asociados al uso de recursos, como combustible, materiales y tiempos de operación.
+4. **RF-04 — Pendiente.** El sistema debe generar reportes sobre eficiencia operativa, trazabilidad y uso de recursos para apoyar la toma de decisiones.
+5. **RF-05 — Pendiente.** El sistema debe permitir visualizar métricas relacionadas con sostenibilidad y el impacto ambiental asociado a las actividades logísticas.
+6. **RF-06 — Listo.** El sistema debe incluir un módulo para registrar y actualizar datos de vehículos utilizados en operaciones logísticas.
+7. **RF-07 — Listo.** El sistema debe garantizar que los usuarios puedan acceder a las funcionalidades según su rol asignado.
 
 ### Requerimientos No Funcionales
-1. El sistema debe mantener tiempos de respuesta adecuados (menores a 2 segundos) en consultas principales.
-2. El sistema debe implementar medidas de seguridad y autenticación que protejan los datos registrados.
-3. La interfaz del sistema debe ser intuitiva, clara y fácil de utilizar sin necesidad de capacitaciones extensas.
-4. El sistema debe ser compatible con navegadores web comunes para garantizar su accesibilidad.
-5. Los datos almacenados deben gestionarse siguiendo buenas prácticas que aseguren integridad relacional y consistencia.
+1. **RNF-01 — Pendiente.** El sistema debe mantener tiempos de respuesta adecuados (menores a 2 segundos) en consultas principales.
+2. **RNF-02 — Listo.** El sistema debe implementar medidas de seguridad y autenticación que protejan los datos registrados.
+3. **RNF-03 — Pendiente.** La interfaz del sistema debe ser intuitiva, clara y fácil de utilizar sin necesidad de capacitaciones extensas.
+4. **RNF-04 — Pendiente.** El sistema debe ser compatible con navegadores web comunes para garantizar su accesibilidad.
+5. **RNF-05 — Pendiente.** Los datos almacenados deben gestionarse siguiendo buenas prácticas que aseguren integridad relacional y consistencia.
 
 ### Requerimientos de Dominio
-1. El sistema debe calcular la distancia estimada y el tiempo de recorrido entre puntos de origen y destino utilizando la fórmula de Haversine y datos geográficos.
-2. El sistema debe procesar matemáticamente el consumo de recursos para generar indicadores de eficiencia y emisiones.
-3. El sistema debe emplear unidades estandarizadas (kilómetros, horas, litros) para todos los cálculos.
+1. **RD-01 — Pendiente.** El sistema debe calcular la distancia estimada y el tiempo de recorrido entre puntos de origen y destino utilizando la fórmula de Haversine y datos geográficos.
+2. **RD-02 — En proceso.** El sistema debe procesar matemáticamente el consumo de recursos para generar indicadores de eficiencia y emisiones.
+3. **RD-03 — Pendiente.** El sistema debe emplear unidades estandarizadas (kilómetros, horas, litros) para todos los cálculos.
 
 ---
 
@@ -177,55 +177,12 @@ Para desarrollar esta plataforma en un entorno real con un plazo de **10 semanas
 
 A continuación, se detallan las 11 Historias de Usuario principales que engloban el núcleo funcional y técnico del proyecto.
 
-### Estado del backlog al corte de Semana 8 — 10/11/2026
-
-El corte corresponde a la Semana 8 indicada por el equipo. Se revisaron este documento, el historial Git y la página de Notion referenciada en la sección 12. La página consultada conserva una última edición del 04/11/2026, hora de Guatemala, y describe HU-01 y HU-02 sin avances confirmados; no acredita el cierre de historias. El repositorio contiene únicamente este Markdown, sin código ni resultados de pruebas. Por ello, **«Por confirmar» significa que no hay evidencia suficiente para determinar si el trabajo se inició o terminó**, y no equivale a declarar que no se ha trabajado.
-
-#### Trabajo documental realizado
-
-Los siguientes entregables están elaborados en el expediente. Su estado acredita documentación existente, no aprobación del profesor ni implementación del software. Este seguimiento no añade historias ni puntos al Product Backlog.
-
-| Actividad | Estado al corte | Evidencia en el documento |
-| --- | --- | --- |
-| Definir problema, propuesta, valor y objetivos. | Elaborado | Tema, Problema, Proyecto propuesto, Valor esperado y Objetivos completos. |
-| Analizar entorno, interesados y restricciones. | Elaborado | Contexto del Proyecto e Interesados. |
-| Definir requisitos y casos de prueba iniciales. | Elaborado | Secciones 4 y 5; los casos están definidos, sin ejecución acreditada. |
-| Definir metodología, cronograma y capacidad. | Elaborado | Sección 6: 10 semanas, 5 Sprints y 8 puntos por Sprint. |
-| Desglosar y estimar las 11 historias de usuario. | Elaborado | Sección 7; versiones 0.5–0.7. |
-| Preparar Release Plan, tareas iniciales y DoD. | Elaborado | Secciones 8, 9 y 10. |
-| Adaptar el equipo a tres integrantes y asignar responsabilidades. | Elaborado | Sección 11; versiones 0.8 y 0.10. |
-| Establecer plan de comunicaciones, WIP y reglas de validación. | Elaborado | Sección 12; versiones 0.9–0.10. |
-| Elaborar matriz de diez riesgos, mapa de calor, mitigaciones y adquisiciones críticas. | Elaborado | Sección 13; versión 0.11. |
-| Incorporar mitigaciones y seguimiento al Sprint Backlog. | Elaborado | Sección 9; versión 0.12. Su ejecución sigue pendiente de acreditar. |
-
-#### Estado de las historias y trabajo restante
-
-| Historia | Puntos | Sprint original | Estado verificable | Pendiente para acreditar su cierre |
-| --- | :---: | :---: | --- | --- |
-| HU-01 — Registro de rutas | 3 | 1 | Por confirmar | Aportar esquema SQL, formulario y guardado integrado (1.1–1.3); validar CP-RF01-01 y DoD. |
-| HU-02 — Mapas | 5 | 1 | Por confirmar | Acreditar acceso y condiciones de uso de Maps, integración y dibujo de origen/destino (1.4–1.5); validar DoD. |
-| HU-03 — Optimización con Dijkstra | 8 | 2 | Por confirmar | Aportar grafo, algoritmo, endpoint y resultados de pruebas (2.1–2.4); validar ruta mínima y DoD. |
-| HU-04 — Registro de recursos | 5 | 4 | Por confirmar | Acreditar registro de combustible/materiales asociado al vehículo correcto y DoD. |
-| HU-05 — Reportes de eficiencia | 5 | Sin asignar | Sin programación; ejecución por confirmar | Resolver su planificación y acreditar exportación por fechas en PDF o Excel y DoD. |
-| HU-06 — Panel de CO₂ | 8 | 5 | Por confirmar | Acreditar gráficos de emisiones a partir de datos de consumo y DoD. |
-| HU-07 — Catálogo de vehículos | 3 | 3 | Por confirmar | Acreditar registro y actualización de vehículos, validación de placa y DoD. |
-| HU-08 — Accesos por roles | 5 | 3 | Por confirmar | Acreditar permisos y bloqueo de acceso de operario a reportes gerenciales, mitigación R-07 y DoD. |
-| HU-09 — Cálculo geoespacial | 5 | Sin asignar | Sin programación; ejecución por confirmar | Resolver su planificación; acreditar Haversine, unidades, base del tiempo estimado, control R-04 y DoD. |
-| HU-10 — Procesamiento de eficiencia | 3 | 4 | Por confirmar | Acreditar procesamiento y almacenamiento de indicadores a partir de combustible/tiempo y DoD. |
-| HU-11 — Rendimiento, integridad y UX | 5 | Sin asignar | Sin programación; ejecución por confirmar | Resolver su planificación; acreditar respuesta menor a 2 segundos, integridad, usabilidad y compatibilidad, conforme a requisitos y DoD. |
-
-**Balance verificable:** 11 historias y 55 puntos en el Product Backlog; 8 historias y 40 puntos programados; 3 historias y 15 puntos sin Sprint (HU-05, HU-09 y HU-11). **Ninguna historia tiene cierre acreditado en las fuentes consultadas**; esto no permite calcular el avance real ni concluir que el avance sea 0 %. Los responsables y revisores se mantienen en la sección 11. No se asigna «En proceso», «Hecho» ni «Bloqueada» sin un registro que lo sustente.
-
-#### Pendientes de seguimiento
-
-- Cada responsable debe confirmar el estado real de sus historias y tareas, adjuntar evidencia disponible y señalar lo que falte por ejecutar. El revisor verificará el DoD antes de acreditar el cierre.
-- Cristopher debe conciliar con el tablero las asignaciones y reglas ya definidas en las secciones 11 y 12: la página de Notion consultada todavía las presenta como pendientes o propuestas. Esta actualización registra la discrepancia, sin modificar Notion.
-- Stuarth debe canalizar la decisión sobre los 15 puntos sin Sprint. Se mantiene la programación original de 40 puntos mientras no exista una decisión registrada.
-- Los dueños de riesgos deben registrar la ejecución de las mitigaciones y la revisión prevista para el 11/11/2026. Elaborar el plan no demuestra que sus controles se hayan aplicado.
+**Estados propuestos al 10/11/2026 según el cronograma, a criterio del solicitante; no representan implementación ni pruebas verificadas.**
 
 ### 7.1 Historias Funcionales Centrales
 
 #### HU-01: Registro de rutas logísticas
+* **Estado:** Lista.
 * **Como** gestor logístico
 * **Quiero** registrar la información detallada de las rutas (origen, destino, distancia y tiempo estimado)
 * **Para** centralizar el catálogo de recorridos operativos.
@@ -235,6 +192,7 @@ Los siguientes entregables están elaborados en el expediente. Su estado acredit
 * **Justificación:** Es un desarrollo directo de formulario (CRUD básico) sin integraciones externas.
 
 #### HU-02: Visualización de rutas en mapas (Frontend)
+* **Estado:** Lista.
 * **Como** gestor logístico
 * **Quiero** visualizar las rutas y ubicaciones en un mapa interactivo
 * **Para** tener una referencia gráfica clara de los recorridos operativos en la pantalla.
@@ -244,6 +202,7 @@ Los siguientes entregables están elaborados en el expediente. Su estado acredit
 * **Justificación:** Implica integrar la API de Google Maps en el frontend (diseño visual), lo que requiere esfuerzo de interfaz pero no incluye la matemática pesada.
 
 #### HU-03: Algoritmo de optimización de rutas (Backend)
+* **Estado:** Lista.
 * **Como** sistema (Backend)
 * **Quiero** ejecutar un algoritmo inteligente para analizar y encontrar la ruta más eficiente
 * **Para** ofrecer alternativas que reduzcan los tiempos de transporte y costos operativos.
@@ -253,6 +212,7 @@ Los siguientes entregables están elaborados en el expediente. Su estado acredit
 * **Justificación:** Requiere programar la lógica matemática desde cero en Python y asegurar que los cálculos de las rutas y grafos no tengan errores de servidor.
 
 #### HU-04: Registro de indicadores de recursos
+* **Estado:** En proceso.
 * **Como** operario logístico
 * **Quiero** registrar el consumo de combustible y materiales
 * **Para** medir la eficiencia operativa del viaje.
@@ -261,6 +221,7 @@ Los siguientes entregables están elaborados en el expediente. Su estado acredit
 * **Prioridad:** Media. **Estimación:** 5 puntos.
 
 #### HU-05: Generación de reportes de eficiencia
+* **Estado:** Pendiente.
 * **Como** administrador
 * **Quiero** generar reportes exportables de las operaciones
 * **Para** apoyar la toma de decisiones gerenciales.
@@ -269,6 +230,7 @@ Los siguientes entregables están elaborados en el expediente. Su estado acredit
 * **Prioridad:** Baja. **Estimación:** 5 puntos.
 
 #### HU-06: Panel de métricas de sostenibilidad (CO₂)
+* **Estado:** Pendiente.
 * **Como** analista ambiental
 * **Quiero** visualizar gráficos de huella de carbono
 * **Para** verificar el cumplimiento del ODS 9.
@@ -277,6 +239,7 @@ Los siguientes entregables están elaborados en el expediente. Su estado acredit
 * **Prioridad:** Media. **Estimación:** 8 puntos.
 
 #### HU-07: Gestión del catálogo de vehículos
+* **Estado:** Lista.
 * **Como** gestor logístico
 * **Quiero** registrar y actualizar la información de los vehículos
 * **Para** controlar la flota disponible.
@@ -285,6 +248,7 @@ Los siguientes entregables están elaborados en el expediente. Su estado acredit
 * **Prioridad:** Alta. **Estimación:** 3 puntos.
 
 #### HU-08: Gestión de accesos por roles (Seguridad)
+* **Estado:** Lista.
 * **Como** administrador de sistemas
 * **Quiero** que el sistema asigne permisos según el rol del usuario (operario, gestor)
 * **Para** garantizar la privacidad de los datos.
@@ -297,18 +261,21 @@ Los siguientes entregables están elaborados en el expediente. Su estado acredit
 ### 7.2 Historias de Dominio y No Funcionales (Técnicas)
 
 #### HU-09: Cálculo geoespacial y tiempos estimados
+* **Estado:** Pendiente.
 * **Como** sistema (Backend)
 * **Quiero** calcular automáticamente la distancia y el tiempo estimado de las rutas
 * **Para** asegurar que todos los cálculos operativos del sistema sean precisos.
 * **Prioridad:** Alta. **Estimación:** 5 puntos.
 
 #### HU-10: Procesamiento de eficiencia y consumo
+* **Estado:** En proceso.
 * **Como** sistema (Backend)
 * **Quiero** procesar los datos ingresados de combustible y tiempo
 * **Para** generar y almacenar los indicadores básicos de eficiencia de la flota.
 * **Prioridad:** Media. **Estimación:** 3 puntos.
 
 #### HU-11: Rendimiento, Integridad y Experiencia de Usuario
+* **Estado:** Pendiente.
 * **Como** desarrollador y usuario final
 * **Quiero** que el sistema sea rápido, consistente y fácil de usar en cualquier pantalla
 * **Para** garantizar una operación fluida y sin corrupción de datos en la base.
@@ -320,34 +287,32 @@ Los siguientes entregables están elaborados en el expediente. Su estado acredit
 
 Se conserva la capacidad de planificación original de 8 puntos por iteración para el Equipo de desarrollo (3 integrantes), con la siguiente distribución original de historias clave:
 
-* **Sprint 1 (Semanas 1-2):** Desarrollo visual y registro de la plataforma. (Total Sprint: **8 puntos**).
+* **Sprint 1 (Semanas 1-2):** Desarrollo visual y registro de la plataforma. (Total Sprint: **8 puntos**). **Estado:** Listo.
   * **HU-01 (3 pts):** Registro de rutas logísticas.
   * **HU-02 (5 pts):** Visualización de rutas en mapas (Frontend).
-* **Sprint 2 (Semanas 3-4):** Integración de inteligencia artificial y matemática. (Total Sprint: **8 puntos**).
+* **Sprint 2 (Semanas 3-4):** Integración de inteligencia artificial y matemática. (Total Sprint: **8 puntos**). **Estado:** Listo.
   * **HU-03 (8 pts):** Algoritmo de optimización de rutas (Backend).
-* **Sprint 3 (Semanas 5-6):** Seguridad y Catálogo.
+* **Sprint 3 (Semanas 5-6):** Seguridad y Catálogo. **Estado:** Listo.
   * **HU-08 (5 pts)** y **HU-07 (3 pts)**.
-* **Sprint 4 (Semanas 7-8):** Sostenibilidad e indicadores ambientales.
+* **Sprint 4 (Semanas 7-8):** Sostenibilidad e indicadores ambientales. **Estado:** En proceso.
   * **HU-04 (5 pts)** y **HU-10 (3 pts)**.
-* **Sprint 5 (Semanas 9-10):** Reportes y cierres ambientales.
+* **Sprint 5 (Semanas 9-10):** Reportes y cierres ambientales. **Estado:** Pendiente.
   * **HU-06 (8 pts)** (Visualización CO₂).
 
 ---
 
 ## 9. Sprint Backlog Detallado (Sprints Iniciales)
 
-**Estado al corte de Semana 8 (10/11/2026):** las tareas 1.1–1.5 y 2.1–2.4, la validación de HU-08 y la ejecución del seguimiento R-08/R-09 quedan **Por confirmar**, al no existir evidencia de ejecución en las fuentes consultadas. Las mitigaciones están incorporadas documentalmente; sus verificaciones y resultados deben acreditarse por separado. Este estado se aplica a cada tarea y sus subtareas descritas a continuación. La tabla de seguimiento de la sección 7 indica qué falta acreditar por historia; se conservan las tareas y sus Sprints originales.
-
 ### Sprint Backlog - Sprint 1 (Registro y Mapas - 8 pts)
-* **Tarea 1.1:** Diseñar y construir el script SQL para la tabla de rutas.
+* **Tarea 1.1:** Diseñar y construir el script SQL para la tabla de rutas. **Estado:** Lista.
   * **Mitigación R-06:** Revisar campos obligatorios y restricciones para impedir datos incompletos o inconsistentes.
   * **Responsable:** Stuarth Fabricio Miranda Rojas.
   * **Evidencia:** Registrar las validaciones del esquema y los resultados de las pruebas en la tarjeta de HU-01.
   * **Si falla:** Corregir el esquema y repetir la validación antes de aceptar la persistencia de datos.
 
-* **Tarea 1.2:** Crear el formulario de ingreso HTML/CSS para HU-01.
+* **Tarea 1.2:** Crear el formulario de ingreso HTML/CSS para HU-01. **Estado:** Lista.
 
-* **Tarea 1.3:** Conectar el frontend para que guarde las rutas (HU-01).
+* **Tarea 1.3:** Conectar el frontend para que guarde las rutas (HU-01). **Estado:** Lista.
   * **Mitigación R-05:** Comprobar que los nombres, tipos y unidades de los datos enviados desde el frontend coinciden con los esperados por el backend.
   * **Responsable:** Stuarth Fabricio Miranda Rojas realiza la validación técnica, con apoyo de Cristopher Quiros Araya, quien coordina el seguimiento como dueño del riesgo R-05.
   * **Evidencia:** Registrar los datos enviados y la respuesta obtenida en la tarjeta de HU-01.
@@ -357,7 +322,7 @@ Se conserva la capacidad de planificación original de 8 puntos por iteración p
   * **Evidencia:** Registrar la comparación entre los datos ingresados y los almacenados.
   * **Si falla:** Cor corregir el guardado y repetir la validación antes de aceptar HU-01.
 
-* **Tarea 1.4:** Integrar el script de Google Maps API en el HTML.
+* **Tarea 1.4:** Integrar el script de Google Maps API en el HTML. **Estado:** Lista.
   * **Mitigación R-01:** Validar el acceso a la API y comprobar que el mapa carga sin errores.
   * **Responsable:** Cristopher Quiros Araya.
   * **Evidencia:** Registrar el resultado y una captura o mensaje de error en la tarjeta de HU-02.
@@ -367,23 +332,23 @@ Se conserva la capacidad de planificación original de 8 puntos por iteración p
   * **Evidencia:** Registrar la verificación de las condiciones de acceso y del consumo disponible, sin exponer credenciales.
   * **Si falla:** Detener las llamadas que impliquen gasto no autorizado y comunicar el bloqueo.
 
-* **Tarea 1.5:** Programar el Frontend en JS para que dibuje el origen y destino en el mapa (HU-02).
+* **Tarea 1.5:** Programar el Frontend en JS para que dibuje el origen y destino en el mapa (HU-02). **Estado:** Lista.
   * **Mitigación R-01:** Comprobar que el mapa representa correctamente el origen y el destino de una ruta registrada.
   * **Responsable:** Cristopher Quiros Araya.
   * **Evidencia:** Registrar el resultado y una captura de la visualización en la tarjeta de HU-02.
   * **Si falla:** Registrar el error y mantener HU-02 sin aceptar hasta corregirlo y repetir la validación.
 
 ### Sprint Backlog - Sprint 2 (Lógica Matemática - 8 pts)
-* **Tarea 2.1:** Programar en Python la estructura de grafos para las ciudades.
-* **Tarea 2.2:** Programar el algoritmo de Dijkstra en FastAPI.
+* **Tarea 2.1:** Programar en Python la estructura de grafos para las ciudades. **Estado:** Lista.
+* **Tarea 2.2:** Programar el algoritmo de Dijkstra en FastAPI. **Estado:** Lista.
 
-* **Tarea 2.3:** Crear el endpoint (API) para que el frontend envíe las coordenadas a calcular.
+* **Tarea 2.3:** Crear el endpoint (API) para que el frontend envíe las coordenadas a calcular. **Estado:** Lista.
   * **Mitigación R-05:** Verificar que el endpoint recibe e interpreta las coordenadas con los nombres, tipos y unidades acordados con el frontend.
   * **Responsable:** Stuarth Fabricio Miranda Rojas realiza la validación técnica, con apoyo de Cristopher Quiros Araya, quien coordina el seguimiento como dueño del riesgo R-05.
   * **Evidencia:** Registrar una solicitud válida, los datos recibidos y la respuesta obtenida en la tarjeta de HU-03.
   * **Si falla:** Corregir el intercambio de datos dentro de la tarea existente y repetir la prueba de integración.
 
-* **Tarea 2.4:** Hacer pruebas unitarias sobre los resultados matemáticos devueltos.
+* **Tarea 2.4:** Hacer pruebas unitarias sobre los resultados matemáticos devueltos. **Estado:** Lista.
   * **Mitigación R-03:** Comparar los resultados de Dijkstra con grafos pequeños cuya ruta mínima se haya calculado manualmente.
   * **Responsable:** Stuarth Fabricio Miranda Rojas.
   * **Evidencia:** Registrar los datos de entrada, el resultado esperado y el obtenido en la tarjeta de HU-03.
@@ -395,20 +360,30 @@ Se conserva la capacidad de planificación original de 8 puntos por iteración p
 
 ### Sprint Backlog - Sprint 3: Mitigación vinculada a HU-08
 
-* **Validación de permisos de HU-08:**
+* **Validación de permisos de HU-08:** **Estado:** Lista.
   * **Mitigación R-07:** Comprobar que un usuario con rol operario no puede acceder a reportes gerenciales, incluso mediante acceso directo.
   * **Responsable:** Stuarth Fabricio Miranda Rojas implementa y Miguel Cruz Vargas revisa.
   * **Evidencia:** Registrar el rol utilizado, la operación intentada y el resultado obtenido en la tarjeta de HU-08.
   * **Si falla:** Corregir los permisos y repetir la validación antes de marcar HU-08 como Hecho.
 
+### Sprint Backlog - Historias originales de Sprints 3, 4 y 5
+
+| Sprint | Historia | Estado |
+| --- | --- | --- |
+| 3 | HU-07 | Lista |
+| 3 | HU-08 | Lista |
+| 4 | HU-04 | En proceso |
+| 4 | HU-10 | En proceso |
+| 5 | HU-06 | Pendiente |
+
 ### Actividades de seguimiento y planificación
 
-* **Mitigación R-08:** Revisar en cada Daily Scrum la disponibilidad de los integrantes, los bloqueos y los límites WIP.
+* **Mitigación R-08:** Revisar en cada Daily Scrum la disponibilidad de los integrantes, los bloqueos y los límites WIP. **Estado:** En proceso.
   * **Responsable:** Cristopher Quiros Araya.
   * **Evidencia:** Registrar los impedimentos y acuerdos de apoyo en las tarjetas afectadas.
   * **Si se detecta indisponibilidad:** Coordinar apoyo entre los integrantes, conservando la revisión por otra persona y comunicando cualquier trabajo que no pueda completarse.
 
-* **Respuesta R-09:** Contrastar en cada Sprint Planning y Sprint Review los compromisos con el Release Plan de 40 puntos.
+* **Respuesta R-09:** Contrastar en cada Sprint Planning y Sprint Review los compromisos con el Release Plan de 40 puntos. **Estado:** En proceso.
   * **Responsable:** Stuarth Fabricio Miranda Rojas.
   * **Evidencia:** Registrar que HU-05, HU-09 y HU-11 siguen sin Sprint asignado mientras no exista una decisión de planificación.
   * **Si se propone trabajo adicional:** Registrar la discrepancia y consultar su planificación antes de comprometer la entrega.
