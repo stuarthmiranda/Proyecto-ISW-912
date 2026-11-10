@@ -24,7 +24,7 @@
 | **0.9** | 04/11/2026 | Plan de Comunicaciones | Incorporación del Plan de Comunicaciones y su referencia al tablero existente de Notion, sin cambios en el alcance ni en la planificación originales. | Equipo de desarrollo (3 integrantes) |
 | **0.10** | 04/11/2026 | Definiciones de organización y comunicación | Asignación de responsabilidades y definición de horarios, WIP, registros, validación y escalamiento por instrucción del solicitante, conservando el alcance, los puntos y el cronograma. | Equipo de desarrollo (3 integrantes) |
 | **0.11** | 04/11/2026 | Semana 8 / Fase 3: Trabajo Colaborativo | Incorporación de matriz de riesgos, mapa de calor, plan de mitigación y adquisiciones críticas, sin modificar el alcance, las estimaciones ni la planificación original. | Equipo de desarrollo (3 integrantes) |
-
+| **0.12** | 09/11/2026 | Semana 8 / Integración de mitigaciones al Sprint Backlog | Incorporación de acciones de mitigación al Sprint Backlog de los Sprints 1, 2 y 3, y actividades de seguimiento para R-08 y R-09. | Equipo de desarrollo (3 integrantes) |
 ---
 
 ## Tema/Nombre:
@@ -291,16 +291,78 @@ Se conserva la capacidad de planificación original de 8 puntos por iteración p
 
 ### Sprint Backlog - Sprint 1 (Registro y Mapas - 8 pts)
 * **Tarea 1.1:** Diseñar y construir el script SQL para la tabla de rutas.
+  * **Mitigación R-06:** Revisar campos obligatorios y restricciones para impedir datos incompletos o inconsistentes.
+  * **Responsable:** Stuarth Fabricio Miranda Rojas.
+  * **Evidencia:** Registrar las validaciones del esquema y los resultados de las pruebas en la tarjeta de HU-01.
+  * **Si falla:** Corregir el esquema y repetir la validación antes de aceptar la persistencia de datos.
+
 * **Tarea 1.2:** Crear el formulario de ingreso HTML/CSS para HU-01.
+
 * **Tarea 1.3:** Conectar el frontend para que guarde las rutas (HU-01).
+  * **Mitigación R-05:** Comprobar que los nombres, tipos y unidades de los datos enviados desde el frontend coinciden con los esperados por el backend.
+  * **Responsable:** Stuarth Fabricio Miranda Rojas realiza la validación técnica, con apoyo de Cristopher Quiros Araya, quien coordina el seguimiento como dueño del riesgo R-05.
+  * **Evidencia:** Registrar los datos enviados y la respuesta obtenida en la tarjeta de HU-01.
+  * **Si falla:** Corregir el intercambio de datos y repetir la prueba de integración.
+  * **Mitigación R-06:** Comprobar que la ruta guardada conserva los datos ingresados y cumple los criterios de CP-RF01-01.
+  * **Responsable:** Stuarth Fabricio Miranda Rojas.
+  * **Evidencia:** Registrar la comparación entre los datos ingresados y los almacenados.
+  * **Si falla:** Cor corregir el guardado y repetir la validación antes de aceptar HU-01.
+
 * **Tarea 1.4:** Integrar el script de Google Maps API en el HTML.
+  * **Mitigación R-01:** Validar el acceso a la API y comprobar que el mapa carga sin errores.
+  * **Responsable:** Cristopher Quiros Araya.
+  * **Evidencia:** Registrar el resultado y una captura o mensaje de error en la tarjeta de HU-02.
+  * **Si falla:** Registrar HU-02 como bloqueada y comunicar el impedimento.
+  * **Mitigación R-02:** Verificar la modalidad de acceso y el consumo disponible antes de realizar llamadas a la API.
+  * **Responsable:** Stuarth Fabricio Miranda Rojas, con apoyo técnico de Cristopher Quiros Araya.
+  * **Evidencia:** Registrar la verificación de las condiciones de acceso y del consumo disponible, sin exponer credenciales.
+  * **Si falla:** Detener las llamadas que impliquen gasto no autorizado y comunicar el bloqueo.
+
 * **Tarea 1.5:** Programar el Frontend en JS para que dibuje el origen y destino en el mapa (HU-02).
+  * **Mitigación R-01:** Comprobar que el mapa representa correctamente el origen y el destino de una ruta registrada.
+  * **Responsable:** Cristopher Quiros Araya.
+  * **Evidencia:** Registrar el resultado y una captura de la visualización en la tarjeta de HU-02.
+  * **Si falla:** Registrar el error y mantener HU-02 sin aceptar hasta corregirlo y repetir la validación.
 
 ### Sprint Backlog - Sprint 2 (Lógica Matemática - 8 pts)
 * **Tarea 2.1:** Programar en Python la estructura de grafos para las ciudades.
 * **Tarea 2.2:** Programar el algoritmo de Dijkstra en FastAPI.
+
 * **Tarea 2.3:** Crear el endpoint (API) para que el frontend envíe las coordenadas a calcular.
+  * **Mitigación R-05:** Verificar que el endpoint recibe e interpreta las coordenadas con los nombres, tipos y unidades acordados con el frontend.
+  * **Responsable:** Stuarth Fabricio Miranda Rojas realiza la validación técnica, con apoyo de Cristopher Quiros Araya, quien coordina el seguimiento como dueño del riesgo R-05.
+  * **Evidencia:** Registrar una solicitud válida, los datos recibidos y la respuesta obtenida en la tarjeta de HU-03.
+  * **Si falla:** Corregir el intercambio de datos dentro de la tarea existente y repetir la prueba de integración.
+
 * **Tarea 2.4:** Hacer pruebas unitarias sobre los resultados matemáticos devueltos.
+  * **Mitigación R-03:** Comparar los resultados de Dijkstra con grafos pequeños cuya ruta mínima se haya calculado manualmente.
+  * **Responsable:** Stuarth Fabricio Miranda Rojas.
+  * **Evidencia:** Registrar los datos de entrada, el resultado esperado y el obtenido en la tarjeta de HU-03.
+  * **Si falla:** Corregir el algoritmo o el grafo y repetir la prueba fallida y la regresión correspondiente.
+  * **Mitigación R-10:** Comprobar que los resultados de estas pruebas quedan registrados como evidencia del criterio de pruebas unitarias del DoD.
+  * **Responsable:** Miguel Cruz Vargas.
+  * **Evidencia:** Registrar el procedimiento ejecutado y los resultados de las pruebas en la tarjeta de HU-03.
+  * **Si falla:** Mantener el criterio como no acreditado y no marcar HU-03 como Hecho hasta completar los cinco criterios del DoD
+
+### Sprint Backlog - Sprint 3: Mitigación vinculada a HU-08
+
+* **Validación de permisos de HU-08:**
+  * **Mitigación R-07:** Comprobar que un usuario con rol operario no puede acceder a reportes gerenciales, incluso mediante acceso directo.
+  * **Responsable:** Stuarth Fabricio Miranda Rojas implementa y Miguel Cruz Vargas revisa.
+  * **Evidencia:** Registrar el rol utilizado, la operación intentada y el resultado obtenido en la tarjeta de HU-08.
+  * **Si falla:** Corregir los permisos y repetir la validación antes de marcar HU-08 como Hecho.
+
+### Actividades de seguimiento y planificación
+
+* **Mitigación R-08:** Revisar en cada Daily Scrum la disponibilidad de los integrantes, los bloqueos y los límites WIP.
+  * **Responsable:** Cristopher Quiros Araya.
+  * **Evidencia:** Registrar los impedimentos y acuerdos de apoyo en las tarjetas afectadas.
+  * **Si se detecta indisponibilidad:** Coordinar apoyo entre los integrantes, conservando la revisión por otra persona y comunicando cualquier trabajo que no pueda completarse.
+
+* **Respuesta R-09:** Contrastar en cada Sprint Planning y Sprint Review los compromisos con el Release Plan de 40 puntos.
+  * **Responsable:** Stuarth Fabricio Miranda Rojas.
+  * **Evidencia:** Registrar que HU-05, HU-09 y HU-11 siguen sin Sprint asignado mientras no exista una decisión de planificación.
+  * **Si se propone trabajo adicional:** Registrar la discrepancia y consultar su planificación antes de comprometer la entrega.
 
 ---
 
@@ -488,7 +550,7 @@ El mapa ubica los diez riesgos: ocho de prioridad alta y dos de prioridad media.
 
 #### 13.3.1. Acciones, disparadores y contingencias
 
-Las acciones siguientes concretan controles dentro de historias, tareas y criterios de calidad ya existentes. **No crean ítems nuevos del Sprint Backlog**, no asignan puntos adicionales ni reprograman historias. Cuando el documento no tiene una tarea desglosada, se indica expresamente la HU correspondiente y esa limitación de trazabilidad. Las referencias a Sprints anteriores son vínculos con la planificación original, no afirmaciones de ejecución ni órdenes de rehacer trabajo ya validado.
+Las acciones siguientes concretan controles dentro de historias, tareas y criterios de calidad ya existentes. **Las acciones de mitigación se incorporan en la sección 9 como subtareas de los Sprints 1 y 2, una actividad de validación de HU-08 en el Sprint 3 y actividades de seguimiento para R-08 y R-09**, sin añadir historias ni modificar sus puntos o programación. R-04 permanece vinculado a HU-09 y pendiente de incorporación al Sprint Backlog, porque esa historia aún no tiene Sprint asignado. Las referencias a Sprints anteriores son vínculos con la planificación original, no afirmaciones de ejecución ni órdenes de rehacer trabajo ya validado.
 
 | ID | Estrategia | Acción concreta e ítem correspondiente del backlog existente | Disparador verificable | Contingencia o respaldo |
 | --- | --- | --- | --- | --- |
@@ -498,7 +560,7 @@ Las acciones siguientes concretan controles dentro de historias, tareas y criter
 | R-04 | Mitigar y aceptar exposición de programación no resuelta. | En **HU-09**, contrastar coordenadas, conversión de unidades y distancia contra ejemplos calculables de forma independiente; aplicar las unidades del requisito de dominio 3. **No existe tarea desglosada ni Sprint asignado para HU-09**; la acción queda vinculada a esa historia, sin incorporarla a un Sprint. | La revisión detecta mezcla de grados y radianes, unidades distintas de kilómetros o una distancia incompatible con los datos de entrada. | No utilizar el resultado discrepante como evidencia de aceptación; registrar la dependencia afectada y corregir dentro de HU-09 cuando se autorice su ejecución. No estimar tiempo únicamente a partir de distancia sin una base definida en los requisitos. |
 | R-05 | Mitigar. | En **HU-01, tarea 1.3**, y **HU-03, tarea 2.3**, contrastar los nombres, tipos y unidades de los datos enviados y recibidos; realizar la verificación de integración ya exigida por el DoD. | Una solicitud válida desde la interfaz es rechazada, guarda datos distintos o devuelve coordenadas incompatibles. | Volver la historia afectada a En proceso, corregir el intercambio en las tareas existentes y repetir la integración; no añadir endpoints ajenos a las historias. |
 | R-06 | Mitigar. | En **HU-01, tareas 1.1 y 1.3**, revisar campos y relaciones del esquema y contrastar el dato guardado con la entrada válida del **CP-RF01-01**; comprobar el requisito no funcional 5 al validar la persistencia. | La ruta guardada pierde campos, admite origen/destino inválidos o queda asociada a datos inconsistentes. | Detener la validación de la persistencia afectada y corregir esquema o guardado en las mismas tareas. Repetir la verificación con datos de prueba; no borrar registros reales ni afirmar recuperación mediante copias cuya existencia no está acreditada. |
-| R-07 | Mitigar. | En **HU-08, Sprint 3**, verificar su criterio de aceptación con un operario que intenta acceder a reportes gerenciales y contrastar el resultado con el rol autorizado. **La sección 9 no contiene tarea desglosada para este Sprint**; el vínculo es HU-08 y el DoD. | Un usuario con rol operario logra acceder a una operación restringida durante la validación. | Impedir que la historia se marque Hecho o se entregue como segura; corregir los permisos dentro de HU-08 y repetir la validación de acceso e integración. |
+| R-07 | Mitigar. | En **HU-08, Sprint 3**, verificar su criterio de aceptación con un operario que intenta acceder a reportes gerenciales y contrastar el resultado con el rol autorizado. **La validación se incorpora en la sección 9, en el apartado del Sprint 3**, como actividad vinculada a HU-08 y al DoD. Stuarth implementa y Miguel revisa. | Un usuario con rol operario logra acceder a una operación restringida durante la validación. | Impedir que la historia se marque Hecho o se entregue como segura; corregir los permisos dentro de HU-08 y repetir la validación de acceso e integración. |
 | R-08 | Mitigar. | En las historias asignadas en la **sección 11**, el responsable mantendrá el avance y las evidencias en sus comentarios; Cristopher vigilará el WIP y coordinará apoyo sobre las mismas tareas. Para Sprint 1 se vincula a **1.1–1.5** y para Sprint 2 a **2.1–2.4**; en Sprints posteriores, a sus HU originales sin inventar desglose. | Un responsable comunica indisponibilidad o falta su actualización en una ventana diaria sin registro previo. | Redistribuir temporalmente el trabajo original entre los otros dos integrantes mediante decisión registrada, preservando revisión por otra persona. Si no hay capacidad, comunicar el trabajo no terminado, sin elevar velocidad, puntos ni extender fechas automáticamente. |
 | R-09 | Evitar promesas fuera del Release Plan; aceptar el riesgo residual de cobertura. | Stuarth contrastará los compromisos con la **sección 8 y las HU originales** en Planning y Review; mantener explícito que HU-05, HU-09 y HU-11 no tienen Sprint asignado. Las tareas de **sección 9** conservan su programación; este control de gestión no agrega una tarea técnica. | Se propone añadir cualquiera de esas tres historias a un Sprint ya completo o se comunica que se entregarán 55 puntos en los cinco Sprints. | Mantener la programación de 40 puntos y registrar la discrepancia para consulta académica. No retirar las tres HU del alcance, no prometer su terminación ni aprobar ampliación de fechas o capacidad como contingencia automática. |
 | R-10 | Mitigar. | En **tarea 2.4 de HU-03** y en la revisión de **todas las historias conforme al DoD de sección 10**, el revisor comprobará cada criterio con la evidencia de sección 12.6 antes del movimiento a Hecho; vigilar el límite de 2 tarjetas en revisión. No se crean tareas de pruebas nuevas. | Una historia se propone como Hecho sin evidencia de algún criterio, falla una validación o se acumulan más de dos tarjetas en revisión. | Mantener o devolver la historia a En proceso según el fallo, priorizar su corrección y revisión dentro del trabajo original y comunicar lo no validado en la Review. No omitir criterios para cumplir una fecha. |
