@@ -26,6 +26,7 @@
 | **0.11** | 04/11/2026 | Semana 8 / Fase 3: Trabajo Colaborativo | Incorporación de matriz de riesgos, mapa de calor, plan de mitigación y adquisiciones críticas, sin modificar el alcance, las estimaciones ni la planificación original. | Equipo de desarrollo (3 integrantes) |
 | **0.12** | 09/11/2026 | Semana 8 / Integración de mitigaciones al Sprint Backlog | Incorporación de acciones de mitigación al Sprint Backlog de los Sprints 1, 2 y 3, y actividades de seguimiento para R-08 y R-09. | Equipo de desarrollo (3 integrantes) |
 | **0.13** | 10/11/2026 | Semana 8 / Actualización del backlog | Actualización del estado de las tareas del backlog. | Equipo de desarrollo (3 integrantes) |
+| **0.14** | 10/11/2026 | Incorporación de IA al Product Backlog | Adición de HU-12 para recomendación de rutas mediante IA, con 8 puntos, pendiente y sin Sprint asignado. Product Backlog: 12 historias y 63 puntos. | Equipo de desarrollo (3 integrantes) |
 ---
 
 ## Tema/Nombre:
@@ -175,7 +176,7 @@ Para desarrollar esta plataforma en un entorno real con un plazo de **10 semanas
 
 ## 7. Product Backlog Priorizado (Historias de Usuario Optimizadas)
 
-A continuación, se detallan las 11 Historias de Usuario principales que engloban el núcleo funcional y técnico del proyecto.
+A continuación, se detallan las 12 Historias de Usuario principales que engloban el núcleo funcional y técnico del proyecto.
 
 **Estados propuestos al 10/11/2026 según el cronograma, a criterio del solicitante; no representan implementación ni pruebas verificadas.**
 
@@ -283,7 +284,24 @@ A continuación, se detallan las 11 Historias de Usuario principales que engloba
 
 ---
 
+### 7.3 Historia de Inteligencia Artificial
+
+#### HU-12: Recomendación de rutas mediante inteligencia artificial
+* **Estado:** Pendiente.
+* **Como** gestor logístico
+* **Quiero** recibir recomendaciones de rutas mediante un modelo de inteligencia artificial que analice los datos históricos de los recorridos
+* **Para** seleccionar rutas con menor tiempo estimado y consumo de combustible.
+* **Criterios de Aceptación:**
+  * **Criterio 1:** Dado que existen datos históricos suficientes de rutas, tiempos y consumo, cuando solicito una recomendación, entonces el sistema utiliza el modelo de IA para comparar las rutas disponibles y recomendar una alternativa.
+  * **Criterio 2:** Dado que recibo una recomendación, cuando consulto su detalle, entonces el sistema muestra el tiempo y consumo estimados de la ruta sugerida.
+  * **Criterio 3:** Dado que no existen datos suficientes para generar una recomendación, cuando la solicito, entonces el sistema informa esta limitación y permite utilizar la optimización mediante Dijkstra.
+* **Prioridad:** Media. **Estimación:** 8 puntos.
+* **Justificación:** Requiere preparar datos históricos, entrenar y evaluar un modelo predictivo e integrar sus recomendaciones con las rutas del sistema.
+
+---
+
 ## 8. Planificación y Release Plan (Capacidad: 8 pts / Sprint)
+
 
 Se conserva la capacidad de planificación original de 8 puntos por iteración para el Equipo de desarrollo (3 integrantes), con la siguiente distribución original de historias clave:
 
@@ -430,7 +448,7 @@ Los roles se acumulan dentro del equipo de tres; no implican incorporar personas
 
 En el Sprint 1, Stuarth asume las tareas originales 1.1 a 1.3 de HU-01, Cristopher las tareas 1.4 y 1.5 de HU-02 y Miguel su revisión según el DoD. En el Sprint 2, Stuarth asume las tareas originales 2.1 a 2.4 y Miguel revisa sus resultados. Los demás integrantes podrán colaborar dentro de las mismas historias sin crear tareas ni puntos adicionales.
 
-Se mantienen las 10 semanas, los 5 Sprints y los 8 puntos por Sprint. El backlog conserva sus 11 historias y 55 puntos; el Release Plan original programa 8 historias y 40 puntos. HU-05, HU-09 y HU-11 permanecen en el backlog sin compromiso de entrega dentro de esos 5 Sprints. Asignarles responsables no las incorpora al cronograma ni elimina sus requisitos.
+Se mantienen las 10 semanas, los 5 Sprints y los 8 puntos por Sprint. Con la incorporación de HU-12, el Product Backlog totaliza 12 historias y 63 puntos; el Release Plan original programa 8 historias y 40 puntos. HU-05, HU-09, HU-11 y HU-12 suman 23 puntos sin Sprint asignado ni compromiso de entrega dentro de esos 5 Sprints. HU-12 mantiene sus responsables de implementación y revisión pendientes de asignación. Asignar responsables no incorpora historias al cronograma ni elimina sus requisitos.
 
 ---
 
