@@ -25,6 +25,7 @@
 | **0.10** | 04/11/2026 | Definiciones de organización y comunicación | Asignación de responsabilidades y definición de horarios, WIP, registros, validación y escalamiento por instrucción del solicitante, conservando el alcance, los puntos y el cronograma. | Equipo de desarrollo (3 integrantes) |
 | **0.11** | 04/11/2026 | Semana 8 / Fase 3: Trabajo Colaborativo | Incorporación de matriz de riesgos, mapa de calor, plan de mitigación y adquisiciones críticas, sin modificar el alcance, las estimaciones ni la planificación original. | Equipo de desarrollo (3 integrantes) |
 | **0.12** | 09/11/2026 | Semana 8 / Integración de mitigaciones al Sprint Backlog | Incorporación de acciones de mitigación al Sprint Backlog de los Sprints 1, 2 y 3, y actividades de seguimiento para R-08 y R-09. | Equipo de desarrollo (3 integrantes) |
+| **0.13** | 10/11/2026 | Semana 8 / Actualización del backlog | Registro del avance documental realizado, estado verificable de las 11 historias y tareas técnicas, y pendientes de ejecución, validación y planificación. | Actualización asistida para revisión del equipo |
 ---
 
 ## Tema/Nombre:
@@ -176,6 +177,52 @@ Para desarrollar esta plataforma en un entorno real con un plazo de **10 semanas
 
 A continuación, se detallan las 11 Historias de Usuario principales que engloban el núcleo funcional y técnico del proyecto.
 
+### Estado del backlog al corte de Semana 8 — 10/11/2026
+
+El corte corresponde a la Semana 8 indicada por el equipo. Se revisaron este documento, el historial Git y la página de Notion referenciada en la sección 12. La página consultada conserva una última edición del 04/11/2026, hora de Guatemala, y describe HU-01 y HU-02 sin avances confirmados; no acredita el cierre de historias. El repositorio contiene únicamente este Markdown, sin código ni resultados de pruebas. Por ello, **«Por confirmar» significa que no hay evidencia suficiente para determinar si el trabajo se inició o terminó**, y no equivale a declarar que no se ha trabajado.
+
+#### Trabajo documental realizado
+
+Los siguientes entregables están elaborados en el expediente. Su estado acredita documentación existente, no aprobación del profesor ni implementación del software. Este seguimiento no añade historias ni puntos al Product Backlog.
+
+| Actividad | Estado al corte | Evidencia en el documento |
+| --- | --- | --- |
+| Definir problema, propuesta, valor y objetivos. | Elaborado | Tema, Problema, Proyecto propuesto, Valor esperado y Objetivos completos. |
+| Analizar entorno, interesados y restricciones. | Elaborado | Contexto del Proyecto e Interesados. |
+| Definir requisitos y casos de prueba iniciales. | Elaborado | Secciones 4 y 5; los casos están definidos, sin ejecución acreditada. |
+| Definir metodología, cronograma y capacidad. | Elaborado | Sección 6: 10 semanas, 5 Sprints y 8 puntos por Sprint. |
+| Desglosar y estimar las 11 historias de usuario. | Elaborado | Sección 7; versiones 0.5–0.7. |
+| Preparar Release Plan, tareas iniciales y DoD. | Elaborado | Secciones 8, 9 y 10. |
+| Adaptar el equipo a tres integrantes y asignar responsabilidades. | Elaborado | Sección 11; versiones 0.8 y 0.10. |
+| Establecer plan de comunicaciones, WIP y reglas de validación. | Elaborado | Sección 12; versiones 0.9–0.10. |
+| Elaborar matriz de diez riesgos, mapa de calor, mitigaciones y adquisiciones críticas. | Elaborado | Sección 13; versión 0.11. |
+| Incorporar mitigaciones y seguimiento al Sprint Backlog. | Elaborado | Sección 9; versión 0.12. Su ejecución sigue pendiente de acreditar. |
+
+#### Estado de las historias y trabajo restante
+
+| Historia | Puntos | Sprint original | Estado verificable | Pendiente para acreditar su cierre |
+| --- | :---: | :---: | --- | --- |
+| HU-01 — Registro de rutas | 3 | 1 | Por confirmar | Aportar esquema SQL, formulario y guardado integrado (1.1–1.3); validar CP-RF01-01 y DoD. |
+| HU-02 — Mapas | 5 | 1 | Por confirmar | Acreditar acceso y condiciones de uso de Maps, integración y dibujo de origen/destino (1.4–1.5); validar DoD. |
+| HU-03 — Optimización con Dijkstra | 8 | 2 | Por confirmar | Aportar grafo, algoritmo, endpoint y resultados de pruebas (2.1–2.4); validar ruta mínima y DoD. |
+| HU-04 — Registro de recursos | 5 | 4 | Por confirmar | Acreditar registro de combustible/materiales asociado al vehículo correcto y DoD. |
+| HU-05 — Reportes de eficiencia | 5 | Sin asignar | Sin programación; ejecución por confirmar | Resolver su planificación y acreditar exportación por fechas en PDF o Excel y DoD. |
+| HU-06 — Panel de CO₂ | 8 | 5 | Por confirmar | Acreditar gráficos de emisiones a partir de datos de consumo y DoD. |
+| HU-07 — Catálogo de vehículos | 3 | 3 | Por confirmar | Acreditar registro y actualización de vehículos, validación de placa y DoD. |
+| HU-08 — Accesos por roles | 5 | 3 | Por confirmar | Acreditar permisos y bloqueo de acceso de operario a reportes gerenciales, mitigación R-07 y DoD. |
+| HU-09 — Cálculo geoespacial | 5 | Sin asignar | Sin programación; ejecución por confirmar | Resolver su planificación; acreditar Haversine, unidades, base del tiempo estimado, control R-04 y DoD. |
+| HU-10 — Procesamiento de eficiencia | 3 | 4 | Por confirmar | Acreditar procesamiento y almacenamiento de indicadores a partir de combustible/tiempo y DoD. |
+| HU-11 — Rendimiento, integridad y UX | 5 | Sin asignar | Sin programación; ejecución por confirmar | Resolver su planificación; acreditar respuesta menor a 2 segundos, integridad, usabilidad y compatibilidad, conforme a requisitos y DoD. |
+
+**Balance verificable:** 11 historias y 55 puntos en el Product Backlog; 8 historias y 40 puntos programados; 3 historias y 15 puntos sin Sprint (HU-05, HU-09 y HU-11). **Ninguna historia tiene cierre acreditado en las fuentes consultadas**; esto no permite calcular el avance real ni concluir que el avance sea 0 %. Los responsables y revisores se mantienen en la sección 11. No se asigna «En proceso», «Hecho» ni «Bloqueada» sin un registro que lo sustente.
+
+#### Pendientes de seguimiento
+
+- Cada responsable debe confirmar el estado real de sus historias y tareas, adjuntar evidencia disponible y señalar lo que falte por ejecutar. El revisor verificará el DoD antes de acreditar el cierre.
+- Cristopher debe conciliar con el tablero las asignaciones y reglas ya definidas en las secciones 11 y 12: la página de Notion consultada todavía las presenta como pendientes o propuestas. Esta actualización registra la discrepancia, sin modificar Notion.
+- Stuarth debe canalizar la decisión sobre los 15 puntos sin Sprint. Se mantiene la programación original de 40 puntos mientras no exista una decisión registrada.
+- Los dueños de riesgos deben registrar la ejecución de las mitigaciones y la revisión prevista para el 11/11/2026. Elaborar el plan no demuestra que sus controles se hayan aplicado.
+
 ### 7.1 Historias Funcionales Centrales
 
 #### HU-01: Registro de rutas logísticas
@@ -288,6 +335,8 @@ Se conserva la capacidad de planificación original de 8 puntos por iteración p
 ---
 
 ## 9. Sprint Backlog Detallado (Sprints Iniciales)
+
+**Estado al corte de Semana 8 (10/11/2026):** las tareas 1.1–1.5 y 2.1–2.4, la validación de HU-08 y la ejecución del seguimiento R-08/R-09 quedan **Por confirmar**, al no existir evidencia de ejecución en las fuentes consultadas. Las mitigaciones están incorporadas documentalmente; sus verificaciones y resultados deben acreditarse por separado. Este estado se aplica a cada tarea y sus subtareas descritas a continuación. La tabla de seguimiento de la sección 7 indica qué falta acreditar por historia; se conservan las tareas y sus Sprints originales.
 
 ### Sprint Backlog - Sprint 1 (Registro y Mapas - 8 pts)
 * **Tarea 1.1:** Diseñar y construir el script SQL para la tabla de rutas.
