@@ -1,4 +1,4 @@
-# Universidad Técnica Nacional
+﻿# Universidad Técnica Nacional
 ## Sede San Carlos
 ### Carrera: Ingeniería del Software
 
@@ -28,6 +28,7 @@
 | **0.13** | 10/11/2026 | Semana 8 / Actualización del backlog | Actualización del estado de las tareas del backlog. | Equipo de desarrollo (3 integrantes) |
 | **0.14** | 10/11/2026 | Incorporación de IA al Product Backlog | Adición de HU-12 para recomendación de rutas mediante IA, con 8 puntos, pendiente y sin Sprint asignado. Product Backlog: 12 historias y 63 puntos. | Equipo de desarrollo (3 integrantes) |
 | **0.15** | 11/11/2026 | Replanificación por capacidad de tres integrantes | Proyección de 24 puntos por Sprint (8 × 3), jornada de 40 horas semanales por integrante y distribución de las 12 historias (63 puntos) en cinco Sprints de dos semanas; actualización de responsabilidades, calidad y riesgos. | Equipo de desarrollo (3 integrantes) |
+| **0.16** | 11/11/2026 | Presupuesto de trabajo | Estimación del costo por Sprint y por proyecto con tarifa base de CRC 17.202/h y alternativa de USD 41–45/h, proporcionadas por el solicitante; supuestos y exclusiones en la sección 6.3.1. | Equipo de desarrollo (3 integrantes) |
 ---
 
 ## Tema/Nombre:
@@ -165,7 +166,31 @@ La jornada prevista es de **lunes a viernes, 8 horas diarias por integrante**. S
 
 Los puntos expresan esfuerzo relativo; **no se establece una conversión fija de puntos a horas**. En cada Planning se desglosarán las historias en tareas y se estimarán sus horas para comprobar que caben en las 192 horas previstas y en la disponibilidad individual. La reserva del 20 % es un supuesto de esta planificación, no una medición histórica.
 
-**Base de costos:** se presupuestan las 240 horas del equipo por Sprint, incluidas coordinación y reuniones. Si todos tienen tarifa horaria T, el costo laboral es **240 × T por Sprint** y **1.200 × T por proyecto**. Si las tarifas difieren, se calcula **80 × (T_Stuarth + T_Cristopher + T_Miguel)** por Sprint y cinco veces ese importe para el proyecto. Los servicios externos se sumarán según los gastos realmente presupuestados. No se fija un monto monetario porque no hay tarifas documentadas. El margen de puntos no constituye un ahorro automático de horas o costos mientras se mantenga la dedicación durante diez semanas.
+**Base de costos:** se presupuestan las 240 horas del equipo por Sprint, incluidas coordinación y reuniones. Si todos tienen tarifa horaria T, el costo laboral es **240 × T por Sprint** y **1.200 × T por proyecto**. Si las tarifas difieren, se calcula **80 × (T_Stuarth + T_Cristopher + T_Miguel)** por Sprint y cinco veces ese importe para el proyecto. El margen de puntos no constituye un ahorro automático de horas o costos mientras se mantenga la dedicación durante diez semanas.
+
+#### 6.3.1 Presupuesto de trabajo del equipo
+
+Se adopta como **escenario base de estimación académica una tarifa de ₡17.202 por hora por integrante**, proporcionada por el solicitante. Como escenario alternativo se calcula una tarifa de **USD 41–45 por hora por integrante**. Estas referencias no cuentan todavía con fuente documental o modalidad contractual verificadas en el expediente; se utilizan como supuestos de presupuesto, sin afirmar que sean un salario promedio comprobado. Se interpreta 17.202 como diecisiete mil doscientos dos colones. No se convierten monedas ni se suman ambos escenarios.
+
+**Cálculo base:**
+
+* Por integrante y Sprint: 80 h × ₡17.202 = **₡1.376.160**.
+* Por equipo y Sprint: 3 × 80 h × ₡17.202 = **₡4.128.480**.
+* Por integrante en diez semanas: 400 h × ₡17.202 = **₡6.880.800**.
+* Por equipo en todo el proyecto: 3 × 400 h × ₡17.202 = **₡20.642.400**.
+
+| Sprint | Semanas | Puntos de historias planificados | Horas del equipo | Costo base (CRC) | Alternativa a USD 41/h | Alternativa a USD 45/h |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| 1 | 1–2 | 16 | 240 | ₡4.128.480 | USD 9.840 | USD 10.800 |
+| 2 | 3–4 | 13 | 240 | ₡4.128.480 | USD 9.840 | USD 10.800 |
+| 3 | 5–6 | 8 | 240 | ₡4.128.480 | USD 9.840 | USD 10.800 |
+| 4 | 7–8 | 13 | 240 | ₡4.128.480 | USD 9.840 | USD 10.800 |
+| 5 | 9–10 | 13 | 240 | ₡4.128.480 | USD 9.840 | USD 10.800 |
+| **Total** | **10 semanas** | **63** | **1.200** | **₡20.642.400** | **USD 49.200** | **USD 54.000** |
+
+Todos los Sprints tienen el mismo costo porque se presupuesta la misma dedicación de tres integrantes durante dos semanas, aunque cambien los puntos de las historias seleccionadas. La reserva del 20 % ya está incluida en las 240 horas: no se agrega un 20 % adicional al costo. Los roles de PO, Scrum Master y QA se distribuyen entre estos tres integrantes y no se cobran como personas adicionales.
+
+El **presupuesto base de trabajo del equipo para el proyecto es ₡20.642.400**. El escenario alternativo es **USD 49.200–54.000** por el mismo período. Estos importes cubren únicamente el trabajo a las tarifas asumidas; no constituyen un costo integral de contratación laboral o de operación. El expediente no cuantifica cargas patronales, prestaciones, impuestos, equipos, hosting ni consumo de APIs; no se presume que sean gratuitos o que estén incluidos. El costo integral será el presupuesto de trabajo más los gastos adicionales aplicables una vez definidos, evitando duplicar conceptos que ya incluya una tarifa contratada. Si se trata de una valoración académica sin remuneración efectiva, estos montos representan el valor estimado del esfuerzo, no pagos realizados.
 
 ### 6.4 Cronograma del Proyecto de Desarrollo de Software (10 semanas)
 
@@ -492,7 +517,7 @@ La página de Notion fue consultada el 04/11/2026, fecha local de Guatemala. En 
 
 Cada responsable de historia actualizará el estado, los avances y los impedimentos en los comentarios de su tarjeta existente. El revisor de la sección 11 registrará el resultado de la validación. Cristopher facilitará las ceremonias, comprobará la coherencia del tablero y registrará los acuerdos generales en comentarios de la página principal existente de Notion.
 
-Stuarth será el enlace con el profesor **Deiver Cubero Molina**. Al cierre de cada Sprint preparará un resumen de historias terminadas con evidencia, trabajo restante, bloqueos y consultas académicas. El canal documental será el Markdown del proyecto y el resumen quedará registrado en los comentarios de la página principal de Notion. Para la comunicación directa se utilizará el espacio de clase del curso, sin crear cuentas, correos o reuniones adicionales ni suponer que el profesor tiene acceso a Notion. Las respuestas se registrarán solo cuando se reciban; no se comprometen plazos de respuesta del profesor.
+Stuarth será el enlace con los profesores **Deiver Cubero Molina y Yesenia Calvo Araya**. Al cierre de cada Sprint preparará un resumen de historias terminadas con evidencia, trabajo restante, bloqueos y consultas académicas. El canal documental será el Markdown del proyecto y el resumen quedará registrado en los comentarios de la página principal de Notion. Para la comunicación directa se utilizará el espacio de clase del curso, sin crear cuentas, correos o reuniones adicionales ni suponer que el profesor tiene acceso a Notion. Las respuestas se registrarán solo cuando se reciban; no se comprometen plazos de respuesta del profesor.
 
 Los demás interesados del mapa se mantienen como roles del contexto conceptual. No se atribuyen nombres, contactos ni participación real a empresas, conductores, clientes o entidades reguladoras. Sus necesidades se revisarán con los requisitos originales en la Sprint Review; no se programan envíos externos ni se inventan representantes. Las dudas sobre su interpretación se canalizarán por Stuarth al profesor dentro del seguimiento académico existente.
 
