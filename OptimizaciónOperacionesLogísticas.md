@@ -692,3 +692,57 @@ Python, FastAPI, SQL, HTML/CSS y JavaScript están citados como tecnologías del
 La matriz y el plan quedan en este mismo Markdown. Los dueños comunicarán disparadores y cambios por el mecanismo de avances y bloqueos de la sección 12, citando el ID del riesgo y su historia o tarea original. Si falla Notion, se aplicará el respaldo documental de la sección 13.4. El análisis de riesgos se incorporará a las ceremonias existentes, sin presumir que ya tuvo lugar.
 
 **Antecedente histórico de la versión 0.11 (sustituido en capacidad y programación por la versión 0.15):** La incorporación de la versión **0.11** conserva íntegros el historial 0.1–0.10 y el contenido de las semanas anteriores. No modifica objetivos, requisitos, funcionalidades, once historias, sus puntos, asignaciones, DoD, tareas, velocidad de 8 puntos por Sprint ni cronograma de 10 semanas. Las respuestas propuestas describen cómo controlar los riesgos de ese trabajo y no constituyen ampliaciones del alcance o compromisos de contratación. No se crean archivos adicionales ni se modifica el tablero de Notion.
+
+## 14. Acta de Sprint Review y Sprint Retrospective — Semana 9
+
+Proyecto: Sistema inteligente para gestión y optimización de operaciones logísticas
+Sprint revisado: Sprint 1 — Base operativa y seguridad
+Fecha de referencia: Viernes 13 de noviembre de 2026
+Modalidad: Simulación académica. El acta recoge la demostración, los resultados y los acuerdos del escenario simulado.
+
+### 14.1. Sprint Review
+
+Horario: 15:00 a 15:30 (30 minutos)
+Participantes: Stuarth Fabricio Miranda Rojas (Product Owner y Backend), Cristopher Quiros Araya (Scrum Master y Frontend) y Miguel Cruz Vargas (QA y apoyo de Backend).
+Interesado representado: Stuarth asumió el papel de encargado de operaciones logísticas durante la retroalimentación.
+
+Objetivo del Sprint: Registrar rutas y vehículos, mostrar el origen y el destino de una ruta en el mapa y aplicar permisos según el rol de cada usuario.
+
+Resultado: En la simulación se cumplió el objetivo. Se usó una ruta de prueba para revisar el registro y el mapa. También se revisó la actualización de un vehículo y el acceso a reportes con dos cuentas de distinto rol.
+
+| Historia mostrada | Qué revisamos en la simulación | Resultado de la DoD |
+|---|---|---|
+| HU-01 — Registro de rutas logísticas | Al volver a consultar la ruta, el origen y el destino coincidieron con los datos ingresados. | Cumple |
+| HU-02 — Visualización de rutas en mapas | El mapa mostró los dos marcadores de la ruta registrada, uno para el origen y otro para el destino. | Cumple |
+| HU-07 — Gestión del catálogo de vehículos | Se registró un vehículo de prueba y, después de actualizar sus datos, se comprobó que el cambio se conservaba al consultarlo. | Cumple |
+| HU-08 — Gestión de accesos por roles | La cuenta de operario quedó restringida y la cuenta autorizada pudo acceder a la opción de reportes gerenciales. | Cumple |
+
+Para el ejercicio se consideró cumplida la Definition of Done de la sección 10 en las cuatro historias, incluidos los criterios de aceptación y las pruebas unitarias, de humo, de integración y de regresión.
+
+Retroalimentación: En el papel de encargado de operaciones logísticas, Stuarth señaló que era útil ver en el mapa los puntos de una ruta recién registrada. Propuso usar esa misma ruta en el Sprint 2 para comprobar la distancia calculada y revisar el recorrido que propone el sistema.
+
+Acuerdo sobre el Product Backlog: Incluir la ruta de referencia como caso de prueba en las tarjetas de HU-09 y HU-03. Se conservaron las prioridades y las estimaciones de ambas historias.
+
+Avance frente al cronograma: En la simulación se completaron las cuatro historias del Sprint 1, equivalentes a los 16 puntos previstos en el Release Plan de la sección 8. La siguiente entrega sigue programada para el Sprint 2, con HU-09 para el cálculo geoespacial y HU-03 para la optimización de rutas.
+
+### 14.2. Sprint Retrospective
+
+Horario: 15:30 a 15:50 (20 minutos)
+Participantes: Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas.
+Facilitador: Cristopher Quiros Araya.
+Formato: Empezar / Dejar de hacer / Continuar.
+
+| Categoría | Qué conversamos |
+|---|---|
+| Empezar | Preparar una ruta de referencia desde el inicio del Sprint. En la Review nos sirvió usar los mismos datos para comprobar el registro y el mapa. Queremos repetir esa práctica con el cálculo de distancias y la optimización. |
+| Dejar de hacer | Dejar para el cierre la preparación del registro de pruebas. Al organizar la Review tuvimos que reunir por separado lo que se iba a comprobar en el registro, el mapa y los permisos. |
+| Continuar | Pedirle a otro integrante que revise cada historia. En HU-08, probar con las dos cuentas nos ayudó a comprobar qué podía hacer cada tipo de usuario. |
+
+Seguimiento de acciones anteriores: No aplica porque fue la primera retrospectiva de la simulación.
+
+Acuerdos para el Sprint Backlog del Sprint 2
+
+| Acción | Responsable | Fecha límite | Cómo se comprobará | Actividad del Sprint 2 |
+|---|---|---|---|---|
+| Definir una ruta de prueba con coordenadas de origen y destino y una distancia esperada en kilómetros. Usar esa ruta como referencia para HU-09 y HU-03. | Stuarth Fabricio Miranda Rojas | 18/11/2026 | Miguel revisará que la tarjeta de HU-09 incluya las coordenadas, la distancia esperada y cómo se calculó. | Preparación del caso de prueba de HU-09 y HU-03. |
+| Preparar un formato para registrar las pruebas de HU-09 y HU-03. Incluir los datos de entrada, el resultado esperado y un campo para anotar el resultado obtenido. | Miguel Cruz Vargas | 27/11/2026 | Cristopher revisará que el formato incluya los tres campos para ambas historias. El campo de resultado obtenido quedará como «Pendiente de ejecución» hasta que se realice cada prueba. | Preparación del registro de pruebas de HU-09 y HU-03. |
