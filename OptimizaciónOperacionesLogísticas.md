@@ -479,6 +479,7 @@ El **Equipo de desarrollo (3 integrantes)** está conformado por **Stuarth Fabri
 
 Los roles se acumulan dentro del equipo de tres; la capacidad proyectada conjunta es de 24 puntos por Sprint según la sección 6.3, sin sumar capacidad adicional por cada rol. Cada responsable implementará su historia, actualizará su tarjeta y aportará evidencia. La revisión corresponderá a otro integrante para evitar que una persona sea el único validador de su propio trabajo.
 
+
 | Historia | Responsable de implementación | Responsable de revisión del DoD | Sprint actualizado |
 | --- | --- | --- | --- |
 | HU-01 (3 puntos) | Stuarth Fabricio Miranda Rojas | Miguel Cruz Vargas | 1 |
