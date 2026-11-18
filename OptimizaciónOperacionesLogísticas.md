@@ -29,6 +29,7 @@
 | **0.14** | 10/11/2026 | Incorporación de IA al Product Backlog | Adición de HU-12 para recomendación de rutas mediante IA, con 8 puntos, pendiente y sin Sprint asignado. Product Backlog: 12 historias y 63 puntos. | Equipo de desarrollo (3 integrantes) |
 | **0.15** | 11/11/2026 | Replanificación por capacidad de tres integrantes | Proyección de 24 puntos por Sprint (8 × 3), jornada de 40 horas semanales por integrante y distribución de las 12 historias (63 puntos) en cinco Sprints de dos semanas; actualización de responsabilidades, calidad y riesgos. | Equipo de desarrollo (3 integrantes) |
 | **0.16** | 11/11/2026 | Presupuesto de trabajo | Estimación del costo por Sprint y por proyecto con tarifa base de CRC 17.202/h y alternativa de USD 41–45/h, proporcionadas por el solicitante; supuestos y exclusiones en la sección 6.3.1. | Equipo de desarrollo (3 integrantes) |
+| **0.17** | 17/11/2026 | Semana 9 / Fase 3 | Registro del acta simulada del Sprint 1 y traslado de sus acuerdos al Product Backlog y al Sprint Backlog del Sprint 2. | Miguel Cruz Vargas |
 ---
 
 ## Tema/Nombre:
@@ -242,6 +243,7 @@ A continuación, se detallan las 12 Historias de Usuario principales que engloba
   * **Criterio 1:** Dado que hay rutas disponibles, cuando solicito la optimización, entonces el sistema analiza usando Dijkstra y devuelve la alternativa más corta.
 * **Prioridad:** Alta. **Estimación:** 8 puntos.
 * **Justificación:** Requiere programar la lógica matemática desde cero en Python y asegurar que los cálculos de las rutas y grafos no tengan errores de servidor.
+* **Caso de prueba acordado en la Sprint Review (sección 14.1):** Reutilizar la ruta de referencia de HU-09 como origen y destino del grafo de prueba. Comparar el recorrido de Dijkstra con la ruta mínima esperada según los pesos de los tramos.
 
 #### HU-04: Registro de indicadores de recursos
 * **Estado:** En proceso.
@@ -298,6 +300,7 @@ A continuación, se detallan las 12 Historias de Usuario principales que engloba
 * **Quiero** calcular automáticamente la distancia y el tiempo estimado de las rutas
 * **Para** asegurar que todos los cálculos operativos del sistema sean precisos.
 * **Prioridad:** Alta. **Estimación:** 5 puntos.
+* **Caso de prueba acordado en la Sprint Review (sección 14.1):** Usar la ruta de referencia para comparar la distancia calculada con la distancia esperada en kilómetros a partir de las coordenadas de origen y destino.
 
 #### HU-10: Procesamiento de eficiencia y consumo
 * **Estado:** En proceso.
@@ -414,6 +417,13 @@ Esta tabla es una **replanificación autorizada el 11/11/2026**, no una reconstr
   * **Responsable:** Miguel Cruz Vargas.
   * **Evidencia:** Registrar el procedimiento ejecutado y los resultados de las pruebas en la tarjeta de HU-03.
   * **Si falla:** Mantener el criterio como no acreditado y no marcar HU-03 como Hecho hasta completar los cinco criterios del DoD
+
+#### Acciones de mejora acordadas en la Retrospective del Sprint 1
+
+| Actividad | Responsable | Fecha límite | Verificación |
+| --- | --- | --- | --- |
+| Definir una ruta de prueba para HU-09 y HU-03 con coordenadas de origen y destino y una distancia esperada en kilómetros. | Stuarth Fabricio Miranda Rojas | 18/11/2026 | Miguel revisará que la tarjeta de HU-09 incluya las coordenadas, la distancia esperada y cómo se calculó. |
+| Preparar el formato de registro de pruebas para HU-09 y HU-03. | Miguel Cruz Vargas | 27/11/2026 | Cristopher comprobará que el formato incluya los datos de entrada, el resultado esperado y el campo de resultado obtenido. Este último quedará como «Pendiente de ejecución» hasta realizar cada prueba. |
 
 ### Sprint Backlog - Sprint 1: Mitigación vinculada a HU-08
 
