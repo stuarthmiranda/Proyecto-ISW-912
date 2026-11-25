@@ -31,6 +31,7 @@
 | **0.16** | 11/11/2026 | Presupuesto de trabajo | Estimación del costo por Sprint y por proyecto con tarifa base de CRC 17.202/h y alternativa de USD 41–45/h, proporcionadas por el solicitante; supuestos y exclusiones en la sección 6.3.1. | Equipo de desarrollo (3 integrantes) |
 | **0.17** | 17/11/2026 | Semana 9 / Fase 3 | Registro del acta simulada del Sprint 1 y traslado de sus acuerdos al Product Backlog y al Sprint Backlog del Sprint 2. | Miguel Cruz Vargas |
 | **0.18** | 24/11/2026 | Ajuste de dedicación y presupuesto | Estimación de 720 horas por proyecto, desglosadas por Sprint e integrante, con reserva incluida. Actualización del Release Plan, presupuesto y controles de carga. | Equipo de desarrollo (3 integrantes) |
+| **0.19** | 25/11/2026 | Cierre académico | Actualización de las historias y los requisitos al cierre del escenario de cinco Sprints. | Equipo de desarrollo (3 integrantes) |
 ---
 
 ## Tema/Nombre:
@@ -109,26 +110,28 @@ El desarrollo del proyecto se plantea bajo una estructura matricial orientada a 
 
 ## 4. Requerimientos del Sistema (Versión Optimizada)
 
+**Estado al cierre académico:** «Listo» indica que el requisito se da por desarrollado dentro del escenario simulado de diez semanas. Las funcionalidades forman parte de un ejercicio de administración de proyectos.
+
 ### Requerimientos Funcionales
 1. **RF-01 — Listo.** El sistema debe permitir registrar información relacionada con las rutas logísticas utilizadas por las empresas, incluyendo origen, destino, distancia y tiempo estimado.
 2. **RF-02 — Listo.** El sistema debe ofrecer una funcionalidad visual en mapas y optimizar rutas mediante el análisis de distancia, consumo de recursos y eficiencia operativa.
-3. **RF-03 — En proceso.** El sistema debe registrar y mostrar indicadores asociados al uso de recursos, como combustible, materiales y tiempos de operación.
-4. **RF-04 — Pendiente.** El sistema debe generar reportes sobre eficiencia operativa, trazabilidad y uso de recursos para apoyar la toma de decisiones.
-5. **RF-05 — Pendiente.** El sistema debe permitir visualizar métricas relacionadas con sostenibilidad y el impacto ambiental asociado a las actividades logísticas.
+3. **RF-03 — Listo.** El sistema debe registrar y mostrar indicadores asociados al uso de recursos, como combustible, materiales y tiempos de operación.
+4. **RF-04 — Listo.** El sistema debe generar reportes sobre eficiencia operativa, trazabilidad y uso de recursos para apoyar la toma de decisiones.
+5. **RF-05 — Listo.** El sistema debe permitir visualizar métricas relacionadas con sostenibilidad y el impacto ambiental asociado a las actividades logísticas.
 6. **RF-06 — Listo.** El sistema debe incluir un módulo para registrar y actualizar datos de vehículos utilizados en operaciones logísticas.
 7. **RF-07 — Listo.** El sistema debe garantizar que los usuarios puedan acceder a las funcionalidades según su rol asignado.
 
 ### Requerimientos No Funcionales
-1. **RNF-01 — Pendiente.** El sistema debe mantener tiempos de respuesta adecuados (menores a 2 segundos) en consultas principales.
+1. **RNF-01 — Listo.** El sistema debe mantener tiempos de respuesta adecuados (menores a 2 segundos) en consultas principales.
 2. **RNF-02 — Listo.** El sistema debe implementar medidas de seguridad y autenticación que protejan los datos registrados.
-3. **RNF-03 — Pendiente.** La interfaz del sistema debe ser intuitiva, clara y fácil de utilizar sin necesidad de capacitaciones extensas.
-4. **RNF-04 — Pendiente.** El sistema debe ser compatible con navegadores web comunes para garantizar su accesibilidad.
-5. **RNF-05 — Pendiente.** Los datos almacenados deben gestionarse siguiendo buenas prácticas que aseguren integridad relacional y consistencia.
+3. **RNF-03 — Listo.** La interfaz del sistema debe ser intuitiva, clara y fácil de utilizar sin necesidad de capacitaciones extensas.
+4. **RNF-04 — Listo.** El sistema debe ser compatible con navegadores web comunes para garantizar su accesibilidad.
+5. **RNF-05 — Listo.** Los datos almacenados deben gestionarse siguiendo buenas prácticas que aseguren integridad relacional y consistencia.
 
 ### Requerimientos de Dominio
-1. **RD-01 — Pendiente.** El sistema debe calcular la distancia estimada y el tiempo de recorrido entre puntos de origen y destino utilizando la fórmula de Haversine y datos geográficos.
-2. **RD-02 — En proceso.** El sistema debe procesar matemáticamente el consumo de recursos para generar indicadores de eficiencia y emisiones.
-3. **RD-03 — Pendiente.** El sistema debe emplear unidades estandarizadas (kilómetros, horas, litros) para todos los cálculos.
+1. **RD-01 — Listo.** El sistema debe calcular la distancia estimada y el tiempo de recorrido entre puntos de origen y destino utilizando la fórmula de Haversine y datos geográficos.
+2. **RD-02 — Listo.** El sistema debe procesar matemáticamente el consumo de recursos para generar indicadores de eficiencia y emisiones.
+3. **RD-03 — Listo.** El sistema debe emplear unidades estandarizadas (kilómetros, horas, litros) para todos los cálculos.
 
 ---
 
@@ -209,7 +212,7 @@ El análisis, diseño, desarrollo y pruebas se realizan incrementalmente dentro 
 
 A continuación, se detallan las 12 Historias de Usuario principales que engloban el núcleo funcional y técnico del proyecto.
 
-**Estados propuestos al 10/11/2026 según el cronograma, a criterio del solicitante; no representan implementación ni pruebas verificadas.**
+**Estados al cierre académico:** Las doce historias se dan por desarrolladas dentro del escenario simulado. «Lista» es el estado de cierre del ejercicio. El paso a «Hecho» en un tablero de ejecución requiere evidencia del DoD según la sección 12.6.
 
 ### 7.1 Historias Funcionales Centrales
 
@@ -245,7 +248,7 @@ A continuación, se detallan las 12 Historias de Usuario principales que engloba
 * **Caso de prueba acordado en la Sprint Review (sección 14.1):** Reutilizar la ruta de referencia de HU-09 como origen y destino del grafo de prueba. Comparar el recorrido de Dijkstra con la ruta mínima esperada según los pesos de los tramos.
 
 #### HU-04: Registro de indicadores de recursos
-* **Estado:** En proceso.
+* **Estado:** Lista.
 * **Como** operario logístico
 * **Quiero** registrar el consumo de combustible y materiales
 * **Para** medir la eficiencia operativa del viaje.
@@ -254,7 +257,7 @@ A continuación, se detallan las 12 Historias de Usuario principales que engloba
 * **Prioridad:** Media. **Estimación:** 5 puntos.
 
 #### HU-05: Generación de reportes de eficiencia
-* **Estado:** Pendiente.
+* **Estado:** Lista.
 * **Como** administrador
 * **Quiero** generar reportes exportables de las operaciones
 * **Para** apoyar la toma de decisiones gerenciales.
@@ -263,7 +266,7 @@ A continuación, se detallan las 12 Historias de Usuario principales que engloba
 * **Prioridad:** Baja. **Estimación:** 5 puntos.
 
 #### HU-06: Panel de métricas de sostenibilidad (CO₂)
-* **Estado:** Pendiente.
+* **Estado:** Lista.
 * **Como** analista ambiental
 * **Quiero** visualizar gráficos de huella de carbono
 * **Para** verificar el cumplimiento del ODS 9.
@@ -294,7 +297,7 @@ A continuación, se detallan las 12 Historias de Usuario principales que engloba
 ### 7.2 Historias de Dominio y No Funcionales (Técnicas)
 
 #### HU-09: Cálculo geoespacial y tiempos estimados
-* **Estado:** Pendiente.
+* **Estado:** Lista.
 * **Como** sistema (Backend)
 * **Quiero** calcular automáticamente la distancia y el tiempo estimado de las rutas
 * **Para** asegurar que todos los cálculos operativos del sistema sean precisos.
@@ -302,14 +305,14 @@ A continuación, se detallan las 12 Historias de Usuario principales que engloba
 * **Caso de prueba acordado en la Sprint Review (sección 14.1):** Usar la ruta de referencia para comparar la distancia calculada con la distancia esperada en kilómetros a partir de las coordenadas de origen y destino.
 
 #### HU-10: Procesamiento de eficiencia y consumo
-* **Estado:** En proceso.
+* **Estado:** Lista.
 * **Como** sistema (Backend)
 * **Quiero** procesar los datos ingresados de combustible y tiempo
 * **Para** generar y almacenar los indicadores básicos de eficiencia de la flota.
 * **Prioridad:** Media. **Estimación:** 3 puntos.
 
 #### HU-11: Rendimiento, Integridad y Experiencia de Usuario
-* **Estado:** Pendiente.
+* **Estado:** Lista.
 * **Como** desarrollador y usuario final
 * **Quiero** que el sistema sea rápido, consistente y fácil de usar en cualquier pantalla
 * **Para** garantizar una operación fluida y sin corrupción de datos en la base.
@@ -320,7 +323,7 @@ A continuación, se detallan las 12 Historias de Usuario principales que engloba
 ### 7.3 Historia de Inteligencia Artificial
 
 #### HU-12: Recomendación de rutas mediante inteligencia artificial
-* **Estado:** Pendiente.
+* **Estado:** Lista.
 * **Como** gestor logístico
 * **Quiero** recibir recomendaciones de rutas mediante un modelo de inteligencia artificial que analice los datos históricos de los recorridos
 * **Para** seleccionar rutas con menor tiempo estimado y consumo de combustible.
@@ -356,7 +359,7 @@ El plan distribuye **12 historias y 63 puntos en cinco Sprints de dos semanas**.
 
 El equipo revisará el trabajo pendiente y el saldo de reserva durante cada Sprint. La reserva cubre coordinación e imprevistos dentro de la dedicación presupuestada.
 
-Esta tabla es una **replanificación autorizada el 11/11/2026**, no una reconstrucción de ejecución pasada. Los estados documentales de las historias se conservan como antecedentes propuestos al 10/11/2026; no acreditan implementación, pruebas ni cierre de los Sprints reorganizados. La selección se confirmará en cada Planning según dependencias, horas por tarea y disponibilidad de cada integrante.
+La tabla recoge la planificación de los cinco Sprints. **Cierre académico:** en el escenario se da por desarrollado el alcance de las doce historias (63 puntos planificados). En el Sprint 2 del escenario, HU-09 se considera completada antes de integrar sus pesos geográficos en HU-03, que completa la optimización de RF-02. El acta de la sección 14.1 documenta únicamente la Review simulada del Sprint 1 y sus 16 puntos.
 
 ---
 
@@ -735,7 +738,7 @@ Retroalimentación: En el papel de encargado de operaciones logísticas, Stuarth
 
 Acuerdo sobre el Product Backlog: Incluir la ruta de referencia como caso de prueba en las tarjetas de HU-09 y HU-03. Se conservaron las prioridades y las estimaciones de ambas historias.
 
-Avance frente al cronograma: En la simulación se completaron las cuatro historias del Sprint 1, equivalentes a los 16 puntos previstos en el Release Plan de la sección 8. La siguiente entrega sigue programada para el Sprint 2, con HU-09 para el cálculo geoespacial y HU-03 para la optimización de rutas.
+Avance frente al cronograma: En la simulación se completaron las cuatro historias del Sprint 1, equivalentes a los 16 puntos previstos en el Release Plan de la sección 8. En el momento de esta Review, la siguiente entrega programada era el Sprint 2, con HU-09 para el cálculo geoespacial y HU-03 para la optimización de rutas.
 
 ### 14.2. Sprint Retrospective
 
