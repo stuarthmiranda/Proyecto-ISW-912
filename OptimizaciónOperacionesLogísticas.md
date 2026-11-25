@@ -5,7 +5,7 @@
 **Curso:** Administración de Proyectos Informáticos  
 **Código de curso:** ISW-912  
 **Integrantes:** Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas  
-**Profesor:** Deiver Cubero Molina  
+**Profesor:** Deiver Cubero Molina y Yesenia Calvo Araya
 
 ---
 
