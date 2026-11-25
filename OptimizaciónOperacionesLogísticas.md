@@ -20,18 +20,19 @@
 | **0.5** | 21/10/2026 | Semana 5 | Desglose completo de los requerimientos en Historias de Usuario (regla de las 3 C's). | Stuarth Fabricio Miranda Rojas |
 | **0.6** | 21/10/2026 | Semana 5 | Optimización y recorte del alcance para enfocar el valor de negocio. | Stuarth Fabricio Miranda Rojas |
 | **0.7** | 21/10/2026 | Semana 5 | División de historia de 13 puntos en dos (HU-02 y HU-03) y renumeración del Backlog para calzar con la velocidad de 8 puntos/Sprint. | Stuarth Fabricio Miranda Rojas |
-| **0.8** | 04/11/2026 | Actualización de integrantes | Adaptación del proyecto a tres integrantes, sin cambios en el alcance, historias, requerimientos, puntos ni cronograma originales. | Equipo de desarrollo (3 integrantes) |
-| **0.9** | 04/11/2026 | Plan de Comunicaciones | Incorporación del Plan de Comunicaciones y su referencia al tablero existente de Notion, sin cambios en el alcance ni en la planificación originales. | Equipo de desarrollo (3 integrantes) |
-| **0.10** | 04/11/2026 | Definiciones de organización y comunicación | Asignación de responsabilidades y definición de horarios, WIP, registros, validación y escalamiento por instrucción del solicitante, conservando el alcance, los puntos y el cronograma. | Equipo de desarrollo (3 integrantes) |
-| **0.11** | 04/11/2026 | Semana 8 / Fase 3: Trabajo Colaborativo | Incorporación de matriz de riesgos, mapa de calor, plan de mitigación y adquisiciones críticas, sin modificar el alcance, las estimaciones ni la planificación original. | Equipo de desarrollo (3 integrantes) |
-| **0.12** | 09/11/2026 | Semana 8 / Integración de mitigaciones al Sprint Backlog | Incorporación de acciones de mitigación al Sprint Backlog de los Sprints 1, 2 y 3, y actividades de seguimiento para R-08 y R-09. | Equipo de desarrollo (3 integrantes) |
-| **0.13** | 10/11/2026 | Semana 8 / Actualización del backlog | Actualización del estado de las tareas del backlog. | Equipo de desarrollo (3 integrantes) |
-| **0.14** | 10/11/2026 | Incorporación de IA al Product Backlog | Adición de HU-12 para recomendación de rutas mediante IA, con 8 puntos, pendiente y sin Sprint asignado. Product Backlog: 12 historias y 63 puntos. | Equipo de desarrollo (3 integrantes) |
-| **0.15** | 11/11/2026 | Replanificación por capacidad de tres integrantes | Proyección de 24 puntos por Sprint (8 × 3), jornada de 40 horas semanales por integrante y distribución de las 12 historias (63 puntos) en cinco Sprints de dos semanas; actualización de responsabilidades, calidad y riesgos. | Equipo de desarrollo (3 integrantes) |
-| **0.16** | 11/11/2026 | Presupuesto de trabajo | Estimación del costo por Sprint y por proyecto con tarifa base de CRC 17.202/h y alternativa de USD 41–45/h, proporcionadas por el solicitante; supuestos y exclusiones en la sección 6.3.1. | Equipo de desarrollo (3 integrantes) |
+| **0.8** | 04/11/2026 | Actualización de integrantes | Adaptación del proyecto a tres integrantes, sin cambios en el alcance, historias, requerimientos, puntos ni cronograma originales. | Cristopher Quiros |
+| **0.9** | 04/11/2026 | Plan de Comunicaciones | Incorporación del Plan de Comunicaciones y su referencia al tablero existente de Notion, sin cambios en el alcance ni en la planificación originales. | Cristopher Quiros |
+| **0.10** | 04/11/2026 | Definiciones de organización y comunicación | Asignación de responsabilidades y definición de horarios, WIP, registros, validación y escalamiento por instrucción del solicitante, conservando el alcance, los puntos y el cronograma. | Cristopher Quiros |
+| **0.11** | 04/11/2026 | Semana 8 / Fase 3: Trabajo Colaborativo | Incorporación de matriz de riesgos, mapa de calor, plan de mitigación y adquisiciones críticas, sin modificar el alcance, las estimaciones ni la planificación original. | Cristopher Quiros |
+| **0.12** | 09/11/2026 | Semana 8 / Integración de mitigaciones al Sprint Backlog | Incorporación de acciones de mitigación al Sprint Backlog de los Sprints 1, 2 y 3, y actividades de seguimiento para R-08 y R-09. | Cristopher Quiros |
+| **0.13** | 10/11/2026 | Semana 8 / Actualización del backlog | Actualización del estado de las tareas del backlog. | Cristopher Quiros |
+| **0.14** | 10/11/2026 | Incorporación de IA al Product Backlog | Adición de HU-12 para recomendación de rutas mediante IA, con 8 puntos, pendiente y sin Sprint asignado. Product Backlog: 12 historias y 63 puntos. | Cristopher Quiros |
+| **0.15** | 11/11/2026 | Replanificación por capacidad de tres integrantes | Proyección de 24 puntos por Sprint (8 × 3), jornada de 40 horas semanales por integrante y distribución de las 12 historias (63 puntos) en cinco Sprints de dos semanas; actualización de responsabilidades, calidad y riesgos. | Cristopher Quiros |
+| **0.16** | 11/11/2026 | Presupuesto de trabajo | Estimación del costo por Sprint y por proyecto con tarifa base de CRC 17.202/h y alternativa de USD 41–45/h, proporcionadas por el solicitante; supuestos y exclusiones en la sección 6.3.1. | Cristopher Quiros |
 | **0.17** | 17/11/2026 | Semana 9 / Fase 3 | Registro del acta simulada del Sprint 1 y traslado de sus acuerdos al Product Backlog y al Sprint Backlog del Sprint 2. | Miguel Cruz Vargas |
-| **0.18** | 24/11/2026 | Ajuste de dedicación y presupuesto | Estimación de 720 horas por proyecto, desglosadas por Sprint e integrante, con reserva incluida. Actualización del Release Plan, presupuesto y controles de carga. | Equipo de desarrollo (3 integrantes) |
-| **0.19** | 25/11/2026 | Cierre académico | Actualización de las historias y los requisitos al cierre del escenario de cinco Sprints. | Equipo de desarrollo (3 integrantes) |
+| **0.18** | 24/11/2026 | Ajuste de dedicación y presupuesto | Estimación de 720 horas por proyecto, desglosadas por Sprint e integrante, con reserva incluida. Actualización del Release Plan, presupuesto y controles de carga. | Cristopher Quiros |
+| **0.19** | 25/11/2026 | Cierre académico | Actualización de las historias y los requisitos al cierre del escenario de cinco Sprints. | Cristopher Quiros |
+| **0.20** | 25/11/2026 | Sprint Review simulada | Incorporación de Valeria Mora como interesada ficticia externa al equipo Scrum y registro de su propuesta de reutilizar la ruta de prueba en el Sprint 2. | Cristopher Quiros |
 ---
 
 ## Tema/Nombre:
@@ -719,7 +720,7 @@ Modalidad: Simulación académica. El acta recoge la demostración, los resultad
 
 Horario: 15:00 a 15:30 (30 minutos)
 Participantes: Stuarth Fabricio Miranda Rojas (Product Owner y Backend), Cristopher Quiros Araya (Scrum Master y Frontend) y Miguel Cruz Vargas (QA y apoyo de Backend).
-Interesado representado: Stuarth asumió el papel de encargado de operaciones logísticas durante la retroalimentación.
+Interesada invitada: Valeria Mora, encargada de operaciones logísticas de la empresa del escenario (personaje ficticio, externo al equipo Scrum).
 
 Objetivo del Sprint: Registrar rutas y vehículos, mostrar el origen y el destino de una ruta en el mapa y aplicar permisos según el rol de cada usuario.
 
@@ -734,7 +735,7 @@ Resultado: En la simulación se cumplió el objetivo. Se usó una ruta de prueba
 
 Para el ejercicio se consideró cumplida la Definition of Done de la sección 10 en las cuatro historias, incluidos los criterios de aceptación y las pruebas unitarias, de humo, de integración y de regresión.
 
-Retroalimentación: En el papel de encargado de operaciones logísticas, Stuarth señaló que era útil ver en el mapa los puntos de una ruta recién registrada. Propuso usar esa misma ruta en el Sprint 2 para comprobar la distancia calculada y revisar el recorrido que propone el sistema.
+Retroalimentación: Valeria Mora señaló que ver el origen y el destino en el mapa le ayudaba a confirmar que la ruta registrada correspondía al recorrido previsto. Propuso reutilizar esa ruta en el Sprint 2 para comprobar la distancia calculada y revisar el recorrido que recomienda el sistema.
 
 Acuerdo sobre el Product Backlog: Incluir la ruta de referencia como caso de prueba en las tarjetas de HU-09 y HU-03. Se conservaron las prioridades y las estimaciones de ambas historias.
 
