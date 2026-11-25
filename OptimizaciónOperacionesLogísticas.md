@@ -522,7 +522,7 @@ Se mantienen las **10 semanas y cinco Sprints**, ahora con **24 puntos proyectad
 
 El plan establece cómo comunicar avances, bloqueos, validaciones y decisiones mediante el tablero existente y las ceremonias ya previstas: Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective.
 
-La página de Notion fue consultada el 04/11/2026, fecha local de Guatemala. En esa consulta documentaba HU-01 y HU-02, las cuatro columnas, los límites WIP como propuestas, las asignaciones individuales pendientes y ningún avance confirmado. Esa descripción corresponde al momento de la consulta. Las asignaciones y reglas que siguen son definiciones de esta actualización del Markdown; no se ha modificado Notion ni se afirma que ya las refleje.
+La página de Notion fue consultada el 04/11/2026, fecha local de Costa Rica. En esa consulta documentaba HU-01 y HU-02, las cuatro columnas, los límites WIP como propuestas, las asignaciones individuales pendientes y ningún avance confirmado. Esa descripción corresponde al momento de la consulta. Las asignaciones y reglas que siguen son definiciones de esta actualización del Markdown; no se ha modificado Notion ni se afirma que ya las refleje.
 
 ### 12.2. Participantes y responsabilidades de comunicación
 
