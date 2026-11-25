@@ -30,6 +30,7 @@
 | **0.15** | 11/11/2026 | Replanificación por capacidad de tres integrantes | Proyección de 24 puntos por Sprint (8 × 3), jornada de 40 horas semanales por integrante y distribución de las 12 historias (63 puntos) en cinco Sprints de dos semanas; actualización de responsabilidades, calidad y riesgos. | Equipo de desarrollo (3 integrantes) |
 | **0.16** | 11/11/2026 | Presupuesto de trabajo | Estimación del costo por Sprint y por proyecto con tarifa base de CRC 17.202/h y alternativa de USD 41–45/h, proporcionadas por el solicitante; supuestos y exclusiones en la sección 6.3.1. | Equipo de desarrollo (3 integrantes) |
 | **0.17** | 17/11/2026 | Semana 9 / Fase 3 | Registro del acta simulada del Sprint 1 y traslado de sus acuerdos al Product Backlog y al Sprint Backlog del Sprint 2. | Miguel Cruz Vargas |
+| **0.18** | 24/11/2026 | Ajuste de dedicación y presupuesto | Estimación de 720 horas por proyecto, desglosadas por Sprint e integrante, con reserva incluida. Actualización del Release Plan, presupuesto y controles de carga. | Equipo de desarrollo (3 integrantes) |
 ---
 
 ## Tema/Nombre:
@@ -153,45 +154,43 @@ Se utilizará un **Ciclo de Vida Adaptativo (Ágil)**. Este enfoque permite evol
 El trabajo se estructurará en iteraciones llamadas **Sprints**, con una duración fija de **2 semanas** cada uno. Cada Sprint incluirá las ceremonias: Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective.
 
 ### 6.3 Estimación de Desarrolladores y Capacidad
-El equipo está integrado por **Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas**. La planificación individual original declaraba **8 puntos por Sprint**. Por decisión del solicitante, se supone que los tres integrantes trabajan al mismo ritmo y con igual dedicación: **8 × 3 = 24 puntos por Sprint de dos semanas**. Esta es una capacidad proyectada, no una velocidad demostrada mediante entregas. Se conserva la escala de puntos de las historias y se revisará la previsión según los puntos que cumplan el DoD al cerrar cada Sprint.
+El equipo de tres integrantes planifica una dedicación parcial y variable durante cinco Sprints de dos semanas. Las horas de trabajo cubren implementación, apoyo, integración, pruebas y revisión. La dedicación total se calcula dividiendo esas horas entre 0,80 y redondeando hacia arriba por integrante y Sprint.
 
-La jornada prevista es de **lunes a viernes, 8 horas diarias por integrante**. Se asumen diez días laborables por Sprint, sin feriados ni ausencias; cualquier indisponibilidad se descontará en Planning.
+| Sprint | Stuarth: trabajo / total | Cristopher: trabajo / total | Miguel: trabajo / total | Trabajo del equipo | Reserva incluida | Dedicación total |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | 44 / 55 h | 42 / 53 h | 32 / 40 h | 118 h | 30 h | 148 h |
+| 2 | 48 / 60 h | 24 / 30 h | 40 / 50 h | 112 h | 28 h | 140 h |
+| 3 | 26 / 33 h | 26 / 33 h | 44 / 55 h | 96 h | 25 h | 121 h |
+| 4 | 24 / 30 h | 46 / 58 h | 40 / 50 h | 110 h | 28 h | 138 h |
+| 5 | 56 / 70 h | 30 / 38 h | 52 / 65 h | 138 h | 35 h | 173 h |
+| **Total** | **198 / 248 h** | **168 / 212 h** | **208 / 260 h** | **574 h** | **146 h** | **720 h** |
 
-| Concepto | Por Sprint (2 semanas) | Proyecto (10 semanas / 5 Sprints) |
-| --- | ---: | ---: |
-| Horas por integrante | 80 h | 400 h |
-| Horas del equipo de tres | 240 h | 1.200 h |
-| Reserva de planificación propuesta: 20 % para ceremonias, coordinación e imprevistos | 48 h | 240 h |
-| Horas para tareas de historias, incluyendo desarrollo, pruebas y revisión | 192 h | 960 h |
-| Capacidad proyectada de puntos | 24 | 120 |
+Las **146 h de reserva** están incluidas en las 720 h presupuestadas. Después de cubrir ceremonias y coordinación, el saldo de cada Sprint puede utilizarse para corregir defectos, resolver problemas de integración o repetir pruebas. Si el saldo es insuficiente, el equipo revisará la disponibilidad individual y el efecto sobre costo, plazo y dependencias antes de ajustar el plan.
 
-Los puntos expresan esfuerzo relativo; **no se establece una conversión fija de puntos a horas**. En cada Planning se desglosarán las historias en tareas y se estimarán sus horas para comprobar que caben en las 192 horas previstas y en la disponibilidad individual. La reserva del 20 % es un supuesto de esta planificación, no una medición histórica.
+**Desglose de referencia del Sprint 2 (112 h de trabajo y 28 h de reserva)**
 
-**Base de costos:** se presupuestan las 240 horas del equipo por Sprint, incluidas coordinación y reuniones. Si todos tienen tarifa horaria T, el costo laboral es **240 × T por Sprint** y **1.200 × T por proyecto**. Si las tarifas difieren, se calcula **80 × (T_Stuarth + T_Cristopher + T_Miguel)** por Sprint y cinco veces ese importe para el proyecto. El margen de puntos no constituye un ahorro automático de horas o costos mientras se mantenga la dedicación durante diez semanas.
+* **Stuarth (48 h):** grafo y Dijkstra (24 h), API e integración (12 h), pruebas propias (6 h) y revisión de HU-09 (6 h).
+* **Cristopher (24 h):** conexión con la interfaz (12 h), comprobaciones de integración (8 h) y revisión del formato de pruebas (4 h).
+* **Miguel (40 h):** Haversine y estimación de tiempos (20 h), ruta de referencia y registro de pruebas (12 h) y revisión de HU-03 (8 h).
+
+En Planning el equipo confirmará su disponibilidad y revisará las horas estimadas por tarea. Las 80 h por persona y Sprint representan el techo teórico de jornada completa. Los puntos expresan esfuerzo relativo y se conservan para describir el alcance planificado.
 
 #### 6.3.1 Presupuesto de trabajo del equipo
 
 Se adopta como **escenario base de estimación académica una tarifa de ₡17.202 por hora por integrante**, proporcionada por el solicitante. Como escenario alternativo se calcula una tarifa de **USD 41–45 por hora por integrante**. Estas referencias no cuentan todavía con fuente documental o modalidad contractual verificadas en el expediente; se utilizan como supuestos de presupuesto, sin afirmar que sean un salario promedio comprobado. Se interpreta 17.202 como diecisiete mil doscientos dos colones. No se convierten monedas ni se suman ambos escenarios.
 
-**Cálculo base:**
+El costo de cada Sprint se calcula multiplicando sus horas totales por la tarifa. Las horas ya incluyen la reserva y la dedicación de PO, Scrum Master y QA dentro del equipo.
 
-* Por integrante y Sprint: 80 h × ₡17.202 = **₡1.376.160**.
-* Por equipo y Sprint: 3 × 80 h × ₡17.202 = **₡4.128.480**.
-* Por integrante en diez semanas: 400 h × ₡17.202 = **₡6.880.800**.
-* Por equipo en todo el proyecto: 3 × 400 h × ₡17.202 = **₡20.642.400**.
-
-| Sprint | Semanas | Puntos de historias planificados | Horas del equipo | Costo base (CRC) | Alternativa a USD 41/h | Alternativa a USD 45/h |
+| Sprint | Semanas | Puntos planificados | Horas del equipo | Costo base (CRC) | Alternativa a USD 41/h | Alternativa a USD 45/h |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| 1 | 1–2 | 16 | 240 | ₡4.128.480 | USD 9.840 | USD 10.800 |
-| 2 | 3–4 | 13 | 240 | ₡4.128.480 | USD 9.840 | USD 10.800 |
-| 3 | 5–6 | 8 | 240 | ₡4.128.480 | USD 9.840 | USD 10.800 |
-| 4 | 7–8 | 13 | 240 | ₡4.128.480 | USD 9.840 | USD 10.800 |
-| 5 | 9–10 | 13 | 240 | ₡4.128.480 | USD 9.840 | USD 10.800 |
-| **Total** | **10 semanas** | **63** | **1.200** | **₡20.642.400** | **USD 49.200** | **USD 54.000** |
+| 1 | 1–2 | 16 | 148 | ₡2.545.896 | USD 6.068 | USD 6.660 |
+| 2 | 3–4 | 13 | 140 | ₡2.408.280 | USD 5.740 | USD 6.300 |
+| 3 | 5–6 | 8 | 121 | ₡2.081.442 | USD 4.961 | USD 5.445 |
+| 4 | 7–8 | 13 | 138 | ₡2.373.876 | USD 5.658 | USD 6.210 |
+| 5 | 9–10 | 13 | 173 | ₡2.975.946 | USD 7.093 | USD 7.785 |
+| **Total** | **10 semanas** | **63** | **720** | **₡12.385.440** | **USD 29.520** | **USD 32.400** |
 
-Todos los Sprints tienen el mismo costo porque se presupuesta la misma dedicación de tres integrantes durante dos semanas, aunque cambien los puntos de las historias seleccionadas. La reserva del 20 % ya está incluida en las 240 horas: no se agrega un 20 % adicional al costo. Los roles de PO, Scrum Master y QA se distribuyen entre estos tres integrantes y no se cobran como personas adicionales.
-
-El **presupuesto base de trabajo del equipo para el proyecto es ₡20.642.400**. El escenario alternativo es **USD 49.200–54.000** por el mismo período. Estos importes cubren únicamente el trabajo a las tarifas asumidas; no constituyen un costo integral de contratación laboral o de operación. El expediente no cuantifica cargas patronales, prestaciones, impuestos, equipos, hosting ni consumo de APIs; no se presume que sean gratuitos o que estén incluidos. El costo integral será el presupuesto de trabajo más los gastos adicionales aplicables una vez definidos, evitando duplicar conceptos que ya incluya una tarifa contratada. Si se trata de una valoración académica sin remuneración efectiva, estos montos representan el valor estimado del esfuerzo, no pagos realizados.
+El **presupuesto base de trabajo del equipo para el proyecto es ₡12.385.440**. El escenario alternativo es **USD 29.520–32.400** por el mismo período. Estos importes cubren únicamente el trabajo a las tarifas asumidas; no constituyen un costo integral de contratación laboral o de operación. El expediente no cuantifica cargas patronales, prestaciones, impuestos, equipos, hosting ni consumo de APIs; no se presume que sean gratuitos o que estén incluidos. El costo integral será el presupuesto de trabajo más los gastos adicionales aplicables una vez definidos, evitando duplicar conceptos que ya incluya una tarifa contratada. Si se trata de una valoración académica sin remuneración efectiva, estos montos representan el valor estimado del esfuerzo, no pagos realizados.
 
 ### 6.4 Cronograma del Proyecto de Desarrollo de Software (10 semanas)
 
@@ -334,18 +333,18 @@ A continuación, se detallan las 12 Historias de Usuario principales que engloba
 
 ---
 
-## 8. Planificación y Release Plan (Capacidad: 24 pts / Sprint)
+## 8. Planificación y Release Plan
 
-Se mantienen **10 semanas y cinco Sprints de dos semanas**, con capacidad proyectada de **24 puntos por Sprint**. Se programan las **12 historias, que suman 63 puntos**, conservando sus estimaciones: el aumento del equipo permite cubrir todo el backlog y reforzar su calidad, sin aumentar artificialmente el valor de las historias para llenar la capacidad.
+El plan distribuye **12 historias y 63 puntos en cinco Sprints de dos semanas**. La dedicación se estima por integrante según el trabajo y las dependencias.
 
-| Sprint | Semanas | Historias y puntos | Puntos planificados | Capacidad proyectada | Margen de puntos |
-| --- | --- | --- | ---: | ---: | ---: |
-| 1 | 1–2 | HU-01 (3), HU-02 (5), HU-07 (3), HU-08 (5) | 16 | 24 | 8 |
-| 2 | 3–4 | HU-09 (5), HU-03 (8) | 13 | 24 | 11 |
-| 3 | 5–6 | HU-04 (5), HU-10 (3) | 8 | 24 | 16 |
-| 4 | 7–8 | HU-05 (5), HU-06 (8) | 13 | 24 | 11 |
-| 5 | 9–10 | HU-12 (8), HU-11 (5) | 13 | 24 | 11 |
-| **Total** | **10 semanas** | **12 historias** | **63** | **120** | **57** |
+| Sprint | Semanas | Historias y puntos | Puntos planificados | Horas de trabajo | Reserva | Dedicación total |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| 1 | 1–2 | HU-01 (3), HU-02 (5), HU-07 (3), HU-08 (5) | 16 | 118 h | 30 h | 148 h |
+| 2 | 3–4 | HU-09 (5), HU-03 (8) | 13 | 112 h | 28 h | 140 h |
+| 3 | 5–6 | HU-04 (5), HU-10 (3) | 8 | 96 h | 25 h | 121 h |
+| 4 | 7–8 | HU-05 (5), HU-06 (8) | 13 | 110 h | 28 h | 138 h |
+| 5 | 9–10 | HU-12 (8), HU-11 (5) | 13 | 138 h | 35 h | 173 h |
+| **Total** | **10 semanas** | **12 historias** | **63** | **574 h** | **146 h** | **720 h** |
 
 **Orden y mejora del trabajo con tres integrantes:**
 
@@ -355,7 +354,7 @@ Se mantienen **10 semanas y cinco Sprints de dos semanas**, con capacidad proyec
 * **Sprint 4 — Reportes y sostenibilidad:** implementar HU-05 y HU-06 sobre los indicadores del Sprint 3. Se contrastarán los datos exportados y los gráficos con los cálculos de origen y se documentarán los factores de emisión utilizados.
 * **Sprint 5 — IA, calidad integral y cierre:** completar HU-12 con los datos disponibles y evaluar sus recomendaciones frente a una referencia; si son insuficientes, se aplicará su criterio de limitación y alternativa Dijkstra, sin declarar validado un modelo sin evidencia. HU-11 verificará rendimiento, integridad y experiencia de usuario sobre el sistema integrado. Las verificaciones de calidad también se ejecutan en cada Sprint mediante el DoD.
 
-El margen de **57 puntos** es capacidad proyectada no comprometida con historias adicionales; no es trabajo terminado ni una bolsa de puntos para volver a contar pruebas. Permite absorber variaciones de estimación, corregir defectos, mejorar validaciones y documentación dentro de las historias y completar su DoD. Estas actividades se desglosarán en horas, sin asignar puntos adicionales salvo una reestimación explícita de alcance. No se promete una mejora fuera de los requisitos existentes ni se acorta el plazo.
+El equipo revisará el trabajo pendiente y el saldo de reserva durante cada Sprint. La reserva cubre coordinación e imprevistos dentro de la dedicación presupuestada.
 
 Esta tabla es una **replanificación autorizada el 11/11/2026**, no una reconstrucción de ejecución pasada. Los estados documentales de las historias se conservan como antecedentes propuestos al 10/11/2026; no acreditan implementación, pruebas ni cierre de los Sprints reorganizados. La selección se confirmará en cada Planning según dependencias, horas por tarea y disponibilidad de cada integrante.
 
@@ -458,9 +457,9 @@ La integración, pruebas, revisión y documentación de cada historia forman par
   * **Evidencia:** Registrar los impedimentos y acuerdos de apoyo en las tarjetas afectadas.
   * **Si se detecta indisponibilidad:** Coordinar apoyo entre los integrantes, conservando la revisión por otra persona y comunicando cualquier trabajo que no pueda completarse.
 
-* **Respuesta R-09:** Contrastar en cada Sprint Planning y Sprint Review los compromisos con el Release Plan de 63 puntos y el límite proyectado de 24 puntos por Sprint. **Estado:** En proceso.
+* **Respuesta R-09:** Contrastar en Planning y Review las historias comprometidas con la disponibilidad en horas por integrante, las dependencias y el saldo de reserva. **Estado:** En proceso.
   * **Responsable:** Stuarth Fabricio Miranda Rojas.
-  * **Evidencia:** Registrar la cobertura de las 12 historias, sus dependencias y el cumplimiento de la capacidad en horas y puntos de cada Sprint.
+  * **Evidencia:** Registrar la cobertura de las 12 historias, sus dependencias y la carga en horas por integrante y el saldo de reserva de cada Sprint.
   * **Si se propone trabajo adicional:** Registrar la discrepancia y consultar su planificación antes de comprometer la entrega.
 
 ---
@@ -487,7 +486,7 @@ El **Equipo de desarrollo (3 integrantes)** está conformado por **Stuarth Fabri
 | Cristopher Quiros Araya | Scrum Master y Frontend | Facilitar las ceremonias existentes, vigilar los límites WIP, mantener el registro de decisiones y desarrollar las interfaces de sus historias asignadas. |
 | Miguel Cruz Vargas | QA y apoyo de Backend | Coordinar la verificación del DoD, registrar resultados reales de pruebas y desarrollar el procesamiento de recursos asignado. |
 
-Los roles se acumulan dentro del equipo de tres; la capacidad proyectada conjunta es de 24 puntos por Sprint según la sección 6.3, sin sumar capacidad adicional por cada rol. Cada responsable implementará su historia, actualizará su tarjeta y aportará evidencia. La revisión corresponderá a otro integrante para evitar que una persona sea el único validador de su propio trabajo.
+Los tres integrantes comparten las responsabilidades dentro de la dedicación de la sección 6.3. Cada responsable implementará su historia, actualizará su tarjeta y aportará evidencia. Otro integrante realizará la revisión.
 
 
 | Historia | Responsable de implementación | Responsable de revisión del DoD | Sprint actualizado |
@@ -507,7 +506,7 @@ Los roles se acumulan dentro del equipo de tres; la capacidad proyectada conjunt
 
 En el Sprint 1, Stuarth asume las tareas originales 1.1 a 1.3 de HU-01 y HU-08; Cristopher, las tareas 1.4 y 1.5 de HU-02 y HU-07; Miguel coordina su revisión. En el Sprint 2, Stuarth implementa HU-03 y Miguel HU-09, con revisión cruzada. En el Sprint 3, Miguel implementa HU-04 y HU-10, con apoyo de interfaz de Cristopher; en el Sprint 4, Miguel implementa HU-05 y Cristopher HU-06; en el Sprint 5, Stuarth implementa HU-12 y Miguel coordina HU-11, con verificación de Cristopher. Nadie concentra más de 8 puntos de responsabilidad principal en un Sprint. La asignación de puntos no sustituye la estimación de horas: implementación, apoyo y revisión deben caber en la disponibilidad de cada persona.
 
-Se mantienen las **10 semanas y cinco Sprints**, ahora con **24 puntos proyectados por Sprint**. Las **12 historias y sus 63 puntos** tienen Sprint y responsables asignados. Las estimaciones individuales no cambian. La capacidad de 120 puntos supera el backlog en 57 puntos y se utiliza como margen de planificación, no como obligación de ampliar el alcance. Las tareas complementarias se detallan en la sección 9; cada responsable contará con colaboración del equipo sin duplicar puntos y con revisión independiente.
+Las **12 historias y sus 63 puntos** mantienen Sprint y responsables asignados. La sección 6.3 detalla la dedicación por integrante y la sección 9 recoge las tareas complementarias.
 
 ---
 
@@ -515,7 +514,7 @@ Se mantienen las **10 semanas y cinco Sprints**, ahora con **24 puntos proyectad
 
 **Proyecto:** Sistema inteligente para gestión y optimización de operaciones logísticas  
 **Equipo:** Stuarth Fabricio Miranda Rojas, Cristopher Quiros Araya y Miguel Cruz Vargas  
-**Base:** Antecedentes de las versiones 0.8–0.14 y replanificación de capacidad, asignaciones y horarios de la versión 0.15.
+**Base:** Acuerdos de comunicación de las versiones 0.8–0.15 y dedicación parcial de la versión 0.18.
 **Referencia:** [Optimización logística · Centro del Sprint 1](https://app.notion.com/p/40f28b05e206818bae44c111edf7ee18)
 
 ### 12.1. Propósito y fuentes
@@ -549,7 +548,7 @@ Las actualizaciones de tarjetas corresponderán al trabajo real y se harán el m
 
 ### 12.4. Matriz de comunicaciones internas
 
-Se fija el siguiente horario de planificación en **hora de Costa Rica**, relativo a las semanas de cada Sprint del Release Plan actualizado. Como distribución operativa propuesta, se utiliza 08:00–17:00 con una hora de almuerzo no contabilizada, para completar ocho horas diarias; las ceremonias se incluyen dentro de esa jornada. Se aplica al trabajo futuro, sin reconstruir ni dar por realizadas ceremonias pasadas. La modalidad será escrita mediante comentarios en Notion, sin incorporar otra herramienta. Los bloques horarios reservan una ventana de intercambio, no acreditan asistencia ni disponibilidad previamente comprobada.
+Se fija el siguiente horario de planificación en **hora de Costa Rica**, relativo a las semanas de cada Sprint del Release Plan actualizado. La franja de coordinación es de 08:00 a 17:00. Cada integrante organiza su trabajo dentro de la dedicación parcial prevista en la sección 6.3. Las ceremonias se cubren con la reserva de cada Sprint. Se aplica al trabajo futuro, sin reconstruir ni dar por realizadas ceremonias pasadas. La modalidad será escrita mediante comentarios en Notion, sin incorporar otra herramienta. Los bloques horarios reservan una ventana de intercambio, no acreditan asistencia ni disponibilidad previamente comprobada.
 
 | Comunicación | Momento y duración | Responsable y participantes | Contenido y registro |
 | --- | --- | --- | --- |
@@ -592,9 +591,9 @@ Las asignaciones, los horarios y los límites WIP de esta versión se registran 
 
 ### 12.8. Conservación del alcance y estado de aplicación
 
-Se conservan los objetivos, requerimientos, funcionalidades, 12 historias, sus 63 puntos, tareas técnicas originales, DoD y plazo de 10 semanas. La versión 0.15 sustituye la capacidad y las asignaciones anteriores por la planificación de las secciones 6.3, 8, 9 y 11; todas las historias quedan programadas.
+Se conservan los objetivos, requerimientos, funcionalidades, 12 historias, sus 63 puntos, tareas técnicas originales, DoD y plazo de 10 semanas. Las secciones 6.3, 8, 9 y 11 recogen la planificación vigente de dedicación, historias y responsabilidades.
 
-Se conserva el historial anterior y se añade la versión 0.15. Esta edición se limita a los Markdown locales: no modifica el tablero de Notion, no envía mensajes ni crea eventos. Por ello, las nuevas asignaciones y reglas quedan documentadas aquí sin afirmar que ya estén aplicadas en el tablero o que se hayan realizado reuniones, pruebas o entregas.
+El historial de versiones documenta los cambios de planificación. Esta edición se limita a los Markdown locales: no modifica el tablero de Notion, no envía mensajes ni crea eventos. Por ello, las nuevas asignaciones y reglas quedan documentadas aquí sin afirmar que ya estén aplicadas en el tablero o que se hayan realizado reuniones, pruebas o entregas.
 
 ---
 
@@ -634,7 +633,7 @@ Los nombres abreviados de los dueños corresponden a los integrantes identificad
 | R-06 | Si el esquema SQL o el guardado permiten datos incompletos o relaciones inconsistentes, entonces las rutas registradas y los indicadores derivados perderán integridad. | técnico | amenaza | 2 | 3 | 6 — Alta | Stuarth Fabricio Miranda Rojas | La persistencia de HU-01 y el requisito no funcional de integridad dependen de la tabla y la conexión de guardado. |
 | R-07 | Si la validación de permisos permite a un operario acceder a información restringida, entonces HU-08 incumplirá el control por roles y expondrá datos. | técnico | amenaza | 2 | 3 | 6 — Alta | Stuarth Fabricio Miranda Rojas | El criterio de HU-08 exige bloquear accesos no autorizados; no hay evidencia de validación. |
 | R-08 | Si un integrante no está disponible para implementar o revisar su historia, entonces se acumulará trabajo en proceso o revisión y se pondrá en riesgo el cierre del Sprint. | equipo | amenaza | 2 | 2 | 4 — Media | Cristopher Quiros Araya | Tres integrantes concentran roles técnicos y de coordinación; cada historia requiere revisión de otra persona. |
-| R-09 | Si se utiliza el antiguo Release Plan de 40 puntos o se interpreta la proyección de 24 puntos como velocidad demostrada, entonces se comunicarán compromisos incompatibles con la planificación actual y se pondrá en riesgo el plazo de 10 semanas. | alcance | amenaza | 3 | 3 | 9 — Alta | Stuarth Fabricio Miranda Rojas | La versión 0.15 programa 63 puntos en cinco Sprints; la capacidad de 24 puntos se basa en igual ritmo de trabajo, pendiente de validación con entregas. |
+| R-09 | Si se compromete más trabajo del que cabe en las horas disponibles por integrante o se omiten dependencias, entonces se pone en riesgo el plazo de 10 semanas. | alcance | amenaza | 3 | 3 | 9 — Alta | Stuarth Fabricio Miranda Rojas | La dedicación estimada por Sprint debe verificarse contra la disponibilidad y el trabajo pendiente. |
 | R-10 | Si se acumulan validaciones o se declara una historia terminada sin evidencia de los cinco criterios del DoD, entonces se comunicarán avances no acreditados y defectos podrían llegar al cierre. | equipo | amenaza | 2 | 3 | 6 — Alta | Miguel Cruz Vargas | El DoD exige cinco verificaciones y QA participa en la revisión de varias historias. |
 
 #### 13.2.3. Mapa de calor inicial
@@ -665,7 +664,7 @@ Las acciones siguientes concretan controles dentro de historias, tareas y criter
 | R-06 | Mitigar. | En **HU-01, tareas 1.1 y 1.3**, revisar campos y relaciones del esquema y contrastar el dato guardado con la entrada válida del **CP-RF01-01**; comprobar el requisito no funcional 5 al validar la persistencia. | La ruta guardada pierde campos, admite origen/destino inválidos o queda asociada a datos inconsistentes. | Detener la validación de la persistencia afectada y corregir esquema o guardado en las mismas tareas. Repetir la verificación con datos de prueba; no borrar registros reales ni afirmar recuperación mediante copias cuya existencia no está acreditada. |
 | R-07 | Mitigar. | En **HU-08, Sprint 1**, verificar su criterio de aceptación con un operario que intenta acceder a reportes gerenciales y contrastar el resultado con el rol autorizado. **La validación se incorpora en la sección 9, en el apartado del Sprint 1**, como actividad vinculada a HU-08 y al DoD. Stuarth implementa y Miguel revisa. | Un usuario con rol operario logra acceder a una operación restringida durante la validación. | Impedir que la historia se marque Hecho o se entregue como segura; corregir los permisos dentro de HU-08 y repetir la validación de acceso e integración. |
 | R-08 | Mitigar. | En las historias asignadas en la **sección 11**, el responsable mantendrá el avance y las evidencias en sus comentarios; Cristopher vigilará el WIP y coordinará apoyo sobre las mismas tareas. Para Sprint 1 se vincula a **1.1–1.5** y para Sprint 2 a **2.1–2.4**; en el resto del plan, al trabajo complementario de las 12 historias descrito en la sección 9. | Un responsable comunica indisponibilidad o falta su actualización en una ventana diaria sin registro previo. | Redistribuir temporalmente el trabajo original entre los otros dos integrantes mediante decisión registrada, preservando revisión por otra persona. Si no hay capacidad, comunicar el trabajo no terminado, sin elevar velocidad, puntos ni extender fechas automáticamente. |
-| R-09 | Evitar promesas fuera del Release Plan; aceptar el riesgo residual de cobertura. | Stuarth contrastará los compromisos con la **sección 8 y las HU originales** en Planning y Review; verificar la asignación de las 12 historias y sus 63 puntos, la disponibilidad en horas y el límite proyectado de 24 puntos por Sprint. Este control de gestión no agrega puntos técnicos. | Se usa una asignación anterior, se supera la capacidad de un Sprint o la carga de tareas excede las horas de un integrante. | Revisar la carga con el equipo y registrar una decisión que preserve dependencias y DoD; utilizar el margen disponible dentro de los cinco Sprints sin aumentar automáticamente la velocidad ni extender las diez semanas. Si no cabe el trabajo, comunicar la desviación y resolver la prioridad antes de comprometer una nueva entrega. |
+| R-09 | Revisar carga y dependencias. | Stuarth contrasta el Release Plan con las horas disponibles por integrante y el saldo de reserva en Planning y Review. | La carga excede las horas disponibles o una dependencia impide avanzar. | Redistribuir el trabajo y evaluar costo y plazo si la reserva resulta insuficiente. |
 | R-10 | Mitigar. | En **tarea 2.4 de HU-03** y en la revisión de **todas las historias conforme al DoD de sección 10**, el revisor comprobará cada criterio con la evidencia de sección 12.6 antes del movimiento a Hecho; vigilar el límite de 2 tarjetas en revisión. No se crean tareas de pruebas nuevas. | Una historia se propone como Hecho sin evidencia de algún criterio, falla una validación o se acumulan más de dos tarjetas en revisión. | Mantener o devolver la historia a En proceso según el fallo, priorizar su corrección y revisión dentro del trabajo original y comunicar lo no validado en la Review. No omitir criterios para cumplir una fecha. |
 
 #### 13.3.2. Fecha de revisión y evaluación residual
@@ -684,7 +683,7 @@ Los valores residuales siguientes son **estimaciones objetivo condicionadas a ej
 | R-06 | 11/11/2026 | 1 | 3 | 3 — Media | Solo tras evidencia de persistencia íntegra; permanecen errores posibles fuera de los casos revisados. |
 | R-07 | 11/11/2026 | 1 | 3 | 3 — Media | Solo tras comprobar roles; una modificación posterior puede introducir un acceso indebido. |
 | R-08 | 11/11/2026 | 1 | 2 | 2 — Baja | Solo con avance accesible y apoyo coordinado; una ausencia prolongada sigue afectando la capacidad. |
-| R-09 | 11/11/2026 | 2 | 3 | 6 — Alta | La replanificación cubre las 12 historias, pero permanecen la incertidumbre de velocidad y el riesgo de utilizar asignaciones antiguas; se requiere comprobar capacidad real y comunicar la versión vigente. |
+| R-09 | 11/11/2026 | 2 | 3 | 6 — Alta | Reevaluar con la carga por integrante, las dependencias y la disponibilidad confirmada. |
 | R-10 | 11/11/2026 | 1 | 3 | 3 — Media | Solo con revisión y evidencia del DoD; la carga de validación y defectos no detectados permanecen posibles. |
 
 En cada revisión, el dueño registrará fecha efectiva, evidencia, estado (identificado, activo, en tratamiento o cerrado), P e I reevaluadas y justificación de cualquier cambio. Un riesgo solo se cerrará cuando deje de ser aplicable o exista evidencia suficiente de resolución; una fecha programada no demuestra cierre. Miguel comprobará la evidencia de calidad, Cristopher consolidará el seguimiento y Stuarth canalizará las consultas de alcance conforme a sus roles existentes.
